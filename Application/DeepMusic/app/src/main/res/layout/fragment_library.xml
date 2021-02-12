@@ -7,7 +7,7 @@
     tools:context=".ui.bookmarks.BookmarksFragment">
 
     <fragment
-        android:id="@+id/bookmarks"
+        android:id="@+id/genres"
         android:name="com.ceri.deepmusic.ui.musics.MusicsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

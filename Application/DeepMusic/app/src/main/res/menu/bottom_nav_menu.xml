@@ -12,7 +12,7 @@
         android:title="@string/your_library" />
 
     <item
-        android:id="@+id/bookmarks"
+        android:id="@+id/genres"
         android:icon="@drawable/ic_heart"
         android:title="@string/bookmarks" />
 

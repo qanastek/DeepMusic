@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_player" />
 
     <fragment
-        android:id="@+id/bookmarks"
+        android:id="@+id/genres"
         android:name="com.ceri.deepmusic.ui.bookmarks.BookmarksFragment"
         android:label="@string/bookmarks"
         tools:layout="@layout/fragment_bookmarks" >
