@@ -61,7 +61,8 @@ public class BookmarksFragment extends Fragment {
 
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
+        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "fr-FR");
+//        intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         intent.putExtra(RecognizerIntent.EXTRA_PROMPT, "Speak something...");
 
         try {
@@ -100,6 +101,10 @@ public class BookmarksFragment extends Fragment {
                     String text = result.get(0);
 
                     Log.d("---------------- res", text);
+
+                    if(text.contains("démarrer")) {
+                        Log.d("---------------- res", "----- Start Up -----");
+                    }
                 }
 
                 Log.d("---------------- res", "After");
