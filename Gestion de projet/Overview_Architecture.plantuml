@@ -1,0 +1,4 @@
+@startuml
+Client -> Serveur: Text issue de la reconnaissance vocal (Google Speech)
+Serveur -> Client: Regex sur le texte & Lien du fichier audio afin d'être consommer par le client VLC 
+@enduml
