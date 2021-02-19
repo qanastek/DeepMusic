@@ -6,16 +6,16 @@
 
 module Server
 {
-    class Music {
-        int currentId;
-        string id;
+    struct Music {
+        int identifier;
         string titre;
         string artiste;
         string album;
         string path;
-    }
+    };
     
-    ["python:seq:default"] sequence<Music> MusicList;
+    sequence<Music> MusicList;
+    sequence<string> TitleList;
 
     interface Hello
     {
@@ -27,15 +27,18 @@ module Server
         string searchBar(string text);
         void library();
         void bookmarks();
-        void music(int id);
-        void like(int id);
+        void musicInfo(int identifier);
+        void like(int identifier);
+
+        TitleList showAll();
 
         MusicList findAll();
-    }
+        Music findOne();
+    };
     
     interface Administration
     {
         void add(string title, string artist, string album, string path);
         bool delete(int identifier);
-    }
+    };
 }

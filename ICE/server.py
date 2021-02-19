@@ -7,32 +7,29 @@ import signal
 import sys
 import Ice
 
+# import Music
+# import MusicI
+
 import vlc
 import pylev
 
 Ice.loadSlice('Server.ice')
 import Server
 
-class Music:
-
-    currentId = 0
-
-    def __init__(self, titre, artiste, album, path):
-
-        Music.currentId += 1
-
-        self.id = Music.currentId
-        self.titre = titre
-        self.artiste = artiste
-        self.album = album
-        self.path = path
-
-        print(self.id)
+# class TimeOfDay(Ice.Object):
+#     def __init__(self, hour=0, minute=0, second=0):
+#         self.hour = hour
+#         self.minute = minute
+#         self.second = second
+ 
+#     def ice_staticId():
+#         return '::M::TimeOfDay'
+#     ice_staticId = staticmethod(ice_staticId)
 
 musics = [
-    Music("D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Dee Yan-Key - Hold on.mp3"),
-    Music("Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Dee Yan-Key - Hold on.mp3"),
-    Music("Checkie Brown - Rosalie (CB 104)","Artiste Test 3","Album Test 3","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(1,"D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(2,"Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(3,"Checkie Brown - Rosalie (CB 104)","Artiste Test 3","Album Test 3","musics/Dee Yan-Key - Hold on.mp3"),
 ]
 
 start = ["lancer","lance","demarrer","demarre"]
@@ -66,6 +63,10 @@ def search(title):
     return sorted_items[0][1]
 
 class HelloI(Server.Hello):
+
+    def test(self, current):
+        time = TimeOfDay()
+        return time
 
     def sayHello(self, current):
         print("Hello World!")
@@ -112,13 +113,23 @@ class HelloI(Server.Hello):
     def bookmarks(self, current):
         print("bookmarks!")
 
-    def music(self, id, current):
+    def musicInfo(self, identifier, current):
         print("music {}!".format(id))
 
-    def like(self, id, current):
+    def like(self, identifier, current):
         print("like {}!".format(id))
 
+    def showAll(self, current):
+        print(musics)
+        print(len(musics))
+        return [a.titre for a in musics]
+    
+    def findOne(self, current):
+        return musics[0]
+
     def findAll(self, current):
+        print(musics)
+        print(len(musics))
         return musics
         
 class AdministrationI(Server.Administration):
@@ -128,7 +139,7 @@ class AdministrationI(Server.Administration):
         print("Add!")
 
         # Créer la musique
-        m = Music(title,artist,album, path)
+        m = Server.Music(8,title,artist,album, path)
 
         # Ajoute la musique à la liste
         musics.append(m)
@@ -139,7 +150,7 @@ class AdministrationI(Server.Administration):
         
         for m in musics:
 
-            if m.id == identifier:
+            if m.identifier == identifier:
 
                 # Supprime la musique
                 musics.remove(m)
@@ -165,6 +176,10 @@ with Ice.initialize(sys.argv) as communicator:
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))
+
+    # servant = NodeI("Fred")
+    # adapter.add(servant, id)
+
 
     adapter.activate()
     communicator.waitForShutdown()

@@ -8,8 +8,8 @@ Technically, this is an Android Application and its entire RPC / MOM backend.
 
 <!-- ![Preview](GithubAssets/Preview.png) -->
 ## Install Dependencies
-* `pip install -R requirements.txt`
 * `sudo apt-get install vlc`
+* `pip install -r requirements.txt`
 
 ## Another Dependency for Compiling Android on Windows
 * Install the Zeroc Ice 3.7 for Java [here](https://zeroc.com/downloads/ice/3.7/java)
@@ -22,7 +22,8 @@ Here is the procedure to install this software :
 
 ## Server Installation
 Here is the procedure to install this software :
-1. Run: `./server.py`
+1. Start Audio: `pulseaudio --start`
+2. Run: `./server.py`
 
 ## References
 * [Dribble](https://dribbble.com/)

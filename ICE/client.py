@@ -25,25 +25,37 @@ with Ice.initialize(sys.argv) as communicator:
     hello.topGenres()
     hello.topArtist()
 
+    resAll = hello.showAll()
+    print(resAll)
+
     res1 = hello.searchVoice("demarre D-Sturb & High Voltage")
     res2 = hello.searchBar("D-Sturb & High ")
+
+    print("----------------before")
+
+    # test = hello.test()
+    print("----------------hello.findAll()")
+    musics = hello.findAll()
+    print(musics)
+    print("----------------hello.findOne()")
+    musics = hello.findOne()
+    print(musics.titre)
+    print("----------------musics")
+    # print(musics)
+    # print(test)
 
     print(res2)
  
     # creating vlc media player object
-    media = vlc.MediaPlayer("musics/Dee Yan-Key - Hold on.mp3")
+    # media = vlc.MediaPlayer("musics/Dee Yan-Key - Hold on.mp3")
     
     # start playing video
-    media.play()
+    # media.play()
 
     hello.library()
     hello.bookmarks()
-    hello.music(10)
+    hello.musicInfo(10)
     hello.like(10)
-
-    musics = hello.findAll()
-    print("----------------musics")
-    print(musics)
 
     # ------------ ADMIN ------------
     admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h localhost -p 10000"))
