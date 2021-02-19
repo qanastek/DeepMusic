@@ -1,7 +1,11 @@
 package com.ceri.deepmusic.ui.bookmarks;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -20,12 +24,25 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.ceri.deepmusic.R;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
 public class BookmarksFragment extends Fragment {
 
+    private Context mContext;
+
     private BookmarksViewModel bookmarksViewModel;
+
+    private boolean isPlaying = false;
+
+    private MediaPlayer mp;
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mContext=context;
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -52,7 +69,64 @@ public class BookmarksFragment extends Fragment {
             }
         });
 
+        final Button player = root.findViewById(R.id.player);
+
+        player.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                togglePlay();
+            }
+        });
+
         return root;
+    }
+
+    private void togglePlay() {
+
+        if (!isPlaying)
+        {
+            isPlaying = true;
+
+            mp = new MediaPlayer();
+
+            try {
+
+                mp.reset(); // new one
+
+                mp.setDataSource(getActivity(), Uri.parse("https://www.all-birds.com/Sound/western%20bluebird.wav"));
+
+                //mp.prepareAsync();
+
+                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+
+                mp.prepare(); // don't use prepareAsync for mp3 playback
+
+                mp.start();
+
+                // String songTitle = songsList.get(songIndex).get("songTitle");
+                // songTitleLabel.setText(songTitle);
+
+//                songProgressBar.setProgress(0);
+//                songProgressBar.setMax(100);
+//
+//                // Updating progress bar
+//                updateProgressBar();
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+        }
+        else
+        {
+            isPlaying = false;
+
+            mp.release();// stop Playing
+
+            //mp = null;
+        }
+
     }
 
     private void startSpeechToText() {

@@ -1,23 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:padding="10dp">
 
     <TextView
-        android:id="@+id/content"
+        android:id="@+id/identifierMusic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
+        android:layout_weight="1"
+        android:paddingRight="15dp"
         android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="17dp"
+        android:textStyle="bold"
         tools:text="10" />
 
-    <TextView
-        android:id="@+id/content"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem"
-        tools:text="Item 10" />
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="#676767" />
+
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/button_favorite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill"
+        android:layout_weight="0"
+        android:background="@drawable/button_favorite"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/imageButton"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:backgroundTint="@color/listViewBackground"-->
+    <!--        app:srcCompat="@drawable/ic_heart" />-->
+
 </LinearLayout>

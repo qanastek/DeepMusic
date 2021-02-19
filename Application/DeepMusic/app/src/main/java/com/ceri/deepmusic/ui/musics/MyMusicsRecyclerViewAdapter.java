@@ -2,40 +2,53 @@ package com.ceri.deepmusic.ui.musics;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ceri.deepmusic.R;
-import com.ceri.deepmusic.ui.musics.dummy.DummyContent.DummyItem;
+import com.ceri.deepmusic.models.Music;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem}.
+ * {@link RecyclerView.Adapter} that can display a {@link com.ceri.deepmusic.models.Music}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
+    private final List<Music> mValues;
 
-    public MyMusicsRecyclerViewAdapter(List<DummyItem> items) {
+    public MyMusicsRecyclerViewAdapter(List<Music> items) {
         mValues = items;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_musics, parent, false);
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_musics, parent, false);
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("-------------","Clicked");
+            }
+        });
+
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
+
+        // Get the current Music
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
-        holder.mContentView.setText(mValues.get(position).content);
+
+        holder.mIdView.setText(String.valueOf(position < 10 ? "0" + position : position));
+        holder.mTitleView.setText(mValues.get(position).titre);
+        holder.mAlbumView.setText(String.format("%s - %s", mValues.get(position).album, mValues.get(position).duration));
     }
 
     @Override
@@ -44,21 +57,27 @@ public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRe
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+
         public final View mView;
+
         public final TextView mIdView;
-        public final TextView mContentView;
-        public DummyItem mItem;
+        public final TextView mTitleView;
+        public final TextView mAlbumView;
+
+        public Music mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mIdView = (TextView) view.findViewById(R.id.content);
-            mContentView = (TextView) view.findViewById(R.id.content);
+
+            mIdView = (TextView) view.findViewById(R.id.identifierMusic);
+            mTitleView = (TextView) view.findViewById(R.id.title);
+            mAlbumView = (TextView) view.findViewById(R.id.album);
         }
 
         @Override
         public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
+            return super.toString() + " '" + mTitleView.getText() + "'";
         }
     }
 }

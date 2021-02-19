@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/your_library"
-        android:icon="@drawable/ic_books"
+        android:icon="@drawable/ic_loupe"
         android:title="@string/your_library" />
 
     <item
