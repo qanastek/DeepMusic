@@ -30,7 +30,7 @@ module Server
         void music(int id);
         void like(int id);
 
-        MusicList findAll(out MusicList res);
+        MusicList findAll();
     }
     
     interface Administration

@@ -7,12 +7,22 @@ DeepMusic is an easy to use Spotify like app to manage and listen to your favori
 Technically, this is an Android Application and its entire RPC / MOM backend.
 
 <!-- ![Preview](GithubAssets/Preview.png) -->
+## Install Dependencies
+* `pip install -R requirements.txt`
+* `sudo apt-get install vlc`
+
+## Another Dependency for Compiling Android on Windows
+* Install the Zeroc Ice 3.7 for Java [here](https://zeroc.com/downloads/ice/3.7/java)
 
 ## Client Installation
 Here is the procedure to install this software :
 1. Download the *.APK* in the release section
 2. Install it on your Android device
 3. Run it
+
+## Server Installation
+Here is the procedure to install this software :
+1. Run: `./server.py`
 
 ## References
 * [Dribble](https://dribbble.com/)
