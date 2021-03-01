@@ -23,12 +23,14 @@ module Server
         void sayFuckOff();
         void topGenres();
         void topArtist();
-        void searchVoice(string text);
-        string searchBar(string text);
+        Music searchVoice(string text);
+        MusicList searchBar(string text);
         void library();
         void bookmarks();
         void musicInfo(int identifier);
         void like(int identifier);
+
+        void testVlc();
 
         TitleList showAll();
 
@@ -38,7 +40,7 @@ module Server
     
     interface Administration
     {
-        void add(string title, string artist, string album, string path);
+        Music add(string title, string artist, string album, string path);
         bool delete(int identifier);
     };
 }

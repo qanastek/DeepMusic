@@ -3,9 +3,12 @@
 # Copyright (c) ZeroC, Inc. All rights reserved.
 #
 
-import signal
+import os
 import sys
+import time
+
 import Ice
+import signal
 
 # import Music
 # import MusicI
@@ -27,8 +30,8 @@ import Server
 #     ice_staticId = staticmethod(ice_staticId)
 
 musics = [
-    Server.Music(1,"D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Dee Yan-Key - Hold on.mp3"),
-    Server.Music(2,"Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(1,"Mike D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(2,"Mike Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Dee Yan-Key - Hold on.mp3"),
     Server.Music(3,"Checkie Brown - Rosalie (CB 104)","Artiste Test 3","Album Test 3","musics/Dee Yan-Key - Hold on.mp3"),
 ]
 
@@ -36,31 +39,6 @@ start = ["lancer","lance","demarrer","demarre"]
 stop = ["arrêter","arrêt","stopper","stop"]
 pause = ["pause"]
 actions = start + stop + pause
-
-def search(title):
-
-    if len(musics) <= 0:
-        return None
-
-    items = []
-    
-    # For each music
-    for m in musics:
-
-        # Get the current levenshtein distance
-        distance = pylev.levenshtein(m.titre, title)
-
-        # Add the distance and the music in the tuple
-        couple = (distance, m)
-
-        # Add the tuple to the list
-        items.append(couple)
-
-    # Sort them
-    sorted_items = sorted(items, key=lambda tup: tup[0])
-
-    # Return the closest Music instance
-    return sorted_items[0][1]
 
 class HelloI(Server.Hello):
 
@@ -80,32 +58,93 @@ class HelloI(Server.Hello):
     def topArtist(self, current):
         print("top_artist!")
 
+
     def searchVoice(self, text, current):
 
         print("search_voice {}!".format(text))
 
+        # Tokenize
         splitted = text.split()
 
+        # Get action tokens
         actions_tokens = [a for a in splitted if a in actions]
 
+        # Get others tokens
         others_tokens = [a for a in splitted if a not in actions_tokens]
 
-        title = ' '.join(others_tokens)
+        # Rebuild the title of the music
+        title = ' '.join(others_tokens).lower()
 
-        music = search(title)
+        # Search for the music thanks to the title
+        if len(musics) <= 0:
+            return None
 
-        print("search_voice: {}".format(music.titre))
+        items = []
+        
+        # For each music
+        for m in musics:
 
+            musicTitle = m.titre.lower()
+
+            # Get the current levenshtein distance
+            distance = pylev.levenshtein(musicTitle, title)
+
+            print(musicTitle, distance)
+
+            # Add the distance and the music in the tuple
+            couple = (distance, m)
+
+            # Add the tuple to the list
+            items.append(couple)
+
+        # Sort them
+        sorted_items = sorted(items, key=lambda tup: tup[0])
+
+        if len(sorted_items) > 0:
+
+            # Return the closest Music instance
+            music = sorted_items[0][1]
+
+            # Display the title
+            print("search_voice: {}".format(music.titre))
+
+            return music
+
+        return None
+
+
+    # Search for the music thanks to the title
     def searchBar(self, text, current):
         
-        print("search_bar {}!".format(text))
+        text = text.lower().replace('\n','')
 
-        music = search(text)
+        print("Start search_bar {}!".format(text))
 
-        print("search_bar: {}".format(music.titre))
+        if len(musics) <= 0:
+            return None
 
-        # TODO: Return the ICE URL
-        return music.path
+        items = []
+        
+        # For each music
+        for m in musics:
+
+            title = m.titre.lower()
+            print("----------------")
+            print(text)
+            print(title)
+            print(text in title)
+            print("----------------")
+
+            # Check if contains
+            if text in title:
+
+                print("in")
+
+                # Add the tuple to the list
+                items.append(m)
+
+        print(items)
+        return items
 
     def library(self, current):
         print("library!")
@@ -131,6 +170,18 @@ class HelloI(Server.Hello):
         print(musics)
         print(len(musics))
         return musics
+
+    # https://github.com/oaubert/python-vlc/blob/master/tests/test.py
+    def testVlc(self, current):
+        print("------------------------ Play")
+        instance = vlc.Instance('--vout dummy --aout dummy')
+        player = instance.media_player_new()
+        SAMPLE = os.path.join(os.path.dirname(__file__), 'musics/decata.mp4')
+        print(SAMPLE)
+        media = instance.media_new(SAMPLE)
+        player.set_media(media)
+        player.play()
+        player.audio_set_volume(100)
         
 class AdministrationI(Server.Administration):
 
@@ -139,10 +190,12 @@ class AdministrationI(Server.Administration):
         print("Add!")
 
         # Créer la musique
-        m = Server.Music(8,title,artist,album, path)
+        m = Server.Music(int(time.time()),title,artist,album, path)
 
         # Ajoute la musique à la liste
         musics.append(m)
+
+        return m
 
     def delete(self, identifier, current):
 
