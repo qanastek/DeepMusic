@@ -6,6 +6,8 @@
 import os
 import sys
 import time
+import datetime
+import random
 
 import Ice
 import signal
@@ -30,8 +32,8 @@ import Server
 #     ice_staticId = staticmethod(ice_staticId)
 
 musics = [
-    Server.Music(1,"Mike D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Dee Yan-Key - Hold on.mp3"),
-    Server.Music(2,"Mike Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Dee Yan-Key - Hold on.mp3"),
+    Server.Music(1,"Mike D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Checkie Brown - Rosalie (CB 104).mp3"),
+    Server.Music(2,"Mike Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Lobo Loco - Bad Guys (ID 1333).mp3"),
     Server.Music(3,"Checkie Brown - Rosalie (CB 104)","Artiste Test 3","Album Test 3","musics/Dee Yan-Key - Hold on.mp3"),
 ]
 
@@ -39,6 +41,8 @@ start = ["lancer","lance","demarrer","demarre"]
 stop = ["arrêter","arrêt","stopper","stop"]
 pause = ["pause"]
 actions = start + stop + pause
+
+players = {}
 
 class HelloI(Server.Hello):
 
@@ -58,8 +62,7 @@ class HelloI(Server.Hello):
     def topArtist(self, current):
         print("top_artist!")
 
-
-    def searchVoice(self, text, current):
+    def searchVoice(self, text):
 
         print("search_voice {}!".format(text))
 
@@ -77,7 +80,7 @@ class HelloI(Server.Hello):
 
         # Search for the music thanks to the title
         if len(musics) <= 0:
-            return None
+            return None, None
 
         items = []
         
@@ -108,10 +111,27 @@ class HelloI(Server.Hello):
             # Display the title
             print("search_voice: {}".format(music.titre))
 
-            return music
+            return music, actions_tokens
 
         return None
 
+    def startVoice(self, text, current):
+
+        m, actions_tokens = self.searchVoice(text)
+
+        if not m or not actions_tokens or len(actions_tokens) <= 0:
+            return None, None
+
+        action = actions_tokens[0]
+
+        if action in start:
+            start(m.identifier, current)
+        elif action in pause:
+            pause(current)
+        else:
+            pause(current)
+        
+        return m
 
     # Search for the music thanks to the title
     def searchBar(self, text, current):
@@ -172,16 +192,39 @@ class HelloI(Server.Hello):
         return musics
 
     # https://github.com/oaubert/python-vlc/blob/master/tests/test.py
-    def testVlc(self, current):
+    def start(self, identifier, current):
         print("------------------------ Play")
-        instance = vlc.Instance('--vout dummy --aout dummy')
-        player = instance.media_player_new()
-        SAMPLE = os.path.join(os.path.dirname(__file__), 'musics/decata.mp4')
+
+        # Music.identifier == identifier
+
+        musicsFound = [m for m in musics if m.identifier == identifier]
+
+        if len(musicsFound) <= 0:
+            return None
+        
+        SAMPLE = os.path.join(os.path.dirname(__file__), musicsFound[0].path)
         print(SAMPLE)
-        media = instance.media_new(SAMPLE)
-        player.set_media(media)
-        player.play()
-        player.audio_set_volume(100)
+        media = vlc.MediaPlayer(SAMPLE)
+
+        seconds = int(datetime.datetime.now().strftime("%s")) * 1000
+        identifier = str(seconds) + "_" + str(random.randint(0, 999999999))
+
+        players[identifier] = media
+
+        players[identifier].play()
+
+        print("identifier")
+        print(identifier)
+
+        return identifier
+
+    def stop(self, identifier, current):
+        print("------------------------ Stop")
+        players[identifier].stop()
+
+    def pause(self, identifier, current):
+        print("------------------------ Pause")
+        players[identifier].pause()
         
 class AdministrationI(Server.Administration):
 

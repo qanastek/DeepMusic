@@ -23,14 +23,16 @@ module Server
         void sayFuckOff();
         void topGenres();
         void topArtist();
-        Music searchVoice(string text);
+        Music startVoice(string text);
         MusicList searchBar(string text);
         void library();
         void bookmarks();
         void musicInfo(int identifier);
         void like(int identifier);
 
-        void testVlc();
+        string start(int identifier);
+        void stop(string identifier);
+        void pause(string identifier);
 
         TitleList showAll();
 

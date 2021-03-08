@@ -22,6 +22,8 @@ window = Tk()
 window.title("Client")
 # window.geometry('1280x720')
 
+currentMusic = None
+
 f1 = Frame(window)
 f1.pack(side = TOP)
 
@@ -50,7 +52,6 @@ hello.topArtist()
 resAll = hello.showAll()
 print(resAll)
 
-res1 = hello.searchVoice("demarre D-Sturb & High Voltage")
 res2 = hello.searchBar("D-Sturb & High ")
 
 print("----------------before")
@@ -161,8 +162,51 @@ def delete():
 
 # Play Audio
 def play():
+
+    global currentMusic
+
     print("Play!")
-    hello.testVlc()
+
+    stop()
+
+    index = listView.curselection()[0]
+    print(index)
+    m = musics[index]
+    print(m.identifier)
+
+    identifierStart = hello.start(m.identifier)
+    print(identifierStart)
+
+    currentMusic = identifierStart
+    print(currentMusic)
+
+# Stop Audio
+def stop():
+
+    global currentMusic
+
+    print("Stop 1 !")
+    print(currentMusic)
+
+    if currentMusic:
+        print("Stop!")
+        hello.stop(currentMusic)
+
+# Pause Audio
+def pause():
+
+    global currentMusic
+
+    print("Pause 1 !")
+    print(currentMusic)
+
+    if currentMusic:
+        print("Pause!")
+        hello.pause(currentMusic)
+
+def voice():
+    
+    hello.startVoice("demarre D-Sturb & High Voltage")
 
 # Input Text
 Label(f2, text = "titre").pack()
@@ -181,12 +225,14 @@ Label(f2, text = "path").pack()
 path = Entry(f2)
 path.pack()
 
-
 f3 = Frame(f2)
 f3.pack(side = BOTTOM)
 
 addBtn = Button(f3, text="Add", command=add).pack(side = LEFT)
 deleteBtn = Button(f3, text="Delete", command=delete).pack(side = RIGHT)
-playBtn = Button(f3, text="Play", command=play).pack(side = RIGHT)
+stopBtn = Button(f3, text="Stop", command=lambda *args: stop()).pack(side = RIGHT)
+stopBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)
+playBtn = Button(f3, text="Play", command=lambda *args: play()).pack(side = RIGHT)
+playBtn = Button(f3, text="Voice", command=lambda *args: voice()).pack(side = RIGHT)
 
 window.mainloop()
