@@ -20,7 +20,6 @@ module Server
     interface Hello
     {
         void sayHello();
-        void sayFuckOff();
         void topGenres();
         void topArtist();
         Music startVoice(string text);
@@ -31,8 +30,6 @@ module Server
         void like(int identifier);
 
         string start(int identifier);
-        void stop(string identifier);
-        void pause(string identifier);
 
         TitleList showAll();
 

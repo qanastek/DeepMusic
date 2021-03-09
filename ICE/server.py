@@ -53,9 +53,6 @@ class HelloI(Server.Hello):
     def sayHello(self, current):
         print("Hello World!")
 
-    def sayFuckOff(self, current):
-        print("Fuck Off!")
-
     def topGenres(self, current):
         print("top_genres!")
 
@@ -202,29 +199,51 @@ class HelloI(Server.Hello):
         if len(musicsFound) <= 0:
             return None
         
-        SAMPLE = os.path.join(os.path.dirname(__file__), musicsFound[0].path)
-        print(SAMPLE)
-        media = vlc.MediaPlayer(SAMPLE)
+        path = os.path.join(os.path.dirname(__file__), musicsFound[0].path)
+        print(path)
 
         seconds = int(datetime.datetime.now().strftime("%s")) * 1000
         identifier = str(seconds) + "_" + str(random.randint(0, 999999999))
+        
+        port = 20000
+        hostname = "localhost"
 
-        players[identifier] = media
+        urlPath = str(port) + "/stream_" + str(identifier) + ".mp3"
+        streamStr = "#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:" + str(urlPath) + "}"
 
-        players[identifier].play()
+        myLibVlcInstance = vlc.Instance()
 
-        print("identifier")
-        print(identifier)
+        print(str(identifier))
+        print(str(path))
+        print(str(streamStr))
+        print(myLibVlcInstance.vlm_add_broadcast)
 
-        return identifier
+        # output = 0
+        # output = vlc.libvlc_vlm_add_broadcast(myLibVlcInstance,str(identifier),str(path),str(streamStr),0,None,True,False)
+        output = myLibVlcInstance.vlm_add_broadcast(
+            bytes(identifier,'utf-8'),
+            bytes(path,'utf-8'),
+            bytes(streamStr,'utf-8'),
+            0,
+            [],
+            True,
+            False)
 
-    def stop(self, identifier, current):
-        print("------------------------ Stop")
-        players[identifier].stop()
+        print("After")
 
-    def pause(self, identifier, current):
-        print("------------------------ Pause")
-        players[identifier].pause()
+        # players[identifier] = media
+
+        # players[identifier].play()
+        
+        url = "http://" + hostname + ":" + urlPath;
+
+        if output != 0:
+            cout << "Error brodcasting !!!!!"
+            return None
+
+        myLibVlcInstance.vlm_play_media(identifier)
+
+        return url
         
 class AdministrationI(Server.Administration):
 

@@ -23,6 +23,8 @@ window.title("Client")
 # window.geometry('1280x720')
 
 currentMusic = None
+mediaPlayer = None
+myLibVlcInstance = vlc.Instance()
 
 f1 = Frame(window)
 f1.pack(side = TOP)
@@ -45,7 +47,6 @@ hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h
 admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h localhost -p 10000"))
 
 hello.sayHello()
-hello.sayFuckOff()
 hello.topGenres()
 hello.topArtist()
 
@@ -164,6 +165,7 @@ def delete():
 def play():
 
     global currentMusic
+    global mediaPlayer
 
     print("Play!")
 
@@ -174,35 +176,49 @@ def play():
     m = musics[index]
     print(m.identifier)
 
-    identifierStart = hello.start(m.identifier)
-    print(identifierStart)
+    url = hello.start(m.identifier)
+    print(url)
 
-    currentMusic = identifierStart
+    currentMusic = url
     print(currentMusic)
+
+    media = vlc.libvlc_media_new_location(myLibVlcInstance, bytes(url,'utf-8'))
+    
+    # mediaPlayer = myLibVlcInstance.media_new()
+
+    mediaPlayer = vlc.libvlc_media_player_new_from_media(media)
+
+    ret = vlc.libvlc_media_player_play(mediaPlayer)
+
+    # media.play()
 
 # Stop Audio
 def stop():
 
     global currentMusic
+    global mediaPlayer
 
     print("Stop 1 !")
     print(currentMusic)
 
     if currentMusic:
         print("Stop!")
-        hello.stop(currentMusic)
+        # hello.stop(currentMusic)
+        vlc.libvlc_media_player_stop(mediaPlayer)
 
 # Pause Audio
 def pause():
 
     global currentMusic
+    global mediaPlayer
 
     print("Pause 1 !")
     print(currentMusic)
 
     if currentMusic:
         print("Pause!")
-        hello.pause(currentMusic)
+        vlc.libvlc_media_player_pause(mediaPlayer)
+        # hello.pause(currentMusic)
 
 def voice():
     
