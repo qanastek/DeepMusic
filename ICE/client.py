@@ -181,6 +181,7 @@ def play():
 
     currentMusic = url
     print(currentMusic)
+    print(url)
 
     media = vlc.libvlc_media_new_location(myLibVlcInstance, bytes(url,'utf-8'))
     
