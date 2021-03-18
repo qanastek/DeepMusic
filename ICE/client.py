@@ -167,7 +167,7 @@ def fileUpload(path):
     # File Extension
     extension = path.split(".")[-1]
     
-    remotePath = str(randrange(999999)) + "_" + str(int(time.time())) + "." + extension
+    remotePath = "musics/" + str(randrange(999999)) + "_" + str(int(time.time())) + "." + extension
 
     while True:
         

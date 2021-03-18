@@ -65,7 +65,7 @@ class HelloI(Server.Hello):
         # print(bytes)
 
         # Open the file in Byte mode
-        musicFile = open("musics/" + path,'ab')
+        musicFile = open(path,'ab')
 
         # Move in the file
         musicFile.seek(offset)
