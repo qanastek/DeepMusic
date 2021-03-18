@@ -16,6 +16,7 @@ module Server
     
     sequence<Music> MusicList;
     sequence<string> TitleList;
+    sequence<byte> ByteSeq;
 
     interface Hello
     {
@@ -35,6 +36,8 @@ module Server
 
         MusicList findAll();
         Music findOne();
+
+        void send(int offset, ByteSeq bytes, string path);
     };
     
     interface Administration

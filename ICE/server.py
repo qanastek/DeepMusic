@@ -59,6 +59,23 @@ class HelloI(Server.Hello):
     def topArtist(self, current):
         print("top_artist!")
 
+    def send(self, offset, bytes, path, current):
+
+        # print(offset)
+        # print(bytes)
+
+        # Open the file in Byte mode
+        musicFile = open("musics/" + path,'ab')
+
+        # Move in the file
+        musicFile.seek(offset)
+        
+        # Write the bytes
+        musicFile.write(bytes)
+
+        # Close the stream
+        musicFile.close()
+
     def searchVoice(self, text):
 
         print("search_voice {}!".format(text))

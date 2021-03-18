@@ -5,10 +5,14 @@
 
 from tkinter import * 
 from tkinter import scrolledtext
+from tkinter.filedialog import askopenfilename
+from tkinter import messagebox
 
 import os
 import sys
 import Ice
+import time
+from random import randrange
 
 import vlc
 
@@ -85,6 +89,8 @@ hello.like(10)
 txt = Entry(f1)
 txt.pack()
 
+filePath = ""
+
 # OnClick
 def search():
     
@@ -145,9 +151,73 @@ scrollbar.pack(side = RIGHT, fill = BOTH, expand = False)
 listView.config(yscrollcommand = scrollbar.set)
 scrollbar.config(command = listView.yview)
 
+def fileChoose():
+    global filePath
+    filePath = askopenfilename()
+
+def fileUpload(path):
+
+    file = open(path,'rb')
+    chunkSize = 1024
+    offset = 0
+    
+    results = []
+    numRequests = 5    
+
+    # File Extension
+    extension = path.split(".")[-1]
+    
+    remotePath = str(randrange(999999)) + "_" + str(int(time.time())) + "." + extension
+
+    while True:
+        
+        chuck = file.read(chunkSize) # Read a chunk
+
+        if chuck == bytes('','utf-8') or chuck == None:
+            break
+    
+        # Send up to numRequests + 1 chunks asynchronously.
+        r = hello.begin_send(offset, chuck, remotePath)
+        offset += len(chuck)
+    
+        # Wait until this request has been passed to the transport.
+        r.waitForSent()
+        results.append(r)
+    
+        # Once there are more than numRequests, wait for the least
+        # recent one to complete.
+        while len(results) > numRequests:
+            r = results[0]
+            del results[0]
+            r.waitForCompleted()
+    
+    # Wait for any remaining requests to complete.
+    while len(results) > 0:
+        r = results[0]
+        del results[0]
+        r.waitForCompleted()
+
+    print("Finished")
+
+    return remotePath
+    
 # Add a Music to the database
 def add():
-    m = admin.add(titre.get(), artiste.get(), album.get(), path.get())
+
+    global filePath
+
+    print(filePath)
+
+    if not filePath and not titre.get() and not album.get() and not artiste.get():
+        messagebox.showwarning("Champs manquant","Il y a un chammps manquant!")
+        return
+
+    remotePath = fileUpload(filePath)
+
+    if remotePath:
+        filePath = None
+
+    m = admin.add(titre.get(), artiste.get(), album.get(), remotePath)
     musics.append(m)
     listView.insert(m.identifier, m.titre)
 
@@ -239,8 +309,7 @@ album = Entry(f2)
 album.pack()
 
 Label(f2, text = "path").pack()
-path = Entry(f2)
-path.pack()
+path = Button(f2, text="File...", command=fileChoose).pack()
 
 f3 = Frame(f2)
 f3.pack(side = BOTTOM)
