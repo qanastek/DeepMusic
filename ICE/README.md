@@ -1,5 +1,14 @@
-This demo is a minimal Ice "hello world" application. Each time the
-client is run a "sayHello" invocation is sent to the server.
+Install the system dependencies:
+
+```
+xargs sudo apt-get install <packages.txt
+```
+
+Install the Python dependenciess:
+
+```
+sudo pip install -r requirements.txt
+```
 
 To run the demo, first start the server:
 ```
