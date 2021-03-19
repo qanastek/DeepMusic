@@ -205,6 +205,9 @@ class HelloI(Server.Hello):
         print(len(musics))
         return musics
 
+    def demoSSL(self, current):            
+        return "Je suis du contenu sensible qui doit être sécuriser!!!"
+
     # https://github.com/oaubert/python-vlc/blob/master/tests/test.py
     def start(self, identifier, current):
         print("------------------------ Play")
@@ -225,7 +228,10 @@ class HelloI(Server.Hello):
         port = 20000
         hostname = "localhost"
 
-        urlPath = str(port) + "/stream_" + str(identifier) + ".mp3"
+        # File Extension
+        extension = path.split(".")[-1]
+
+        urlPath = str(port) + "/stream_" + str(identifier) + "." + extension
         streamStr = "#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:" + str(urlPath) + "}"
 
         myLibVlcInstance = vlc.Instance()
@@ -295,7 +301,8 @@ class AdministrationI(Server.Administration):
 
 # Ice.initialize returns an initialized Ice communicator,
 # the communicator is destroyed once it goes out of scope.
-with Ice.initialize(sys.argv) as communicator:
+#with Ice.initialize(sys.argv) as communicator:
+with Ice.initialize(sys.argv, "config.server") as communicator:
 
     #
     # Install a signal handler to shutdown the communicator on Ctrl-C
@@ -304,7 +311,7 @@ with Ice.initialize(sys.argv) as communicator:
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
-    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h localhost -p 10000")
+    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h localhost -p 10001")
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))

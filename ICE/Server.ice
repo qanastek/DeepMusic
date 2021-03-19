@@ -38,6 +38,8 @@ module Server
         Music findOne();
 
         void send(int offset, ByteSeq bytes, string path);
+
+        string demoSSL();
     };
     
     interface Administration

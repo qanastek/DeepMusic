@@ -36,7 +36,8 @@ f1.pack(side = TOP)
 f2 = Frame(window)
 f2.pack(side = BOTTOM)
 
-communicator = Ice.initialize(sys.argv)
+#communicator = Ice.initialize(sys.argv)
+communicator = Ice.initialize(sys.argv, "config.client")
 
 # #
 # # Ice.initialize returns an initialized Ice communicator,
@@ -45,10 +46,10 @@ communicator = Ice.initialize(sys.argv)
 # with Ice.initialize(sys.argv) as communicator:
 
 # ------------ CLIENT ------------
-hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h localhost -p 10000"))
+hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h localhost -p 10001"))
 
 # ------------ ADMIN ------------
-admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h localhost -p 10000"))
+admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h localhost -p 10001"))
 
 hello.sayHello()
 hello.topGenres()
@@ -158,7 +159,7 @@ def fileChoose():
 def fileUpload(path):
 
     file = open(path,'rb')
-    chunkSize = 1024
+    chunkSize = 4096
     offset = 0
     
     results = []
@@ -292,8 +293,10 @@ def pause():
         # hello.pause(currentMusic)
 
 def voice():
-    
     hello.startVoice("demarre D-Sturb & High Voltage")
+
+def ssl():
+    print(hello.demoSSL())
 
 # Input Text
 Label(f2, text = "titre").pack()
@@ -317,8 +320,9 @@ f3.pack(side = BOTTOM)
 addBtn = Button(f3, text="Add", command=add).pack(side = LEFT)
 deleteBtn = Button(f3, text="Delete", command=delete).pack(side = RIGHT)
 stopBtn = Button(f3, text="Stop", command=lambda *args: stop()).pack(side = RIGHT)
-stopBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)
+pauseBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)
 playBtn = Button(f3, text="Play", command=lambda *args: play()).pack(side = RIGHT)
-playBtn = Button(f3, text="Voice", command=lambda *args: voice()).pack(side = RIGHT)
+voiceBtn = Button(f3, text="Voice", command=lambda *args: voice()).pack(side = RIGHT)
+sslBtn = Button(f3, text="SSL", command=lambda *args: ssl()).pack(side = RIGHT)
 
 window.mainloop()
