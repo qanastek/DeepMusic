@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-#
-# Copyright (c) ZeroC, Inc. All rights reserved.
-#
+
+# LABRAK Yanis
+# M1 ILSEN ALT
 
 import os
 import sys
@@ -12,30 +12,19 @@ import random
 import Ice
 import signal
 
-# import Music
-# import MusicI
-
 import vlc
 import pylev
 
 Ice.loadSlice('Server.ice')
 import Server
 
-# class TimeOfDay(Ice.Object):
-#     def __init__(self, hour=0, minute=0, second=0):
-#         self.hour = hour
-#         self.minute = minute
-#         self.second = second
- 
-#     def ice_staticId():
-#         return '::M::TimeOfDay'
-#     ice_staticId = staticmethod(ice_staticId)
+from db import DB
 
-musics = [
-    Server.Music(1,"Mike D-Sturb & High Voltage","Artiste Test 1","Album Test 1","musics/Checkie Brown - Rosalie (CB 104).mp3"),
-    Server.Music(2,"Mike Dee Yan-Key - Hold on","Artiste Test 2","Album Test 2","musics/Lobo Loco - Bad Guys (ID 1333).mp3"),
-    Server.Music(3,"Checkie Brown - Rosalie (CB 104)","Artiste Test 3","Album Test 3","musics/Dee Yan-Key - Hold on.mp3"),
-]
+# The database proxy
+db = DB()
+
+musics = db.getMusics()
+print(musics)
 
 start = ["lancer","lance","demarrer","demarre"]
 stop = ["arrêter","arrêt","stopper","stop"]
@@ -201,6 +190,10 @@ class HelloI(Server.Hello):
         return musics[0]
 
     def findAll(self, current):
+
+        # Update the local instance
+        musics = db.getMusics()
+
         print(musics)
         print(len(musics))
         return musics
@@ -210,9 +203,6 @@ class HelloI(Server.Hello):
 
     # https://github.com/oaubert/python-vlc/blob/master/tests/test.py
     def start(self, identifier, current):
-        print("------------------------ Play")
-
-        # Music.identifier == identifier
 
         musicsFound = [m for m in musics if m.identifier == identifier]
 
@@ -241,8 +231,6 @@ class HelloI(Server.Hello):
         print(str(streamStr))
         print(myLibVlcInstance.vlm_add_broadcast)
 
-        # output = 0
-        # output = vlc.libvlc_vlm_add_broadcast(myLibVlcInstance,str(identifier),str(path),str(streamStr),0,None,True,False)
         output = myLibVlcInstance.vlm_add_broadcast(
             bytes(identifier,'utf-8'),
             bytes(path,'utf-8'),
@@ -254,10 +242,6 @@ class HelloI(Server.Hello):
 
         print("After")
 
-        # players[identifier] = media
-
-        # players[identifier].play()
-        
         url = "http://" + hostname + ":" + urlPath;
 
         if output != 0:
@@ -277,8 +261,11 @@ class AdministrationI(Server.Administration):
         # Créer la musique
         m = Server.Music(int(time.time()),title,artist,album, path)
 
-        # Ajoute la musique à la liste
-        musics.append(m)
+        # # Ajoute la musique à la liste
+        db.insert(m)
+
+        # Update the local instance
+        musics = db.getMusics()
 
         return m
 
@@ -286,27 +273,16 @@ class AdministrationI(Server.Administration):
 
         print("Delete {}!".format(identifier))
         
-        for m in musics:
+        # Remove the music from the database
+        res = db.removeMusic(identifier)
 
-            if m.identifier == identifier:
+        # Update the local instance
+        musics = db.getMusics()
 
-                # Supprime la musique
-                musics.remove(m)
+        return res
 
-                return True
-        
-        print("Not found!")
-
-        return False
-
-# Ice.initialize returns an initialized Ice communicator,
-# the communicator is destroyed once it goes out of scope.
-#with Ice.initialize(sys.argv) as communicator:
 with Ice.initialize(sys.argv, "config.server") as communicator:
 
-    #
-    # Install a signal handler to shutdown the communicator on Ctrl-C
-    #
     signal.signal(signal.SIGINT, lambda signum, frame: communicator.shutdown())
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
@@ -315,10 +291,6 @@ with Ice.initialize(sys.argv, "config.server") as communicator:
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))
-
-    # servant = NodeI("Fred")
-    # adapter.add(servant, id)
-
 
     adapter.activate()
     communicator.waitForShutdown()
