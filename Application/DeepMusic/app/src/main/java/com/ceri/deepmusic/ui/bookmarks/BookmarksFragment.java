@@ -84,6 +84,39 @@ public class BookmarksFragment extends Fragment {
 
     private void togglePlay() {
 
+        Log.d("Zeroc-Ice","1");
+        String[] args = new String[0];
+        java.util.List<String> extraArgs = new java.util.ArrayList<>();
+
+        try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize())
+//        try(com.zeroc.Ice.Communicator communicator = com.zeroc.Ice.Util.initialize(args, "config.client", extraArgs))
+        {
+            communicator.getProperties().setProperty("Ice.Default.Package", "com.ceri.deepmusic.Server.hello");
+
+            Log.d("Zeroc-Ice","2");
+            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001");
+//            com.zeroc.Ice.ObjectPrx base = communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001");
+
+            Log.d("Zeroc-Ice","3");
+            Server.HelloPrx hello = Server.HelloPrx.checkedCast(base);
+
+            Log.d("Zeroc-Ice","4");
+            if(hello == null)
+            {
+                throw new Error("Invalid proxy");
+            }
+
+            Log.d("Zeroc-Ice","5");
+            hello.sayHello();
+
+            Log.d("Zeroc-Ice","6");
+        }
+        catch (Exception e) {
+            Log.e("Zeroc-Ice", e.getMessage(), e);
+        }
+
+        Log.d("Zeroc-Ice","Before playing");
+
         if (!isPlaying)
         {
             isPlaying = true;

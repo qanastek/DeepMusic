@@ -287,7 +287,7 @@ with Ice.initialize(sys.argv, "config.server") as communicator:
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
-    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h localhost -p 10001")
+    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h 192.168.0.29 -p 10001")
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))
