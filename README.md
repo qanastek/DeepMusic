@@ -30,3 +30,4 @@ Here is the procedure to install this software :
 * [Behance](https://www.behance.net/)
 * [Illustrations](https://undraw.co/illustrations)
 * [Some Icons](http://flaticon.com/)
+* https://www.w3schools.com/python/python_mysql_delete.asp
