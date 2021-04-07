@@ -23,7 +23,7 @@ module Server
         void sayHello();
         void topGenres();
         void topArtist();
-        Music startVoice(string text);
+        string startVoice(string text);
         MusicList searchBar(string text);
         void library();
         void bookmarks();

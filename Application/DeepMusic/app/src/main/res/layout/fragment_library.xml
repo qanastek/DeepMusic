@@ -12,13 +12,77 @@
         android:name="com.ceri.deepmusic.ui.searchbar.SearchBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="7.5dp"
         tools:layout="@layout/search_bar_fragment" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Toggle" />
+
+        <Button
+            android:id="@+id/playerPause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/playerPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/playerStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="14dp"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Stop" />
+    </LinearLayout>
+
     <fragment
-        android:id="@+id/genres"
+        android:id="@+id/musics"
         android:name="com.ceri.deepmusic.ui.musics.MusicsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

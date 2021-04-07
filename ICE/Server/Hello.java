@@ -23,7 +23,7 @@ public interface Hello extends com.zeroc.Ice.Object
 
     void topArtist(com.zeroc.Ice.Current current);
 
-    Music startVoice(String text, com.zeroc.Ice.Current current);
+    String startVoice(String text, com.zeroc.Ice.Current current);
 
     Music[] searchBar(String text, com.zeroc.Ice.Current current);
 
@@ -130,9 +130,9 @@ public interface Hello extends com.zeroc.Ice.Object
         String iceP_text;
         iceP_text = istr.readString();
         inS.endReadParams();
-        Music ret = obj.startVoice(iceP_text, current);
+        String ret = obj.startVoice(iceP_text, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
-        Music.ice_write(ostr, ret);
+        ostr.writeString(ret);
         inS.endWriteParams(ostr);
         return inS.setResult(ostr);
     }

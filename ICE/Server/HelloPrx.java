@@ -116,22 +116,22 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default Music startVoice(String text)
+    default String startVoice(String text)
     {
         return startVoice(text, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default Music startVoice(String text, java.util.Map<String, String> context)
+    default String startVoice(String text, java.util.Map<String, String> context)
     {
         return _iceI_startVoiceAsync(text, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Music> startVoiceAsync(String text)
+    default java.util.concurrent.CompletableFuture<java.lang.String> startVoiceAsync(String text)
     {
         return _iceI_startVoiceAsync(text, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Music> startVoiceAsync(String text, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<java.lang.String> startVoiceAsync(String text, java.util.Map<String, String> context)
     {
         return _iceI_startVoiceAsync(text, context, false);
     }
@@ -143,14 +143,14 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Music> _iceI_startVoiceAsync(String iceP_text, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.String> _iceI_startVoiceAsync(String iceP_text, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<Music> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "startVoice", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.String> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "startVoice", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeString(iceP_text);
                  }, istr -> {
-                     Music ret;
-                     ret = Music.ice_read(istr);
+                     String ret;
+                     ret = istr.readString();
                      return ret;
                  });
         return f;

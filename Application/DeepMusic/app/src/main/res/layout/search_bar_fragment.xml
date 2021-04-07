@@ -2,37 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.searchbar.SearchBar"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip"
+    android:orientation="vertical"
+    tools:context=".ui.searchbar.SearchBar">
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:id="@+id/textField"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="@string/your_library">-->
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/textField"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:hint="@string/your_library">-->
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
+    <!--        <com.google.android.material.textfield.TextInputEditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content" />-->
 
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-    <EditText
-        android:id="@+id/searchbar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dip"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
         android:layout_weight="1"
-        android:background="@drawable/rounded_edittext"
-        android:backgroundTint="@color/createPlaylist"
-        android:ems="10"
-        android:hint="Recherche"
-        android:inputType="textPersonName"
-        android:padding="10dip"
-        android:textAlignment="center"
-        android:textColor="@color/likedSondGradientBottom"
-        android:textColorHint="@color/navText"
-        tools:text="Text" />
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:ems="10"
+            android:hint="Recherche"
+            android:inputType="textPersonName"
+            android:padding="10dip"
+            android:textAlignment="center"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            tools:text="Recherche" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="4"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Search"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText" />
+
+    </LinearLayout>
 
 </LinearLayout>

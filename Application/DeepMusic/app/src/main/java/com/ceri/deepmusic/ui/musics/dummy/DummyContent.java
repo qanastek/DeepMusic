@@ -1,6 +1,8 @@
 package com.ceri.deepmusic.ui.musics.dummy;
 
-import com.ceri.deepmusic.models.Music;
+import android.util.Log;
+
+import com.ceri.deepmusic.models.IceServer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,32 +17,34 @@ import java.util.Map;
  */
 public class DummyContent {
 
+    // Get the IceServer Singleton Instance
+    private static IceServer iceServer = IceServer.getInstance();
+
     /**
      * An array of sample (dummy) items.
      */
-    public static final List<Music> ITEMS = new ArrayList<Music>();
+    public static final List<Server.Music> ITEMS = new ArrayList<Server.Music>();
 
     /**
      * A map of sample (dummy) items, by ID.
      */
-    public static final Map<String, Music> ITEM_MAP = new HashMap<String, Music>();
-
-    private static final int COUNT = 2500;
+    public static final Map<String, Server.Music> ITEM_MAP = new HashMap<String, Server.Music>();
 
     static {
+
+        Server.Music[] items = DummyContent.iceServer.getHello().findAll();
+
+        Log.d("DummyContent", "--------------------");
+
         // Add some sample items.
-        for (int i = 1; i <= COUNT; i++) {
-            addItem(i);
+        for (Server.Music m: items) {
+            Log.d("DummyContent", String.valueOf(m));
+            addItem(m);
         }
     }
 
-    private static void addItem(int i) {
-        Music m = createDummyItem(i);
+    private static void addItem(Server.Music m) {
         ITEMS.add(m);
-        ITEM_MAP.put(i < 10 ? "0" + i : Integer.toString(i), m);
-    }
-
-    private static Music createDummyItem(int position) {
-        return new Music("Music " + position, "Mr. Kitty", "2:52");
+        ITEM_MAP.put(m.identifier < 10 ? "0" + m.identifier : Integer.toString(m.identifier), m);
     }
 }

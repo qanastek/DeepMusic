@@ -18,6 +18,9 @@ import pylev
 Ice.loadSlice('Server.ice')
 import Server
 
+hostname = "192.168.0.29"
+# hostname = "localhost"
+
 from db import DB
 
 # The database proxy
@@ -27,7 +30,7 @@ musics = db.getMusics()
 print(musics)
 
 start = ["lancer","lance","demarrer","demarre"]
-stop = ["arrêter","arrêt","stopper","stop"]
+stop = ["arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain"]
 pause = ["pause"]
 actions = start + stop + pause
 
@@ -114,6 +117,9 @@ class HelloI(Server.Hello):
             # Display the title
             print("search_voice: {}".format(music.titre))
 
+            if not actions_tokens or len(actions_tokens) <= 0:
+                actions_tokens = [start[0]]
+
             return music, actions_tokens
 
         return None
@@ -122,19 +128,25 @@ class HelloI(Server.Hello):
 
         m, actions_tokens = self.searchVoice(text)
 
+        print("------------------------")
+        print(m)
+        print(m.identifier)
+        print(actions_tokens)
+
         if not m or not actions_tokens or len(actions_tokens) <= 0:
             return None, None
 
         action = actions_tokens[0]
+        print(action)
+
+        res = "stop"
 
         if action in start:
-            start(m.identifier, current)
+            res = self.start(m.identifier, current)
         elif action in pause:
-            pause(current)
-        else:
-            pause(current)
+            res = "pause"
         
-        return m
+        return res
 
     # Search for the music thanks to the title
     def searchBar(self, text, current):
@@ -216,7 +228,6 @@ class HelloI(Server.Hello):
         identifier = str(seconds) + "_" + str(random.randint(0, 999999999))
         
         port = 20000
-        hostname = "localhost"
 
         # File Extension
         extension = path.split(".")[-1]
@@ -287,7 +298,7 @@ with Ice.initialize(sys.argv, "config.server") as communicator:
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
-    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h 192.168.0.29 -p 10001")
+    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001")
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))

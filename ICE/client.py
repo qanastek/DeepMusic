@@ -120,10 +120,10 @@ def voice():
     print(currentText)
 
     # Fetch the music
-    res = hello.searchVoice(currentText)
+    res = hello.startVoice(currentText)
 
-    listView.delete(0,'end')
-    listView.insert(0, res.titre)
+    # listView.delete(0,'end')
+    # listView.insert(0, res.titre)
 
 # Button
 btn = Button(f1, text="Search", command=search)
@@ -295,7 +295,7 @@ def pause():
         # hello.pause(currentMusic)
 
 def voice():
-    hello.startVoice("demarre D-Sturb & High Voltage")
+    resVoice = hello.startVoice("demarre D-Sturb & High Voltage")
 
 def ssl():
     print(hello.demoSSL())

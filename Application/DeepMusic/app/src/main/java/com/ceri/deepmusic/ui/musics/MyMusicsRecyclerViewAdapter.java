@@ -9,19 +9,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ceri.deepmusic.R;
-import com.ceri.deepmusic.models.Music;
 
 import java.util.List;
 
 /**
- * {@link RecyclerView.Adapter} that can display a {@link com.ceri.deepmusic.models.Music}.
+ * {@link RecyclerView.Adapter} that can display a {@link OldMusic}.
  * TODO: Replace the implementation with code for your data type.
  */
 public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRecyclerViewAdapter.ViewHolder> {
 
-    private final List<Music> mValues;
+    private final List<Server.Music> mValues;
 
-    public MyMusicsRecyclerViewAdapter(List<Music> items) {
+    public MyMusicsRecyclerViewAdapter(List<Server.Music> items) {
         mValues = items;
     }
 
@@ -48,7 +47,7 @@ public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRe
 
         holder.mIdView.setText(String.valueOf(position < 10 ? "0" + position : position));
         holder.mTitleView.setText(mValues.get(position).titre);
-        holder.mAlbumView.setText(String.format("%s - %s", mValues.get(position).album, mValues.get(position).duration));
+        holder.mAlbumView.setText(String.format("%s - %s", mValues.get(position).album, mValues.get(position).artiste));
     }
 
     @Override
@@ -64,7 +63,7 @@ public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRe
         public final TextView mTitleView;
         public final TextView mAlbumView;
 
-        public Music mItem;
+        public Server.Music mItem;
 
         public ViewHolder(View view) {
             super(view);
