@@ -18,9 +18,11 @@ import java.util.List;
  */
 public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRecyclerViewAdapter.ViewHolder> {
 
+    private final List<Server.Music> rawValues;
     private final List<Server.Music> mValues;
 
     public MyMusicsRecyclerViewAdapter(List<Server.Music> items) {
+        rawValues = items;
         mValues = items;
     }
 

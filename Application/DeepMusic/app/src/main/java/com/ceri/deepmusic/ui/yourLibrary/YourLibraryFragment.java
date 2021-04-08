@@ -3,7 +3,10 @@ package com.ceri.deepmusic.ui.yourLibrary;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioAttributes;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -118,15 +121,17 @@ public class YourLibraryFragment extends Fragment {
 
     private void togglePlay() {
 
-        Log.d("Zeroc-Ice","togglePlay");
+        Log.d("Zeroc-Ice","Toggle");
 
         String url = iceServer.getHello().start(1);
         Log.d("Zeroc-Ice", url);
 
-        if(isPlaying) {
+        if(!isPlaying) {
+            Log.d("Zeroc-Ice", "isPlaying");
             start(url);
         }
         else {
+            Log.d("Zeroc-Ice", "toggleStop");
             toggleStop();
         }
     }
@@ -143,36 +148,85 @@ public class YourLibraryFragment extends Fragment {
 
         try {
 
-            mp.reset(); // new one
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                Log.d("MediaPlayer","4");
+
+                mp.setAudioAttributes(
+                    new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .setLegacyStreamType(AudioManager.STREAM_MUSIC)
+                    .build()
+                );
+                Log.d("MediaPlayer","5");
+
+            } else {
+                Log.d("MediaPlayer","3");
+                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
+            }
+            try {
+                Log.d("MediaPlayer","2");
+
+                mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                    @Override
+                    public void onPrepared(MediaPlayer player) {
+                        Log.d("MediaPlayer","1");
+                        player.start();
+                        Log.d("MediaPlayer","6");
+                    }
+                });
+                Log.d("MediaPlayer","7");
+
+                mp.setDataSource(url);
+                Log.d("MediaPlayer","8");
+                mp.prepareAsync();
+                Log.d("MediaPlayer","9");
+
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            Log.d("MediaPlayer","10");
+
+
+
+
+
+//            mp.reset(); // new one
+//
+//            mp.setDataSource(url);
+//            mp.setVolume(1.0f,1.0f);
+//
+//            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+//                @Override
+//                public void onPrepared(MediaPlayer media) {
+//                    media.start();
+//                }
+//            });
+//
+//            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                @Override
+//                public void onCompletion(MediaPlayer mp) {
+//                    mp.reset();
+//                    mp.release();
+////                        mp = null;
+//                }
+//            });
+//            mp.prepareAsync();
+//
+//            mp.start();
+
+
+
+
+
+//                mp.prepare();
+
 //                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
 //                mp.setDataSource(getActivity(), Uri.parse(url));;
 
 //                mp.setOnBufferingUpdateListener(mContext);
 //                mp.setOnPreparedListener(mContext);
-
-            mp.setDataSource(url);
-            mp.setVolume(1.0f,1.0f);
-
-            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(MediaPlayer media) {
-                    media.start();
-                }
-            });
-
-            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    mp.reset();
-                    mp.release();
-//                        mp = null;
-                }
-            });
-
-//                mp.prepare();
-            mp.prepareAsync();
-
-            mp.start();
 
 //                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
@@ -210,15 +264,21 @@ public class YourLibraryFragment extends Fragment {
         Log.d("Zeroc-Ice","togglePause");
 
         // Pause
-        if (isPlaying) {
+        if (isPlaying && !isPaused) {
+            Log.d("Zeroc-Ice","togglePause isPlaying");
             mp.pause();
             isPaused = true;
+        }
+        else if (isPaused) {
+            Log.d("Zeroc-Ice","togglePause isPaused");
+            mp.start();
+            isPaused = false;
         }
     }
 
     private void toggleStop() {
 
-        Log.d("Zeroc-Ice","toggleStop");
+        Log.d("Zeroc-Ice","inside toggleStop");
 
         // Stop the audio stream
         if (isPlaying || isPaused) {
