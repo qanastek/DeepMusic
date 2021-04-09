@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ceri.deepmusic.R;
+import com.ceri.deepmusic.models.Toolbox;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,19 +20,19 @@ import java.util.List;
  */
 public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRecyclerViewAdapter.ViewHolder> {
 
-    public static List<Server.Music> rawValues;
-    private static List<Server.Music> mValues;
+    public List<Server.Music> rawValues;
+    public List<Server.Music> mValues;
 
     public MyMusicsRecyclerViewAdapter(List<Server.Music> items) {
-        rawValues = items;
-        mValues = items;
+        rawValues = new ArrayList<Server.Music>(items);
+        mValues = new ArrayList<Server.Music>(items);
     }
 
     public void filter(String text) {
 
         mValues.clear();
 
-        if(text.isEmpty()) {
+        if(text == null || text.isEmpty()) {
             mValues.addAll(rawValues);
         } else{
 
@@ -52,14 +54,35 @@ public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRe
 
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_musics, parent, false);
 
+        final ViewHolder result = new ViewHolder(view);
+
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Log.d("-------------","Clicked");
+
+                Server.Music item = mValues.get(result.getAdapterPosition());
+
+                // Check if the same
+                if (item.identifier != Toolbox.CURRENT_MUSIC_ID) {
+
+                    // Check if is already ON
+                    if (Toolbox.isPlaying || Toolbox.isPaused) {
+
+                        // Stop the old one
+                        YourLibraryFragment.toggleStop();
+                    }
+                }
+
+                Toolbox.CURRENT_MUSIC_ID = item.identifier;
+                YourLibraryFragment.togglePlay();
+
+                Log.d("-------------",Toolbox.CURRENT_MUSIC.toString());
             }
         });
 
-        return new ViewHolder(view);
+        return result;
     }
 
     @Override

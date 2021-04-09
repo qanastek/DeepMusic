@@ -49,19 +49,28 @@
         android:orientation="vertical"
         android:textAlignment="center">
 
-        <ToggleButton
-            android:id="@+id/button_favorite"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="fill"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="0"
-            android:background="@drawable/button_favorite"
-            android:checked="false"
-            android:text=""
-            android:textAlignment="center"
-            android:textOff=""
-            android:textOn="" />
+<!--        <ToggleButton-->
+<!--            android:id="@+id/button_favorite"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            android:layout_gravity="fill"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_weight="0"-->
+<!--            android:background="@drawable/button_favorite"-->
+<!--            android:backgroundTint="#A4A4A4"-->
+<!--            android:checked="false"-->
+<!--            android:outlineAmbientShadowColor="#FFFFFF"-->
+<!--            android:outlineSpotShadowColor="#FFFFFF"-->
+<!--            android:shadowColor="#FFFFFF"-->
+<!--            android:text=""-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="#A4A4A4"-->
+<!--            android:textColorHighlight="#FFFFFF"-->
+<!--            android:textColorHint="#FFFFFF"-->
+<!--            android:textColorLink="#FFFFFF"-->
+<!--            android:textOff=""-->
+<!--            android:textOn="" />-->
+
     </LinearLayout>
 
     <!--    <ImageButton-->

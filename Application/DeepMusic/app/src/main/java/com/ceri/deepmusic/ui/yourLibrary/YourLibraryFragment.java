@@ -9,11 +9,14 @@ import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,30 +30,26 @@ import com.ceri.deepmusic.R;
 import com.ceri.deepmusic.models.IceServer;
 import com.ceri.deepmusic.models.Toolbox;
 import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Locale;
 
 public class YourLibraryFragment extends Fragment {
 
-    private YourLibraryViewModel yourLibraryViewModel;
-
     // IceServer Singleton Instance
     private static IceServer iceServer;
 
     private Context mContext;
 
-    private boolean isPlaying = false;
-    private boolean isPaused = false;
-
-    private MediaPlayer mp;
-
-    private String currentMusic = null;
+    private static MediaPlayer mp;
 
     private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
 
-    RecyclerView recyclerView;
+    static RecyclerView recyclerView;
+
+    EditText searchbar;
 
     public YourLibraryFragment() {
     }
@@ -71,8 +70,6 @@ public class YourLibraryFragment extends Fragment {
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        yourLibraryViewModel = ViewModelProviders.of(this).get(YourLibraryViewModel.class);
 
         View view = inflater.inflate(R.layout.fragment_library, container, false);
 
@@ -123,20 +120,55 @@ public class YourLibraryFragment extends Fragment {
             }
         });
 
+//        final Button searchBtn = view.findViewById(R.id.searchBtn);
+//        searchBtn.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View arg0) {
+//                search();
+//            }
+//        });
+
+        searchbar = (EditText) view.findViewById(R.id.searchbar);
+
+        searchbar.addTextChangedListener(new TextWatcher() {
+
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String content = searchbar.getText().toString();
+                Log.d("Zeroc-Ice",content);
+
+                MyMusicsRecyclerViewAdapter adapter = (MyMusicsRecyclerViewAdapter) recyclerView.getAdapter();
+
+                Log.d("adapter rawValues", String.valueOf(adapter.rawValues.size()));
+                Log.d("adapter mValues", String.valueOf(adapter.mValues.size()));
+
+                adapter.filter(content);
+
+//                YourLibraryFragment frag = ((YourLibraryFragment) this.getParentFragment());
+//                frag.
+//                MyMusicsRecyclerViewAdapter.filter(content);
+            }
+        });
+
         // Get the IceServer Singleton Instance
         iceServer = IceServer.getInstance();
 
         return view;
     }
 
-    private void togglePlay() {
+    public static void togglePlay() {
 
         Log.d("Zeroc-Ice","Toggle");
 
-        String url = iceServer.getHello().start(1);
+        String url = iceServer.getHello().start(Toolbox.CURRENT_MUSIC_ID);
         Log.d("Zeroc-Ice", url);
 
-        if(!isPlaying) {
+        if(!Toolbox.isPlaying) {
             Log.d("Zeroc-Ice", "isPlaying");
             start(url);
         }
@@ -146,17 +178,23 @@ public class YourLibraryFragment extends Fragment {
         }
     }
 
-    private void start(String url) {
+    private static void start(String url) {
 
-        this.currentMusic = url;
-        Log.d("Zeroc-Ice", this.currentMusic);
+        Toolbox.CURRENT_MUSIC = url;
+        Log.d("Zeroc-Ice", Toolbox.CURRENT_MUSIC);
 
-        isPlaying = true;
-        isPaused = false;
+        Toolbox.isPlaying = true;
+        Toolbox.isPaused = false;
 
         mp = new MediaPlayer();
 
         try {
+
+            Snackbar.make(
+                recyclerView,
+                "Start Audio",
+                Snackbar.LENGTH_LONG
+            ).show();
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
@@ -192,35 +230,50 @@ public class YourLibraryFragment extends Fragment {
         }
     }
 
-    private void togglePause() {
+    private static void togglePause() {
 
         Log.d("Zeroc-Ice","togglePause");
 
         // Pause
-        if (isPlaying && !isPaused) {
+        if (Toolbox.isPlaying && !Toolbox.isPaused) {
+
             Log.d("Zeroc-Ice","togglePause isPlaying");
+
             mp.pause();
-            isPaused = true;
+
+            Toolbox.isPaused = true;
+
+            Snackbar.make(
+                recyclerView,
+                "Pause Audio",
+                Snackbar.LENGTH_LONG
+            ).show();
         }
-        else if (isPaused) {
+        else if (Toolbox.isPaused) {
             Log.d("Zeroc-Ice","togglePause isPaused");
             mp.start();
-            isPaused = false;
+            Toolbox.isPaused = false;
         }
     }
 
-    private void toggleStop() {
+    public static void toggleStop() {
 
         Log.d("Zeroc-Ice","inside toggleStop");
 
         // Stop the audio stream
-        if (isPlaying || isPaused) {
+        if (Toolbox.isPlaying || Toolbox.isPaused) {
 
             mp.stop();
             mp.release();
 
-            isPlaying = false;
-            isPaused = false;
+            Toolbox.isPlaying = false;
+            Toolbox.isPaused = false;
+
+            Snackbar.make(
+                recyclerView,
+                "Audio Stopped",
+                Snackbar.LENGTH_LONG
+            ).show();
         }
     }
 
@@ -248,6 +301,19 @@ public class YourLibraryFragment extends Fragment {
             ).show();
         }
     }
+
+//    private void search() {
+//
+//        Log.d("SearchBar", "-------- Search ------------");
+//
+////        Log.d("SearchBar", content);
+////
+////        Server.Music[] items = SearchBar.iceServer.getHello().searchBar(content);
+////
+////        for (Server.Music m : items) {
+////            Log.d("SearchBar", m.titre);
+////        }
+//    }
 
     /**
      * Callback for speech recognition activity
@@ -295,4 +361,5 @@ public class YourLibraryFragment extends Fragment {
             }
         }
     }
+
 }
