@@ -6,4 +6,6 @@
     <string name="home">Home</string>
     <string name="top_genres">Top genres</string>
     <string name="top_artists">Top artists</string>
+
+    <string name="done">Refresh</string>
 </resources>
