@@ -8,6 +8,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +19,6 @@ import android.widget.EditText;
 
 import com.ceri.deepmusic.R;
 import com.ceri.deepmusic.models.IceServer;
-import com.ceri.deepmusic.ui.musics.dummy.DummyContent;
-import com.ceri.deepmusic.ui.yourLibrary.YourLibraryViewModel;
 
 public class SearchBar extends Fragment {
 
@@ -28,6 +28,8 @@ public class SearchBar extends Fragment {
     private SearchBarViewModel mViewModel;
 
     private EditText searchbar;
+
+    View view;
 
     public static SearchBar newInstance() {
         return new SearchBar();
@@ -39,7 +41,7 @@ public class SearchBar extends Fragment {
 
         mViewModel = ViewModelProviders.of(this).get(SearchBarViewModel.class);
 
-        View view = inflater.inflate(R.layout.search_bar_fragment, container, false);
+        view = inflater.inflate(R.layout.search_bar_fragment, container, false);
 
         final Button searchBtn = view.findViewById(R.id.searchBtn);
         searchBtn.setOnClickListener(new View.OnClickListener() {
@@ -56,17 +58,31 @@ public class SearchBar extends Fragment {
     }
 
     private void search() {
+
         Log.d("SearchBar", "-------- Search ------------");
 
-        String content = searchbar.getText().toString();
+        searchbar.addTextChangedListener(new TextWatcher() {
 
-        Log.d("SearchBar", content);
+            public void afterTextChanged(Editable s) {}
 
-        Server.Music[] items = SearchBar.iceServer.getHello().searchBar(content);
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
-        for (Server.Music m : items) {
-            Log.d("SearchBar", m.titre);
-        }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String content = searchbar.getText().toString();
+//                YourLibraryFragment frag = ((YourLibraryFragment) this.getParentFragment());
+//                frag.
+//                MyMusicsRecyclerViewAdapter.filter(content);
+            }
+        });
+
+//        Log.d("SearchBar", content);
+//
+//        Server.Music[] items = SearchBar.iceServer.getHello().searchBar(content);
+//
+//        for (Server.Music m : items) {
+//            Log.d("SearchBar", m.titre);
+//        }
     }
 
     @Override

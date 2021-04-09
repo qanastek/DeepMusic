@@ -14,20 +14,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ceri.deepmusic.R;
 import com.ceri.deepmusic.models.IceServer;
 import com.ceri.deepmusic.models.Toolbox;
-import com.ceri.deepmusic.ui.musics.MusicsFragment;
-import com.ceri.deepmusic.ui.musics.dummy.DummyContent;
+import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -48,10 +47,11 @@ public class YourLibraryFragment extends Fragment {
 
     private String currentMusic = null;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
+    private static final String ARG_COLUMN_COUNT = "column-count";
+    private int mColumnCount = 1;
+
+    RecyclerView recyclerView;
+
     public YourLibraryFragment() {
     }
 
@@ -61,21 +61,31 @@ public class YourLibraryFragment extends Fragment {
         this.mContext = context;
     }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        if (getArguments() != null) {
+            mColumnCount = getArguments().getInt(ARG_COLUMN_COUNT);
+        }
+    }
+
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         yourLibraryViewModel = ViewModelProviders.of(this).get(YourLibraryViewModel.class);
 
         View view = inflater.inflate(R.layout.fragment_library, container, false);
 
-//        final TextView textView = root.findViewById(R.id.text_dashboard);
-//
-//        yourLibraryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-//            @Override
-//            public void onChanged(@Nullable String s) {
-//            textView.setText(s);
-//            }
-//        });
+        Context context = view.getContext();
 
+        recyclerView = (RecyclerView) view.findViewById(R.id.list);;
+
+        if (mColumnCount <= 1) {
+            recyclerView.setLayoutManager(new LinearLayoutManager(context));
+        } else {
+            recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
+        }
+        recyclerView.setAdapter(new MyMusicsRecyclerViewAdapter(DummyContent.ITEMS));
 
         final Button toggle = view.findViewById(R.id.toggle);
         toggle.setOnClickListener(new View.OnClickListener() {
@@ -149,7 +159,6 @@ public class YourLibraryFragment extends Fragment {
         try {
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                Log.d("MediaPlayer","4");
 
                 mp.setAudioAttributes(
                     new AudioAttributes.Builder()
@@ -158,101 +167,25 @@ public class YourLibraryFragment extends Fragment {
                     .setLegacyStreamType(AudioManager.STREAM_MUSIC)
                     .build()
                 );
-                Log.d("MediaPlayer","5");
 
             } else {
-                Log.d("MediaPlayer","3");
                 mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
             }
             try {
-                Log.d("MediaPlayer","2");
 
                 mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                     @Override
                     public void onPrepared(MediaPlayer player) {
-                        Log.d("MediaPlayer","1");
                         player.start();
-                        Log.d("MediaPlayer","6");
                     }
                 });
-                Log.d("MediaPlayer","7");
 
                 mp.setDataSource(url);
-                Log.d("MediaPlayer","8");
                 mp.prepareAsync();
-                Log.d("MediaPlayer","9");
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-            Log.d("MediaPlayer","10");
-
-
-
-
-
-//            mp.reset(); // new one
-//
-//            mp.setDataSource(url);
-//            mp.setVolume(1.0f,1.0f);
-//
-//            mp.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-//                @Override
-//                public void onPrepared(MediaPlayer media) {
-//                    media.start();
-//                }
-//            });
-//
-//            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//                @Override
-//                public void onCompletion(MediaPlayer mp) {
-//                    mp.reset();
-//                    mp.release();
-////                        mp = null;
-//                }
-//            });
-//            mp.prepareAsync();
-//
-//            mp.start();
-
-
-
-
-
-//                mp.prepare();
-
-//                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-//                mp.setDataSource(getActivity(), Uri.parse(url));;
-
-//                mp.setOnBufferingUpdateListener(mContext);
-//                mp.setOnPreparedListener(mContext);
-
-//                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-//                mp.setDataSource(String.valueOf(Uri.parse(url)));
-//                mp.setDataSource(getActivity(), Uri.parse(url));
-//                mp.setDataSource(getActivity(), Uri.parse("https://www.all-birds.com/Sound/western%20bluebird.wav"));
-
-            //mp.prepareAsync();
-
-//                mp.setAudioStreamType(AudioManager.STREAM_MUSIC);
-
-//                mp.prepare(); // don't use prepareAsync for mp3 playback
-
-//                mp.setOnBufferingUpdateListener(this);
-//                mp.setOnPreparedListener(this);
-//                mp.prepareAsync();
-//                mp.start();
-
-            // String songTitle = songsList.get(songIndex).get("songTitle");
-            // songTitleLabel.setText(songTitle);
-
-//                songProgressBar.setProgress(0);
-//                songProgressBar.setMax(100);
-//
-//                // Updating progress bar
-//                updateProgressBar();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -359,11 +292,7 @@ public class YourLibraryFragment extends Fragment {
                         start(action);
                     }
                 }
-
-                Log.d("VoiceReco", "After");
             }
-
-            Log.d("VoiceReco", "After Data Check");
         }
     }
 }

@@ -79,13 +79,18 @@
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="@color/createPlaylist"
             android:text="Stop" />
+
     </LinearLayout>
 
-    <fragment
-        android:id="@+id/musics"
-        android:name="com.ceri.deepmusic.ui.musics.MusicsFragment"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_musics_list" />
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".ui.musics.MusicsFragment"
+        tools:listitem="@layout/fragment_musics" />
 
 </LinearLayout>
