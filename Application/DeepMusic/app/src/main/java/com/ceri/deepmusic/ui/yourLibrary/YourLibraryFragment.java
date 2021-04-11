@@ -8,6 +8,7 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.speech.RecognizerIntent;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,6 +16,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -32,8 +34,13 @@ import com.ceri.deepmusic.models.Toolbox;
 import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
 import com.google.android.material.snackbar.Snackbar;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Locale;
+import java.util.Random;
+import java.util.concurrent.CompletableFuture;
 
 public class YourLibraryFragment extends Fragment {
 
@@ -117,6 +124,15 @@ public class YourLibraryFragment extends Fragment {
             @Override
             public void onClick(View arg0) {
                 toggleStop();
+            }
+        });
+
+        final Button upload = view.findViewById(R.id.upload);
+        upload.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                upload();
             }
         });
 
@@ -256,6 +272,97 @@ public class YourLibraryFragment extends Fragment {
         }
     }
 
+    public static void upload() {
+
+        try {
+
+
+            Log.d("Zeroc-Ice","Upload");
+
+            String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString();
+
+            Log.d("Zeroc-Ice",path);
+
+            path = path + "/sample.mp3";
+
+            Log.d("Zeroc-Ice",path);
+
+            File file = new File(path);
+            Log.d("Zeroc-Ice",file.exists() ? "Exist" : "Doesn't");
+
+            int chunkSize = 4096;
+            int offset = 0;
+
+            ArrayList<CompletableFuture<Void>> results = new ArrayList<CompletableFuture<Void>>();
+            int numRequests = 5;
+
+            Log.d("Zeroc-Ice","before splitted");
+
+//            String[] splitted = path.split(".");
+//            Log.d("Zeroc-Ice", Arrays.toString(splitted));
+//            Log.d("Zeroc-Ice", String.valueOf(splitted.length));
+
+//            String extension = splitted[splitted.length - 1];
+////            Log.d("Zeroc-Ice", extension);
+
+            String extension = MimeTypeMap.getFileExtensionFromUrl(file.toString());
+            Log.d("Zeroc-Ice", extension);
+
+            Random rand = new Random();
+            int min = 1;
+            int max = 999999;
+            int rand1 = rand.nextInt(max - min + 1) + min;
+
+            Log.d("Zeroc-Ice", "rand1");
+            Log.d("Zeroc-Ice", String.valueOf(rand1));
+
+            String remotePath = "musics/" + rand1 + "_" + System.currentTimeMillis() + "." + extension;
+
+            Log.d("Zeroc-Ice","remotePath");
+            Log.d("Zeroc-Ice",remotePath);
+
+            FileInputStream is = new FileInputStream(file);
+            byte[] chuck = new byte[chunkSize];
+
+            Log.d("Zeroc-Ice","chuck");
+
+            CompletableFuture<Void> r;
+
+            Log.d("Zeroc-Ice","Before while");
+
+            while ((offset = is.read(chuck)) != -1) {
+
+                Log.d("Zeroc-Ice",String.valueOf(offset));
+
+                r = YourLibraryFragment.iceServer.getHello().sendAsync(offset, chuck, remotePath);
+                offset += chuck.length;
+
+                r.wait();
+                results.add(r);
+
+                while (results.size() > numRequests) {
+                    r = results.get(0);
+                    results.remove(results.get(0));
+                    r.wait();
+                }
+            }
+
+            while (results.size() > 0) {
+                r = results.get(0);
+                results.remove(results.get(0));
+                rand.wait();
+            }
+
+        } catch (Exception e) {
+            System.err.println(e.toString());
+        }
+
+//        File[] files = directory.listFiles();
+//        assert files != null;
+//        Log.d("Zeroc-Ice",files.toString());
+//        Log.d("Files", "Size: "+ files.length);
+    }
+
     public static void toggleStop() {
 
         Log.d("Zeroc-Ice","inside toggleStop");
@@ -270,9 +377,9 @@ public class YourLibraryFragment extends Fragment {
             Toolbox.isPaused = false;
 
             Snackbar.make(
-                recyclerView,
-                "Audio Stopped",
-                Snackbar.LENGTH_LONG
+                    recyclerView,
+                    "Audio Stopped",
+                    Snackbar.LENGTH_LONG
             ).show();
         }
     }

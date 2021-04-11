@@ -104,12 +104,26 @@
             android:layout_weight="1"
             android:textAlignment="center"
             android:layout_marginStart="3dp"
-            android:layout_marginEnd="14dp"
+            android:layout_marginEnd="3dp"
             android:textColor="@color/likedSondGradientBottom"
             android:textColorHint="@color/navText"
             android:background="@drawable/rounded_edittext"
             android:backgroundTint="@color/createPlaylist"
             android:text="Stop" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="14dp"
+            android:textColor="@color/likedSondGradientBottom"
+            android:textColorHint="@color/navText"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/createPlaylist"
+            android:text="Upload" />
 
     </LinearLayout>
 

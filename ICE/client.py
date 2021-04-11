@@ -179,22 +179,17 @@ def fileUpload(path):
         if chuck == bytes('','utf-8') or chuck == None:
             break
     
-        # Send up to numRequests + 1 chunks asynchronously.
         r = hello.begin_send(offset, chuck, remotePath)
         offset += len(chuck)
-    
-        # Wait until this request has been passed to the transport.
+
         r.waitForSent()
         results.append(r)
     
-        # Once there are more than numRequests, wait for the least
-        # recent one to complete.
         while len(results) > numRequests:
             r = results[0]
             del results[0]
             r.waitForCompleted()
     
-    # Wait for any remaining requests to complete.
     while len(results) > 0:
         r = results[0]
         del results[0]
