@@ -298,7 +298,7 @@ with Ice.initialize(sys.argv, "config.server") as communicator:
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
-    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001")
+    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001:ssl -p 4064")
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
     adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))

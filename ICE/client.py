@@ -47,11 +47,11 @@ communicator = Ice.initialize(sys.argv, "config.client")
 
 # ------------ CLIENT ------------
 # 172.17.223.81
-hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001"))
+hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001:ssl -p 4064"))
 # hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h localhost -p 10001"))
 
 # ------------ ADMIN ------------
-admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h 192.168.0.29 -p 10001"))
+admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h 192.168.0.29 -p 10001:ssl -p 4064"))
 
 hello.sayHello()
 hello.topGenres()

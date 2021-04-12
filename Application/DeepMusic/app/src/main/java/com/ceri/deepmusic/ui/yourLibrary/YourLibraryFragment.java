@@ -1,8 +1,10 @@
 package com.ceri.deepmusic.ui.yourLibrary;
 
+import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -22,6 +24,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -33,14 +37,18 @@ import com.ceri.deepmusic.models.IceServer;
 import com.ceri.deepmusic.models.Toolbox;
 import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
 import com.google.android.material.snackbar.Snackbar;
+import com.zeroc.Ice.InvocationFuture;
+import com.zeroc.Ice.Util;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Locale;
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
+import java.util.logging.FileHandler;
 
 public class YourLibraryFragment extends Fragment {
 
@@ -136,6 +144,15 @@ public class YourLibraryFragment extends Fragment {
             }
         });
 
+        final Button ssl = view.findViewById(R.id.ssl);
+        ssl.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                ssl();
+            }
+        });
+
 //        final Button searchBtn = view.findViewById(R.id.searchBtn);
 //        searchBtn.setOnClickListener(new View.OnClickListener() {
 //
@@ -175,6 +192,26 @@ public class YourLibraryFragment extends Fragment {
         iceServer = IceServer.getInstance();
 
         return view;
+    }
+
+    private void checkPermissions() {
+
+        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        }
+
+        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
+
+        if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.CAMERA}, 1);
+        }
+    }
+
+    public static void ssl() {
+        String res = iceServer.getHello().demoSSL();
+        Log.d("SSL",res);
     }
 
     public static void togglePlay() {
@@ -272,95 +309,70 @@ public class YourLibraryFragment extends Fragment {
         }
     }
 
-    public static void upload() {
+    public void upload() {
+
+        checkPermissions();
 
         try {
 
-
-            Log.d("Zeroc-Ice","Upload");
-
             String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString();
-
-            Log.d("Zeroc-Ice",path);
 
             path = path + "/sample.mp3";
 
-            Log.d("Zeroc-Ice",path);
-
-            File file = new File(path);
-            Log.d("Zeroc-Ice",file.exists() ? "Exist" : "Doesn't");
+            File song = new File(path);
+            FileInputStream file = new FileInputStream(song);
 
             int chunkSize = 4096;
             int offset = 0;
 
-            ArrayList<CompletableFuture<Void>> results = new ArrayList<CompletableFuture<Void>>();
+            LinkedList<InvocationFuture<Void>> results = new LinkedList<InvocationFuture<Void>>();
             int numRequests = 5;
 
-            Log.d("Zeroc-Ice","before splitted");
-
-//            String[] splitted = path.split(".");
-//            Log.d("Zeroc-Ice", Arrays.toString(splitted));
-//            Log.d("Zeroc-Ice", String.valueOf(splitted.length));
-
-//            String extension = splitted[splitted.length - 1];
-////            Log.d("Zeroc-Ice", extension);
-
-            String extension = MimeTypeMap.getFileExtensionFromUrl(file.toString());
-            Log.d("Zeroc-Ice", extension);
+            String extension = MimeTypeMap.getFileExtensionFromUrl(song.toString());
 
             Random rand = new Random();
             int min = 1;
             int max = 999999;
             int rand1 = rand.nextInt(max - min + 1) + min;
 
-            Log.d("Zeroc-Ice", "rand1");
-            Log.d("Zeroc-Ice", String.valueOf(rand1));
+            String remotePath = "musics/" + "android_" + rand1 + "_" + System.currentTimeMillis() + "." + extension;
 
-            String remotePath = "musics/" + rand1 + "_" + System.currentTimeMillis() + "." + extension;
+            Log.d("Remote Path",remotePath);
 
-            Log.d("Zeroc-Ice","remotePath");
-            Log.d("Zeroc-Ice",remotePath);
+            byte[] bs = new byte[chunkSize];
 
-            FileInputStream is = new FileInputStream(file);
-            byte[] chuck = new byte[chunkSize];
+            while ((offset = file.read(bs)) != -1) {
 
-            Log.d("Zeroc-Ice","chuck");
+                // Send up to numRequests + 1 chunks asynchronously.
+                CompletableFuture<Void> f = YourLibraryFragment.iceServer.getHello().sendAsync(offset, bs, remotePath);
+                offset += bs.length;
 
-            CompletableFuture<Void> r;
+                // Wait until this request has been passed to the transport.
+                InvocationFuture<Void> i = Util.getInvocationFuture(f);
+                i.waitForSent();
+                results.add(i);
 
-            Log.d("Zeroc-Ice","Before while");
-
-            while ((offset = is.read(chuck)) != -1) {
-
-                Log.d("Zeroc-Ice",String.valueOf(offset));
-
-                r = YourLibraryFragment.iceServer.getHello().sendAsync(offset, chuck, remotePath);
-                offset += chuck.length;
-
-                r.wait();
-                results.add(r);
-
-                while (results.size() > numRequests) {
-                    r = results.get(0);
-                    results.remove(results.get(0));
-                    r.wait();
+                // Once there are more than numRequests, wait for the least
+                // recent one to complete.
+                while(results.size() > numRequests)
+                {
+                    i = results.getFirst();
+                    results.removeFirst();
+                    i.join();
                 }
             }
 
-            while (results.size() > 0) {
-                r = results.get(0);
-                results.remove(results.get(0));
-                rand.wait();
+            // Wait for any remaining requests to complete.
+            while(results.size() > 0)
+            {
+                InvocationFuture<Void> i = results.getFirst();
+                results.removeFirst();
+                i.join();
             }
 
         } catch (Exception e) {
             System.err.println(e.toString());
         }
-
-//        File[] files = directory.listFiles();
-//        assert files != null;
-//        Log.d("Zeroc-Ice",files.toString());
-//        Log.d("Files", "Size: "+ files.length);
     }
 
     public static void toggleStop() {
