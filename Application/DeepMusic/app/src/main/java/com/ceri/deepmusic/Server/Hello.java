@@ -43,6 +43,10 @@ public interface Hello extends com.zeroc.Ice.Object
 
     Music findOne(com.zeroc.Ice.Current current);
 
+    Music add(String title, String artist, String album, String path, com.zeroc.Ice.Current current);
+
+    boolean delete(int identifier, com.zeroc.Ice.Current current);
+
     void send(int offset, byte[] bytes, String path, com.zeroc.Ice.Current current);
 
     String demoSSL(com.zeroc.Ice.Current current);
@@ -306,6 +310,54 @@ public interface Hello extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_add(Hello obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        String iceP_title;
+        String iceP_artist;
+        String iceP_album;
+        String iceP_path;
+        iceP_title = istr.readString();
+        iceP_artist = istr.readString();
+        iceP_album = istr.readString();
+        iceP_path = istr.readString();
+        inS.endReadParams();
+        Music ret = obj.add(iceP_title, iceP_artist, iceP_album, iceP_path, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        Music.ice_write(ostr, ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
+    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_delete(Hello obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
+    {
+        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
+        com.zeroc.Ice.InputStream istr = inS.startReadParams();
+        int iceP_identifier;
+        iceP_identifier = istr.readInt();
+        inS.endReadParams();
+        boolean ret = obj.delete(iceP_identifier, current);
+        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
+        ostr.writeBool(ret);
+        inS.endWriteParams(ostr);
+        return inS.setResult(ostr);
+    }
+
+    /**
+     * @hidden
+     * @param obj -
+     * @param inS -
+     * @param current -
+     * @return -
+    **/
     static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_send(Hello obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
@@ -342,7 +394,9 @@ public interface Hello extends com.zeroc.Ice.Object
     /** @hidden */
     final static String[] _iceOps =
     {
+        "add",
         "bookmarks",
+        "delete",
         "demoSSL",
         "findAll",
         "findOne",
@@ -378,77 +432,85 @@ public interface Hello extends com.zeroc.Ice.Object
         {
             case 0:
             {
-                return _iceD_bookmarks(this, in, current);
+                return _iceD_add(this, in, current);
             }
             case 1:
             {
-                return _iceD_demoSSL(this, in, current);
+                return _iceD_bookmarks(this, in, current);
             }
             case 2:
             {
-                return _iceD_findAll(this, in, current);
+                return _iceD_delete(this, in, current);
             }
             case 3:
             {
-                return _iceD_findOne(this, in, current);
+                return _iceD_demoSSL(this, in, current);
             }
             case 4:
             {
-                return com.zeroc.Ice.Object._iceD_ice_id(this, in, current);
+                return _iceD_findAll(this, in, current);
             }
             case 5:
             {
-                return com.zeroc.Ice.Object._iceD_ice_ids(this, in, current);
+                return _iceD_findOne(this, in, current);
             }
             case 6:
             {
-                return com.zeroc.Ice.Object._iceD_ice_isA(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_id(this, in, current);
             }
             case 7:
             {
-                return com.zeroc.Ice.Object._iceD_ice_ping(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_ids(this, in, current);
             }
             case 8:
             {
-                return _iceD_library(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_isA(this, in, current);
             }
             case 9:
             {
-                return _iceD_like(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_ping(this, in, current);
             }
             case 10:
             {
-                return _iceD_musicInfo(this, in, current);
+                return _iceD_library(this, in, current);
             }
             case 11:
             {
-                return _iceD_sayHello(this, in, current);
+                return _iceD_like(this, in, current);
             }
             case 12:
             {
-                return _iceD_searchBar(this, in, current);
+                return _iceD_musicInfo(this, in, current);
             }
             case 13:
             {
-                return _iceD_send(this, in, current);
+                return _iceD_sayHello(this, in, current);
             }
             case 14:
             {
-                return _iceD_showAll(this, in, current);
+                return _iceD_searchBar(this, in, current);
             }
             case 15:
             {
-                return _iceD_start(this, in, current);
+                return _iceD_send(this, in, current);
             }
             case 16:
             {
-                return _iceD_startVoice(this, in, current);
+                return _iceD_showAll(this, in, current);
             }
             case 17:
             {
-                return _iceD_topArtist(this, in, current);
+                return _iceD_start(this, in, current);
             }
             case 18:
+            {
+                return _iceD_startVoice(this, in, current);
+            }
+            case 19:
+            {
+                return _iceD_topArtist(this, in, current);
+            }
+            case 20:
             {
                 return _iceD_topGenres(this, in, current);
             }

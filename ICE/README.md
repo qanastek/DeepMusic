@@ -49,26 +49,6 @@ exit
 
 
 
-
-
-Note that this demo uses port 10000. If port 10000 is not available on your
-machine, you need to edit both client and server to use a free port.
-
-The demo also assumes the client and server are running on the same host.
-To run the demo on separate hosts, edit the server to remove `-h localhost`
-from the object adapter's endpoint, and edit the client to replace `localhost`
-with the host name or IP address of the server.
-
-To run the server with web socket support:
-```
-python server.py --Ice.Default.Protocol=ws
-```
-
-To run the client with web socket support:
-```
-python client.py --Ice.Default.Protocol=ws
-```
-
 The SSL Certificate was generated with:
 
 ```
@@ -81,3 +61,7 @@ The SSL Certificate password is:
 ```
 home
 ```
+
+## Dependencies
+
+* icegrid.jar: https://mvnrepository.com/artifact/com.zeroc/icegrid/3.7.1

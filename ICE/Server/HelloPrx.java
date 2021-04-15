@@ -485,6 +485,92 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
+    default Music add(String title, String artist, String album, String path)
+    {
+        return add(title, artist, album, path, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Music add(String title, String artist, String album, String path, java.util.Map<String, String> context)
+    {
+        return _iceI_addAsync(title, artist, album, path, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Music> addAsync(String title, String artist, String album, String path)
+    {
+        return _iceI_addAsync(title, artist, album, path, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Music> addAsync(String title, String artist, String album, String path, java.util.Map<String, String> context)
+    {
+        return _iceI_addAsync(title, artist, album, path, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_title -
+     * @param iceP_artist -
+     * @param iceP_album -
+     * @param iceP_path -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Music> _iceI_addAsync(String iceP_title, String iceP_artist, String iceP_album, String iceP_path, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Music> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "add", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_title);
+                     ostr.writeString(iceP_artist);
+                     ostr.writeString(iceP_album);
+                     ostr.writeString(iceP_path);
+                 }, istr -> {
+                     Music ret;
+                     ret = Music.ice_read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
+    default boolean delete(int identifier)
+    {
+        return delete(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default boolean delete(int identifier, java.util.Map<String, String> context)
+    {
+        return _iceI_deleteAsync(identifier, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> deleteAsync(int identifier)
+    {
+        return _iceI_deleteAsync(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Boolean> deleteAsync(int identifier, java.util.Map<String, String> context)
+    {
+        return _iceI_deleteAsync(identifier, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_identifier -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> _iceI_deleteAsync(int iceP_identifier, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Boolean> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "delete", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeInt(iceP_identifier);
+                 }, istr -> {
+                     boolean ret;
+                     ret = istr.readBool();
+                     return ret;
+                 });
+        return f;
+    }
+
     default void send(int offset, byte[] bytes, String path)
     {
         send(offset, bytes, path, com.zeroc.Ice.ObjectPrx.noExplicitContext);
