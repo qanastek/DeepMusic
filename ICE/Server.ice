@@ -36,15 +36,11 @@ module Server
 
         MusicList findAll();
         Music findOne();
-
+        Music add(string title, string artist, string album, string path);
+        bool delete(int identifier);
+        
         void send(int offset, ByteSeq bytes, string path);
 
         string demoSSL();
-    };
-    
-    interface Administration
-    {
-        Music add(string title, string artist, string album, string path);
-        bool delete(int identifier);
     };
 }

@@ -18,6 +18,7 @@ import pylev
 Ice.loadSlice('Server.ice')
 import Server
 
+# TODO: Dynamic IP according to the instance
 hostname = "192.168.0.29"
 # hostname = "localhost"
 
@@ -262,8 +263,6 @@ class HelloI(Server.Hello):
         myLibVlcInstance.vlm_play_media(identifier)
 
         return url
-        
-class AdministrationI(Server.Administration):
 
     def add(self, title, artist, album, path, current):
 
@@ -292,18 +291,20 @@ class AdministrationI(Server.Administration):
 
         return res
 
-# with Ice.initialize(sys.argv) as communicator:
-with Ice.initialize(sys.argv, "config.server") as communicator:
+with Ice.initialize(sys.argv) as communicator:
+# with Ice.initialize(sys.argv, "config.server") as communicator:
 
     signal.signal(signal.SIGINT, lambda signum, frame: communicator.shutdown())
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
-    # adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001")
-    adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001:ssl -p 4064")
+    properties = communicator.getProperties()
 
-    adapter.add(HelloI(), Ice.stringToIdentity("hello"))
-    adapter.add(AdministrationI(), Ice.stringToIdentity("administration"))
+    adapter = communicator.createObjectAdapter("Hello")
+
+    id = Ice.stringToIdentity(properties.getProperty("Identity"))
+
+    adapter.add(HelloI(), id)
 
     adapter.activate()
     communicator.waitForShutdown()

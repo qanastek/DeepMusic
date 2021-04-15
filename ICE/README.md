@@ -20,6 +20,37 @@ In a separate window, start the client:
 python client.py
 ```
 
+
+
+
+To run the demo, first start the IceGrid service:
+
+```
+icegridnode --Ice.Config=config.grid
+```
+
+In a separate window, start the application:
+
+```
+icegridadmin --Ice.Config=config.grid -e "application add application.xml"
+python client.py
+```
+
+Stop a application:
+
+```
+icegridadmin --Ice.Config=config.grid
+application remove Simple
+application list
+exit
+```
+
+
+
+
+
+
+
 Note that this demo uses port 10000. If port 10000 is not available on your
 machine, you need to edit both client and server to use a free port.
 

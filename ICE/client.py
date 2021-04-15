@@ -11,6 +11,7 @@ from tkinter import messagebox
 import os
 import sys
 import Ice
+import IceGrid
 import time
 from random import randrange
 
@@ -37,7 +38,9 @@ f2 = Frame(window)
 f2.pack(side = BOTTOM)
 
 # communicator = Ice.initialize(sys.argv)
-communicator = Ice.initialize(sys.argv, "config.client")
+# communicator = Ice.initialize(sys.argv, "configGrid.client")
+communicator = Ice.initialize(sys.argv, "configGrid.client")
+# communicator = Ice.initialize(sys.argv, "config.client")
 
 # #
 # # Ice.initialize returns an initialized Ice communicator,
@@ -48,11 +51,23 @@ communicator = Ice.initialize(sys.argv, "config.client")
 # ------------ CLIENT ------------
 # 172.17.223.81
 # hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001"))
-hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello:default -h 192.168.0.29 -p 10001:ssl -p 4064"))
 
+hello = None
+
+try:
+    print("****** Inside try ******")
+    hello = Server.HelloPrx.checkedCast(communicator.stringToProxy("hello"))
+except Ice.NotRegisteredException:
+    print("****** Inside Ice.NotRegisteredException ******")
+    query = IceGrid.QueryPrx.checkedCast(communicator.stringToProxy("DemoIceGrid/Query"))
+    hello = Server.HelloPrx.checkedCast(query.findObjectByType("::DemoIceGrid::Hello"))
+
+if not hello:
+    print("couldn't find a `::Server::Hello' object.")
+    sys.exit(1)
+    
 # ------------ ADMIN ------------
 # admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h 192.168.0.29 -p 10001"))
-admin = Server.AdministrationPrx.checkedCast(communicator.stringToProxy("administration:default -h 192.168.0.29 -p 10001:ssl -p 4064"))
 
 hello.sayHello()
 hello.topGenres()
@@ -216,7 +231,7 @@ def add():
     if remotePath:
         filePath = None
 
-    m = admin.add(titre.get(), artiste.get(), album.get(), remotePath)
+    m = hello.add(titre.get(), artiste.get(), album.get(), remotePath)
     musics.append(m)
     listView.insert(m.identifier, m.titre)
 
@@ -228,7 +243,7 @@ def delete():
     print(index)
     print(m.titre)
     listView.delete(index)
-    admin.delete(m.identifier)
+    hello.delete(m.identifier)
 
 # Play Audio
 def play():

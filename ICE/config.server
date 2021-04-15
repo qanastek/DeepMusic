@@ -51,12 +51,20 @@ Ice.Warn.Connections=1
 #
 # SSL Configuration
 #
-Ice.Plugin.IceSSL=IceSSL:createIceSSL
+
+# Ice.Plugin.IceSSL=1
+
+# Ice.Plugin.IceSSL=IceSSL:createIceSSL
+# IceSSL.Ciphers=DEFAULT:DSS
+
+Ice.Plugin.IceSSL=IceSSLOpenSSL:createIceSSLOpenSSL
+IceSSL.Ciphers=ADH:!LOW:!MD5:!EXP:!3DES:@STRENGTH
+IceSSL.VerifyPeer=0
+
 IceSSL.DefaultDir=certs
 IceSSL.CAs=cert.crt
 IceSSL.CertFile=cert.pfx
 IceSSL.Password=home
-IceSSL.Ciphers=DEFAULT:DSS
 
 #IceSSL.CertFile=cert_rsa.pfx:cert_dsa.pfx
 #IceSSL.CertFile=server.p12
