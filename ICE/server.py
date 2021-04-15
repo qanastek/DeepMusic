@@ -29,8 +29,8 @@ db = DB()
 musics = db.getMusics()
 print(musics)
 
-start = ["lancer","lance","demarrer","demarre"]
-stop = ["arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain"]
+start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté"]
+stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer"]
 pause = ["pause"]
 actions = start + stop + pause
 
@@ -292,12 +292,14 @@ class AdministrationI(Server.Administration):
 
         return res
 
+# with Ice.initialize(sys.argv) as communicator:
 with Ice.initialize(sys.argv, "config.server") as communicator:
 
     signal.signal(signal.SIGINT, lambda signum, frame: communicator.shutdown())
     if hasattr(signal, 'SIGBREAK'):
         signal.signal(signal.SIGBREAK, lambda signum, frame: communicator.shutdown())
 
+    # adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001")
     adapter = communicator.createObjectAdapterWithEndpoints("Hello", "default -h " + hostname + " -p 10001:ssl -p 4064")
 
     adapter.add(HelloI(), Ice.stringToIdentity("hello"))
