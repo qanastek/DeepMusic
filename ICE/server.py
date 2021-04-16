@@ -30,7 +30,7 @@ db = DB()
 musics = db.getMusics()
 print(musics)
 
-start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté"]
+start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué"]
 stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer"]
 pause = ["pause"]
 actions = start + stop + pause

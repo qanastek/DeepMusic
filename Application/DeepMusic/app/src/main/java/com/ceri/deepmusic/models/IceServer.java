@@ -2,6 +2,8 @@ package com.ceri.deepmusic.models;
 
 import android.util.Log;
 
+import com.zeroc.Ice.LocatorFinderPrx;
+
 import java.nio.file.FileSystems;
 import java.nio.file.Paths;
 
@@ -38,6 +40,12 @@ public class IceServer {
         {
             communicator.getProperties().setProperty("Ice.Default.Package", "com.ceri.deepmusic.Server.hello");
 //            communicator.getProperties().setProperty("Ice.Default.Locator", "DemoIceGrid/Locator:default -h 192.168.0.29 -p 4061");
+
+            com.zeroc.Ice.LocatorFinderPrx finder = com.zeroc.Ice.LocatorFinderPrx.checkedCast(
+                communicator.stringToProxy("Ice/LocatorFinder:tcp -p 4061 -h 192.168.0.29")
+            );
+
+            communicator.setDefaultLocator(finder.getLocator());
 
             try {
 
