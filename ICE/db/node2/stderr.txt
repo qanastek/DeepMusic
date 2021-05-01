@@ -1,0 +1,13 @@
+-- 05/01/21 23:32:14.960 Node2: Replica: trying to establish session with replica `Master'
+-- 05/01/21 23:32:18.977 Node2: Replica: established session with replica `Master'
+-- 05/01/21 23:32:18.978 Node2: Replica: trying to establish session with replica `Replica1'
+-- 05/01/21 23:32:18.979 Node2: Replica: trying to establish session with replica `Replica2'
+-- 05/01/21 23:32:18.982 Node2: Replica: established session with replica `Replica1'
+-- 05/01/21 23:32:18.982 Node2: Replica: established session with replica `Replica2'
+-- 05/01/21 23:33:07.993 Node2: Replica: lost session with replica `Master':
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused
+-- 05/01/21 23:33:07.993 Node2: Replica: trying to establish session with replica `Master'
+-- 05/01/21 23:33:20.015 Node2: Replica: failed to establish session with replica `Master':
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused

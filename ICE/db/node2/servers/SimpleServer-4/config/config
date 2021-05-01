@@ -1,0 +1,17 @@
+# Configuration file (05/01/21 23:32:19.011)
+
+# Server configuration
+Ice.Admin.ServerId=SimpleServer-4
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=SimpleServer-4
+# Object adapter Hello
+Hello.Endpoints=tcp -h 192.168.0.29
+Hello.AdapterId=SimpleServer-4.Hello
+Hello.ReplicaGroupId=ReplicatedHelloAdapter
+# Server descriptor properties
+Identity=hello
+IceMX.Metrics.Debug.GroupBy=id
+IceMX.Metrics.Debug.Disabled=1
+IceMX.Metrics.ByParent.GroupBy=parent
+IceMX.Metrics.ByParent.Disabled=1
+Ice.Default.Locator=Server/Locator:default -h 192.168.0.29 -p 12000:default -h 192.168.0.29 -p 12001:default -h 192.168.0.29 -p 12002

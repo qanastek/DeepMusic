@@ -276,6 +276,7 @@ class HelloI(Server.Hello):
 
         return res
 
+# https://github.com/zeroc-ice/ice-demos/tree/3.7/cpp98/IceGrid/customLoadBalancing
 with Ice.initialize(sys.argv) as communicator:
 # with Ice.initialize(sys.argv, "config.server") as communicator:
 

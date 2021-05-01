@@ -38,7 +38,7 @@ f1.pack(side = TOP)
 f2 = Frame(window)
 f2.pack(side = BOTTOM)
 
-communicator = Ice.initialize(sys.argv, "configGrid.client")
+communicator = Ice.initialize(sys.argv, "config.client")
 
 hello = None
 

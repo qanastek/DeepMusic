@@ -1,3 +1,0 @@
-# The IceGrid locator proxy.
-# 192.168.0.29
-Ice.Default.Locator=Server/Locator:default -h 192.168.0.29 -p 4061

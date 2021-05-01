@@ -1,71 +1,27 @@
 #
-# The client reads this property to create the reference to the
-# "hello" object in the server.
+# The IceGrid locator proxy.
 #
-Hello.Proxy=hello:tcp -p 10000:udp -p 10000:ssl -p 10001
+Ice.Default.Locator=Server/Locator:default -p 12000:default -p 12001:default -p 12002
 
 #
-# Uncomment to use the WebSocket transports instead.
+# To use the IceGrid discovery plugin comment out the default locator
+# property above and un-comment the two properties below. The discovery
+# plugin uses multicast to discover IceGrid.
 #
-#Hello.Proxy=hello:ws -p 10002:udp -p 10000:wss -p 10003
+#Ice.Plugin.IceLocatorDiscovery=IceLocatorDiscovery:createIceLocatorDiscovery
+#IceLocatorDiscovery.InstanceName=Server
+
+Ice.Default.Timeout=10000
+Ice.Default.Host=192.168.0.29
 
 #
-# Only connect to the localhost interface by default.
-#
-Ice.Default.Host=localhost
-
-#
-# Warn about connection exceptions
-#
-Ice.Warn.Connections=1
-
-#
-# Network Tracing
-#
-# 0 = no network tracing
-# 1 = trace connection establishment and closure
-# 2 = like 1, but more detailed
-# 3 = like 2, but also trace data transfer
+# Trace properties.
 #
 #Ice.Trace.Network=1
+#Ice.Trace.Locator=1
 
 #
-# Protocol Tracing
+# IceGrid admin properties to allow running IceGrid admin clients.
 #
-# 0 = no protocol tracing
-# 1 = trace protocol messages
-#
-#Ice.Trace.Protocol=1
-
-#
-# Security Tracing
-#
-# 0 = no security tracing
-# 1 = trace messages
-#
-#IceSSL.Trace.Security=1
-
-#
-# SSL Configuration
-#
-Ice.Plugin.IceSSL=IceSSL:createIceSSL
-IceSSL.DefaultDir=certs
-IceSSL.CAs=cert.crt
-IceSSL.CertFile=cert.pfx
-IceSSL.Password=home
-IceSSL.Ciphers=DEFAULT:DSS
-
-#IceSSL.CertFile=cert_rsa.pfx:cert_dsa.pfx
-#IceSSL.CertFile=client.p12
-#IceSSL.Keychain=certs/client.keychain
-#IceSSL.KeychainPassword=home
-
-#
-# IceMX configuration.
-#
-#Ice.Admin.Endpoints=tcp -h localhost -p 10004
-Ice.Admin.InstanceName=client
-IceMX.Metrics.Debug.GroupBy=id
-IceMX.Metrics.ByParent.GroupBy=parent
-
-
+IceGridAdmin.Username=foo
+IceGridAdmin.Password=bar

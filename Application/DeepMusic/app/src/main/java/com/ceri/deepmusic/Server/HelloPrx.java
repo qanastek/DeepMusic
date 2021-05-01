@@ -50,72 +50,6 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default void topGenres()
-    {
-        topGenres(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void topGenres(java.util.Map<String, String> context)
-    {
-        _iceI_topGenresAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> topGenresAsync()
-    {
-        return _iceI_topGenresAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> topGenresAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_topGenresAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_topGenresAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "topGenres", null, sync, null);
-        f.invoke(false, context, null, null, null);
-        return f;
-    }
-
-    default void topArtist()
-    {
-        topArtist(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void topArtist(java.util.Map<String, String> context)
-    {
-        _iceI_topArtistAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> topArtistAsync()
-    {
-        return _iceI_topArtistAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> topArtistAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_topArtistAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_topArtistAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "topArtist", null, sync, null);
-        f.invoke(false, context, null, null, null);
-        return f;
-    }
-
     default String startVoice(String text)
     {
         return startVoice(text, com.zeroc.Ice.ObjectPrx.noExplicitContext);
@@ -193,144 +127,6 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
                      ret = MusicListHelper.read(istr);
                      return ret;
                  });
-        return f;
-    }
-
-    default void library()
-    {
-        library(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void library(java.util.Map<String, String> context)
-    {
-        _iceI_libraryAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> libraryAsync()
-    {
-        return _iceI_libraryAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> libraryAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_libraryAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_libraryAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "library", null, sync, null);
-        f.invoke(false, context, null, null, null);
-        return f;
-    }
-
-    default void bookmarks()
-    {
-        bookmarks(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void bookmarks(java.util.Map<String, String> context)
-    {
-        _iceI_bookmarksAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> bookmarksAsync()
-    {
-        return _iceI_bookmarksAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> bookmarksAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_bookmarksAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_bookmarksAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "bookmarks", null, sync, null);
-        f.invoke(false, context, null, null, null);
-        return f;
-    }
-
-    default void musicInfo(int identifier)
-    {
-        musicInfo(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void musicInfo(int identifier, java.util.Map<String, String> context)
-    {
-        _iceI_musicInfoAsync(identifier, context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> musicInfoAsync(int identifier)
-    {
-        return _iceI_musicInfoAsync(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> musicInfoAsync(int identifier, java.util.Map<String, String> context)
-    {
-        return _iceI_musicInfoAsync(identifier, context, false);
-    }
-
-    /**
-     * @hidden
-     * @param iceP_identifier -
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_musicInfoAsync(int iceP_identifier, java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "musicInfo", null, sync, null);
-        f.invoke(false, context, null, ostr -> {
-                     ostr.writeInt(iceP_identifier);
-                 }, null);
-        return f;
-    }
-
-    default void like(int identifier)
-    {
-        like(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default void like(int identifier, java.util.Map<String, String> context)
-    {
-        _iceI_likeAsync(identifier, context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> likeAsync(int identifier)
-    {
-        return _iceI_likeAsync(identifier, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Void> likeAsync(int identifier, java.util.Map<String, String> context)
-    {
-        return _iceI_likeAsync(identifier, context, false);
-    }
-
-    /**
-     * @hidden
-     * @param iceP_identifier -
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_likeAsync(int iceP_identifier, java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "like", null, sync, null);
-        f.invoke(false, context, null, ostr -> {
-                     ostr.writeInt(iceP_identifier);
-                 }, null);
         return f;
     }
 
@@ -448,43 +244,6 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default Music findOne()
-    {
-        return findOne(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default Music findOne(java.util.Map<String, String> context)
-    {
-        return _iceI_findOneAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<Music> findOneAsync()
-    {
-        return _iceI_findOneAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<Music> findOneAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_findOneAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<Music> _iceI_findOneAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<Music> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "findOne", null, sync, null);
-        f.invoke(true, context, null, null, istr -> {
-                     Music ret;
-                     ret = Music.ice_read(istr);
-                     return ret;
-                 });
-        return f;
-    }
-
     default Music add(String title, String artist, String album, String path)
     {
         return add(title, artist, album, path, com.zeroc.Ice.ObjectPrx.noExplicitContext);
@@ -519,6 +278,54 @@ public interface HelloPrx extends com.zeroc.Ice.ObjectPrx
     {
         com.zeroc.IceInternal.OutgoingAsync<Music> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "add", null, sync, null);
         f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_title);
+                     ostr.writeString(iceP_artist);
+                     ostr.writeString(iceP_album);
+                     ostr.writeString(iceP_path);
+                 }, istr -> {
+                     Music ret;
+                     ret = Music.ice_read(istr);
+                     return ret;
+                 });
+        return f;
+    }
+
+    default Music update(String identifier, String title, String artist, String album, String path)
+    {
+        return update(identifier, title, artist, album, path, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default Music update(String identifier, String title, String artist, String album, String path, java.util.Map<String, String> context)
+    {
+        return _iceI_updateAsync(identifier, title, artist, album, path, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<Music> updateAsync(String identifier, String title, String artist, String album, String path)
+    {
+        return _iceI_updateAsync(identifier, title, artist, album, path, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<Music> updateAsync(String identifier, String title, String artist, String album, String path, java.util.Map<String, String> context)
+    {
+        return _iceI_updateAsync(identifier, title, artist, album, path, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_identifier -
+     * @param iceP_title -
+     * @param iceP_artist -
+     * @param iceP_album -
+     * @param iceP_path -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<Music> _iceI_updateAsync(String iceP_identifier, String iceP_title, String iceP_artist, String iceP_album, String iceP_path, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<Music> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "update", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeString(iceP_identifier);
                      ostr.writeString(iceP_title);
                      ostr.writeString(iceP_artist);
                      ostr.writeString(iceP_album);

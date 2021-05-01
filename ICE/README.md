@@ -15,23 +15,26 @@ sudo pip install -r requirements.txt
 ## To run the server, first start the IceGrid service
 
 ```bash
-icegridnode --Ice.Config=config.grid
+icegridregistry --Ice.Config=config.master
+
+icegridregistry --Ice.Config=config.replica1
+icegridnode --Ice.Config=config.node1
+
+icegridregistry --Ice.Config=config.replica2
+icegridnode --Ice.Config=config.node2
 ```
 
 ## In a separate window, start the client
 
 ```bash
-icegridadmin --Ice.Config=config.grid -e "application add application.xml"
+icegridadmin --Ice.Config=config.client -e "application add application.xml"
 python client.py
 ```
 
 ## Undeploy the application
 
 ```bash
-icegridadmin --Ice.Config=config.grid
-application remove Simple
-application list
-exit
+icegridadmin --Ice.Config=config.client -e "application remove Simple"
 ```
 
 ## Dependencies

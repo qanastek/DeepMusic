@@ -42,8 +42,9 @@ public class IceServer {
 //            communicator.getProperties().setProperty("Ice.Default.Locator", "DemoIceGrid/Locator:default -h 192.168.0.29 -p 4061");
 
             com.zeroc.Ice.LocatorFinderPrx finder = com.zeroc.Ice.LocatorFinderPrx.checkedCast(
-                communicator.stringToProxy("Ice/LocatorFinder:tcp -p 4061 -h 192.168.0.29")
+                    communicator.stringToProxy("Ice/LocatorFinder:tcp -p 12001 -h 192.168.0.29")
             );
+//            communicator.stringToProxy("Ice/LocatorFinder:tcp -p 4061 -h 192.168.0.29")
 
             communicator.setDefaultLocator(finder.getLocator());
 

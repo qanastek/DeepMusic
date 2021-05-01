@@ -1,0 +1,224 @@
+<mysql.connector.connection.MySQLConnection object at 0x7f0c6b51d070>
+0 record inserted.
+Musics in the database:
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+3
+Start search_bar mike!
+<mysql.connector.connection.MySQLConnection object at 0x7f64bec4e070>
+0 record inserted.
+Musics in the database:
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+3
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+3
+musics/Checkie Brown - Rosalie (CB 104).mp3
+1619905939000_643474481
+musics/Checkie Brown - Rosalie (CB 104).mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1619905939000_643474481.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f64bebcd1c0>>
+Broadcast created!
+<mysql.connector.connection.MySQLConnection object at 0x7f650baef070>
+0 record inserted.
+Musics in the database:
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+3
+<mysql.connector.connection.MySQLConnection object at 0x7fbba4e6e070>
+0 record inserted.
+Musics in the database:
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+[
+{
+    identifier = 436
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 437
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 438
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}]
+3
+Music update
+Music updated!

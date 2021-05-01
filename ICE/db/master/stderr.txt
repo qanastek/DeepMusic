@@ -1,0 +1,50 @@
+-! 05/01/21 23:31:08.959 Master: warning: failed to join the multicast group for IceGrid discovery:
+   endpoints = udp -h "239.255.0.1" -p 4061
+   src/Ice/Network.cpp:2411: ::Ice::SocketException:
+   socket exception: Cannot assign requested address
+-! 05/01/21 23:32:14.866 Master: warning: failed to join the multicast group for IceGrid discovery:
+   endpoints = udp -h "239.255.0.1" -p 4061
+   src/Ice/Network.cpp:2411: ::Ice::SocketException:
+   socket exception: Cannot assign requested address
+-- 05/01/21 23:32:18.890 Master: Replica: replica `Replica1' up
+-- 05/01/21 23:32:18.919 Master: Replica: replica `Replica2' up
+-- 05/01/21 23:32:18.942 Master: Node: node `node1' up
+-- 05/01/21 23:32:18.975 Master: Node: node `node2' up
+!! 05/01/21 23:32:29.204 Master: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12000'
+!! 05/01/21 23:32:40.540 Master: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12000'
+-- 05/01/21 23:33:39.558 Master: Replica: creating replica `Replica1' session
+-- 05/01/21 23:33:47.580 Master: Replica: replica `Replica1' session creation failed:
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused
+-- 05/01/21 23:33:47.580 Master: Replica: creating replica `Replica2' session
+-- 05/01/21 23:33:47.581 Master: Replica: replica `Replica2' session creation failed:
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused
+-! 05/01/21 23:33:47.584 Master: warning: failed to join the multicast group for IceGrid discovery:
+   endpoints = udp -h "239.255.0.1" -p 4061
+   src/Ice/Network.cpp:2411: ::Ice::SocketException:
+   socket exception: Cannot assign requested address
+-- 05/01/21 23:35:05.713 Master: Replica: replica `Replica1' up
+-- 05/01/21 23:35:16.239 Master: Node: node `node1' up
+-- 05/01/21 23:58:54.212 Master: Node: node `node1' down
+-- 05/01/21 23:58:58.062 Master: Replica: replica `Replica1' down
+-- 05/02/21 00:00:02.880 Master: Replica: creating replica `Replica1' session
+-- 05/02/21 00:00:09.404 Master: Replica: replica `Replica1' up
+-- 05/02/21 00:00:13.425 Master: Replica: replica `Replica1' session created
+-! 05/02/21 00:00:13.430 Master: warning: failed to join the multicast group for IceGrid discovery:
+   endpoints = udp -h "239.255.0.1" -p 4061
+   src/Ice/Network.cpp:2411: ::Ice::SocketException:
+   socket exception: Cannot assign requested address
+-- 05/02/21 00:00:13.589 Master: Node: creating node `node2' session
+-- 05/02/21 00:00:13.809 Master: Node: node `node1' up
+-- 05/02/21 00:00:17.595 Master: Node: node `node2' session creation failed:
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused
+-- 05/02/21 00:02:05.021 Master: Node: node `node1' down
+-- 05/02/21 00:02:06.007 Master: Replica: replica `Replica1' down
+-! 05/02/21 00:02:37.024 Master: warning: failed to join the multicast group for IceGrid discovery:
+   endpoints = udp -h "239.255.0.1" -p 4061
+   src/Ice/Network.cpp:2411: ::Ice::SocketException:
+   socket exception: Cannot assign requested address
+-- 05/02/21 00:02:40.922 Master: Replica: replica `Replica1' up
+-- 05/02/21 00:02:41.084 Master: Node: node `node1' up
