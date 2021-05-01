@@ -1,4 +1,4 @@
-# Configuration file (04/16/21 09:55:40.726)
+# Configuration file (05/01/21 19:00:53.888)
 
 # Server configuration
 Ice.Admin.ServerId=SimpleServer
@@ -13,4 +13,4 @@ IceMX.Metrics.Debug.GroupBy=id
 IceMX.Metrics.Debug.Disabled=1
 IceMX.Metrics.ByParent.GroupBy=parent
 IceMX.Metrics.ByParent.Disabled=1
-Ice.Default.Locator=DemoIceGrid/Locator:default -h 192.168.0.29 -p 4061
+Ice.Default.Locator=Server/Locator:default -h 192.168.0.29 -p 4061

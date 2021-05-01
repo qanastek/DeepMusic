@@ -1,9 +1,9 @@
-IceGrid.InstanceName=DemoIceGrid
+IceGrid.InstanceName=Server
 
 #
 # The IceGrid locator proxy.
 #
-Ice.Default.Locator=DemoIceGrid/Locator:default -h 192.168.0.29 -p 4061
+Ice.Default.Locator=Server/Locator:default -h 192.168.0.29 -p 4061
 
 #
 # IceGrid registry configuration.
@@ -12,10 +12,10 @@ IceGrid.Registry.Client.Endpoints=default -h 192.168.0.29 -p 4061
 IceGrid.Registry.Server.Endpoints=default -h 192.168.0.29
 IceGrid.Registry.Internal.Endpoints=default -h 192.168.0.29
 IceGrid.Registry.LMDB.Path=db/registry
-IceGrid.Registry.PermissionsVerifier=DemoIceGrid/NullPermissionsVerifier
-IceGrid.Registry.AdminPermissionsVerifier=DemoIceGrid/NullPermissionsVerifier
-IceGrid.Registry.SSLPermissionsVerifier=DemoIceGrid/NullSSLPermissionsVerifier
-IceGrid.Registry.AdminSSLPermissionsVerifier=DemoIceGrid/NullSSLPermissionsVerifier
+IceGrid.Registry.PermissionsVerifier=Server/NullPermissionsVerifier
+IceGrid.Registry.AdminPermissionsVerifier=Server/NullPermissionsVerifier
+IceGrid.Registry.SSLPermissionsVerifier=Server/NullSSLPermissionsVerifier
+IceGrid.Registry.AdminSSLPermissionsVerifier=Server/NullSSLPermissionsVerifier
 IceGrid.Registry.Discovery.Interface=127.0.0.1
 
 #

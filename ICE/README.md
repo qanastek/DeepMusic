@@ -1,67 +1,39 @@
-Install the system dependencies:
+# Running procedure
 
-```
+## Install the system dependencies
+
+```bash
 xargs sudo apt-get install <packages.txt
 ```
 
-Install the Python dependenciess:
+## Install the python dependencies
 
-```
+```bash
 sudo pip install -r requirements.txt
 ```
 
-To run the demo, first start the server:
-```
-python server.py
-```
+## To run the server, first start the IceGrid service
 
-In a separate window, start the client:
-```
-python client.py
-```
-
-
-
-
-To run the demo, first start the IceGrid service:
-
-```
+```bash
 icegridnode --Ice.Config=config.grid
 ```
 
-In a separate window, start the application:
+## In a separate window, start the client
 
-```
+```bash
 icegridadmin --Ice.Config=config.grid -e "application add application.xml"
 python client.py
 ```
 
-Stop a application:
+## Undeploy the application
 
-```
+```bash
 icegridadmin --Ice.Config=config.grid
 application remove Simple
 application list
 exit
 ```
 
-
-
-
-
-The SSL Certificate was generated with:
-
-```
-openssl req -x509 -newkey rsa:4096 -keyout cert.key -out cert.crt -days 365
-openssl pkcs12 -export -out cert.pfx -inkey cert.key -in cert.crt
-```
-
-The SSL Certificate password is:
-
-```
-home
-```
-
 ## Dependencies
 
-* icegrid.jar: https://mvnrepository.com/artifact/com.zeroc/icegrid/3.7.1
+* icegrid.jar (Android Only): https://mvnrepository.com/artifact/com.zeroc/icegrid/3.7.1

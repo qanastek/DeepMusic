@@ -2,6 +2,7 @@
 
 # LABRAK Yanis
 # M1 ILSEN ALT
+# Avignon University
 
 import os
 import sys
@@ -18,7 +19,7 @@ import pylev
 Ice.loadSlice('Server.ice')
 import Server
 
-# TODO: Dynamic IP according to the instance
+# Dynamic IP according to the instance
 hostname = "192.168.0.29"
 # hostname = "localhost"
 
@@ -28,6 +29,7 @@ from db import DB
 db = DB()
 
 musics = db.getMusics()
+print("Musics in the database:")
 print(musics)
 
 start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué"]
@@ -39,23 +41,10 @@ players = {}
 
 class HelloI(Server.Hello):
 
-    def test(self, current):
-        time = TimeOfDay()
-        return time
-
     def sayHello(self, current):
         print("Hello World!")
 
-    def topGenres(self, current):
-        print("top_genres!")
-
-    def topArtist(self, current):
-        print("top_artist!")
-
     def send(self, offset, bytes, path, current):
-
-        # print(offset)
-        # print(bytes)
 
         # Open the file in Byte mode
         musicFile = open(path,'ab')
@@ -164,44 +153,23 @@ class HelloI(Server.Hello):
         # For each music
         for m in musics:
 
+            # Fields
             title = m.titre.lower()
-            print("----------------")
-            print(text)
-            print(title)
-            print(text in title)
-            print("----------------")
+            author = m. artiste.lower()
 
             # Check if contains
-            if text in title:
-
-                print("in")
+            if text in title or text in author:
 
                 # Add the tuple to the list
                 items.append(m)
 
-        print(items)
         return items
-
-    def library(self, current):
-        print("library!")
-
-    def bookmarks(self, current):
-        print("bookmarks!")
-
-    def musicInfo(self, identifier, current):
-        print("music {}!".format(id))
-
-    def like(self, identifier, current):
-        print("like {}!".format(id))
 
     def showAll(self, current):
         print(musics)
         print(len(musics))
         return [a.titre for a in musics]
     
-    def findOne(self, current):
-        return musics[0]
-
     def findAll(self, current):
 
         # Update the local instance
@@ -252,12 +220,12 @@ class HelloI(Server.Hello):
             True,
             False)
 
-        print("After")
+        print("Broadcast created!")
 
         url = "http://" + hostname + ":" + urlPath;
 
         if output != 0:
-            cout << "Error brodcasting !!!!!"
+            cout << "Error during brodcasting !!!"
             return None
 
         myLibVlcInstance.vlm_play_media(identifier)
@@ -266,13 +234,13 @@ class HelloI(Server.Hello):
 
     def add(self, title, artist, album, path, current):
 
-        print("Add!")
-
         # Créer la musique
         m = Server.Music(int(time.time()),title,artist,album, path)
 
         # # Ajoute la musique à la liste
         db.insert(m)
+
+        print("Music Added!")
 
         # Update the local instance
         musics = db.getMusics()

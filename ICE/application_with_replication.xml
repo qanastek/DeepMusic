@@ -20,7 +20,7 @@
 
     <replica-group id="ReplicatedHelloAdapter">
       <load-balancing type="round-robin"/>
-      <object identity="hello" type="::DemoIceGrid::Hello"/>
+      <object identity="hello" type="::Server::Hello"/>
     </replica-group>
 
     <node name="node1">

@@ -1,5 +1,5 @@
 //
-// Copyright (c) ZeroC, Inc. All rights reserved.
+// Yanis LABRAK - Master 1 ILSEN, Avignon University.
 //
 
 #pragma once
@@ -21,21 +21,14 @@ module Server
     interface Hello
     {
         void sayHello();
-        void topGenres();
-        void topArtist();
         string startVoice(string text);
         MusicList searchBar(string text);
-        void library();
-        void bookmarks();
-        void musicInfo(int identifier);
-        void like(int identifier);
 
         string start(int identifier);
 
         TitleList showAll();
 
         MusicList findAll();
-        Music findOne();
         Music add(string title, string artist, string album, string path);
         bool delete(int identifier);
         
