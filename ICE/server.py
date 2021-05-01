@@ -247,6 +247,23 @@ class HelloI(Server.Hello):
 
         return m
 
+    def update(self, identifier, title, artist, album, path, current):
+
+        print("Music update")
+
+        # Créer la musique
+        m = Server.Music(int(identifier), title, artist, album, path)
+
+        # # Update la musique à la liste
+        db.update(m)
+
+        print("Music updated!")
+
+        # Update the local instance
+        musics = db.getMusics()
+
+        return m
+
     def delete(self, identifier, current):
 
         print("Delete {}!".format(identifier))

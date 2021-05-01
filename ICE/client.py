@@ -9,6 +9,7 @@ from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
 
 import os
+import os.path
 import sys
 import Ice
 import IceGrid
@@ -61,6 +62,8 @@ txt = Entry(f1)
 txt.pack()
 
 filePath = ""
+currentIdentifier = ""
+currentIndexListView = None
 
 # OnClick
 def search():
@@ -94,8 +97,45 @@ btn.pack(side = LEFT, fill = BOTH)
 btn1 = Button(f1, text="Voice", command=voice)
 btn1.pack(side = RIGHT, fill = BOTH)
 
+def onselect(event):
+
+    global currentIdentifier, filePath, currentIndexListView
+
+    # Get current index ListView
+    w = event.widget
+
+    if not w or not w.curselection():
+        return
+
+    # Current list view index
+    currentIndexListView = int(w.curselection()[0])
+    
+    # Get music instance
+    musicItem = musics[currentIndexListView]
+
+    print('You selected item {}: "{}"'.format(currentIndexListView, musicItem.titre))
+
+    # Load identifier
+    currentIdentifier = musicItem.identifier
+
+    # Load titre
+    titre.delete(0,END)
+    titre.insert(0,musicItem.titre)
+
+    # Load artiste
+    artiste.delete(0,END)
+    artiste.insert(0,musicItem.artiste)
+
+    # Load album
+    album.delete(0,END)
+    album.insert(0,musicItem.album)
+
+    # Load path
+    filePath = musicItem.path
+
 # Fill Up the ListView
 listView = Listbox(f2)
+listView.bind('<<ListboxSelect>>', onselect)
 listView.pack(side = RIGHT, fill = BOTH)
 for i, m in enumerate(musics):
     listView.insert(i, m.titre)
@@ -152,23 +192,55 @@ def fileUpload(path):
     
 # Add a Music to the database
 def add():
+    insert("add")
 
-    global filePath
+# Add a Music to the database
+def update():
+    insert("update")
 
+# Add a Music to the database
+def insert(status):
+
+    global filePath, currentIdentifier, currentIndexListView
+
+    print("File Path:")
     print(filePath)
 
     if not filePath and not titre.get() and not album.get() and not artiste.get():
         messagebox.showwarning("Champs manquant","Il y a un chammps manquant!")
         return
 
-    remotePath = fileUpload(filePath)
+    if os.path.isfile(filePath):
+        remotePath = fileUpload(filePath)
+    else:
+        print(filePath)
+        remotePath = filePath
+        print(filePath)
+        print("File not found locally but continuous!")
 
-    if remotePath:
+    if status == "add":
+        m = hello.add(titre.get(), artiste.get(), album.get(), remotePath)
+        musics.append(m)
+        listView.insert(m.identifier, m.titre)
         filePath = None
 
-    m = hello.add(titre.get(), artiste.get(), album.get(), remotePath)
-    musics.append(m)
-    listView.insert(m.identifier, m.titre)
+    elif status == "update" and currentIdentifier is not None:
+
+        m = hello.update(str(currentIdentifier), titre.get(), artiste.get(), album.get(), remotePath)
+
+        [musics.remove(a) for a in musics if a.identifier == currentIdentifier]
+        musics.append(m)
+
+        listView.delete(currentIndexListView)
+        listView.insert(m.identifier, m.titre)
+
+        # Clear all fields
+        currentIdentifier = None
+        titre.delete(0,END)
+        artiste.delete(0,END)
+        album.delete(0,END)
+        filePath = None
+        currentIndexListView = None
 
 # Remove a Music from the database
 def delete():
@@ -261,6 +333,7 @@ f3.pack(side = BOTTOM)
 
 # Buttons
 addBtn = Button(f3, text="Add", command=add).pack(side = LEFT)
+updateBtn = Button(f3, text="Update", command=update).pack(side = LEFT)
 deleteBtn = Button(f3, text="Delete", command=delete).pack(side = RIGHT)
 stopBtn = Button(f3, text="Stop", command=lambda *args: stop()).pack(side = RIGHT)
 pauseBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)

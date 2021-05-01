@@ -63,11 +63,31 @@ class DB:
         
         # Execute the command
         self.mycursor.execute(sql, val)
+
+    # Update a Music in the database
+    def updateMusic(self, music):
+
+        # Setup the query
+        sql = "UPDATE " + self.DB_TABLE + " SET titre = %s, artiste = %s, album = %s, path = %s WHERE identifier = %s"
+        
+        # Setup the values
+        val = (music.titre, music.artiste, music.album, music.path, music.identifier)
+        
+        # Execute the command
+        self.mycursor.execute(sql, val)
     
     def insert(self,music):
 
         # Insert the Music
         self.insertMusic(music)
+
+        # Commit the changes
+        self.mydb.commit()
+
+    def update(self,music):
+
+        # Update the Music
+        self.updateMusic(music)
 
         # Commit the changes
         self.mydb.commit()

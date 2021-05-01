@@ -29,7 +29,9 @@ module Server
         TitleList showAll();
 
         MusicList findAll();
+        
         Music add(string title, string artist, string album, string path);
+        Music update(string identifier, string title, string artist, string album, string path);
         bool delete(int identifier);
         
         void send(int offset, ByteSeq bytes, string path);

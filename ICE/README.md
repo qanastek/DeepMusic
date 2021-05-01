@@ -3,7 +3,7 @@
 ## Install the system dependencies
 
 ```bash
-xargs sudo apt-get install <packages.txt
+xargs sudo apt-get install -y <packages.txt
 ```
 
 ## Install the python dependencies

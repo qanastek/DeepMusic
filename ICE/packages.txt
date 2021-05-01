@@ -1,2 +1,3 @@
 vlc
 python3-tk 
+libssl-dev

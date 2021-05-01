@@ -1,0 +1,27 @@
+#
+# The IceGrid locator proxy.
+#
+Ice.Default.Locator=Server/Locator:default -p 12000:default -p 12001:default -p 12002
+
+#
+# To use the IceGrid discovery plugin comment out the default locator
+# property above and un-comment the two properties below. The discovery
+# plugin uses multicast to discover IceGrid.
+#
+#Ice.Plugin.IceLocatorDiscovery=IceLocatorDiscovery:createIceLocatorDiscovery
+#IceLocatorDiscovery.InstanceName=Server
+
+Ice.Default.Timeout=10000
+Ice.Default.Host=192.168.0.29
+
+#
+# Trace properties.
+#
+#Ice.Trace.Network=1
+#Ice.Trace.Locator=1
+
+#
+# IceGrid admin properties to allow running IceGrid admin clients.
+#
+IceGridAdmin.Username=foo
+IceGridAdmin.Password=bar
