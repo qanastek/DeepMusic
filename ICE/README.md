@@ -12,16 +12,22 @@ xargs sudo apt-get install -y <packages.txt
 sudo pip install -r requirements.txt
 ```
 
+## Run the MySQL database
+
+```bash
+sudo /etc/init.d/mysql start
+```
+
 ## To run the server, first start the IceGrid service
 
 ```bash
-icegridregistry --Ice.Config=config.master
+icegridregistry --Ice.Config=config.master&
 
-icegridregistry --Ice.Config=config.replica1
-icegridnode --Ice.Config=config.node1
+icegridregistry --Ice.Config=config.replica1&
+icegridnode --Ice.Config=config.node1&
 
-icegridregistry --Ice.Config=config.replica2
-icegridnode --Ice.Config=config.node2
+icegridregistry --Ice.Config=config.replica2&
+icegridnode --Ice.Config=config.node2&
 ```
 
 ## In a separate window, start the client

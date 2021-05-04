@@ -44,3 +44,5 @@
 -- 05/02/21 00:02:48.086 Replica1: Node: node `node2' session creation failed:
    src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
    connection refused: Connection refused
+!! 05/02/21 00:44:27.807 Replica1: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12001'
+!! 05/02/21 01:49:02.064 Replica1: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12001'

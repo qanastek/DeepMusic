@@ -30,7 +30,7 @@
     </server-template> -->
 
     <replica-group id="ReplicatedHelloAdapter">
-      <load-balancing type="random" n-replicas="2"/>
+      <load-balancing type="adaptive" n-replicas="2"/>
       <object identity="hello" type="::Server::Hello"/>
     </replica-group>
 

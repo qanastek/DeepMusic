@@ -48,3 +48,9 @@
    socket exception: Cannot assign requested address
 -- 05/02/21 00:02:40.922 Master: Replica: replica `Replica1' up
 -- 05/02/21 00:02:41.084 Master: Node: node `node1' up
+!! 05/02/21 00:44:27.806 Master: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12000'
+!! 05/02/21 01:49:02.062 Master: error: an IceGrid registry is already running and listening on the client endpoints `default -h 192.168.0.29 -p 12000'
+-- 05/02/21 03:09:22.562 Master: Node: creating node `node2' session
+-- 05/02/21 03:09:26.570 Master: Node: node `node2' session creation failed:
+   src/Ice/Network.cpp:2714: ::Ice::ConnectionRefusedException:
+   connection refused: Connection refused

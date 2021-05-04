@@ -334,7 +334,7 @@ f3.pack(side = BOTTOM)
 # Buttons
 addBtn = Button(f3, text="Add", command=add).pack(side = LEFT)
 updateBtn = Button(f3, text="Update", command=update).pack(side = LEFT)
-deleteBtn = Button(f3, text="Delete", command=delete).pack(side = RIGHT)
+deleteBtn = Button(f3, text="Delete", command=delete).pack(side = LEFT)
 stopBtn = Button(f3, text="Stop", command=lambda *args: stop()).pack(side = RIGHT)
 pauseBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)
 playBtn = Button(f3, text="Play", command=lambda *args: play()).pack(side = RIGHT)
