@@ -15868,3 +15868,15 @@ shared memfd open() failed: Function not implemented
    facet: 
    operation: update
    remote host: 192.168.0.29 remote port: 1549
+shared memfd open() failed: Function not implemented
+[00007f22cc0a4b90] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22bc004c30] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc0e6bf0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22a8002da0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc0c92f0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22c8008640] dummy mux: Open
