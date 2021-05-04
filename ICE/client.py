@@ -152,7 +152,7 @@ def fileChoose():
 def fileUpload(path):
 
     file = open(path,'rb')
-    chunkSize = 4096
+    chunkSize = 61440
     offset = 0
     
     results = []
@@ -198,6 +198,22 @@ def add():
 def update():
     insert("update")
 
+def updateList():
+    
+    global musics, listView
+
+    print("---------------------------")
+    print(musics)
+    musics = hello.findAll()
+    print("---------------------------")
+    print(musics)
+    print("---------------------------")
+
+    listView.delete(0,'end')
+
+    for i, m in enumerate(musics):
+        listView.insert(i, m.titre)
+
 # Add a Music to the database
 def insert(status):
 
@@ -210,7 +226,7 @@ def insert(status):
         messagebox.showwarning("Champs manquant","Il y a un chammps manquant!")
         return
 
-    if os.path.isfile(filePath):
+    if status == "add":
         remotePath = fileUpload(filePath)
     else:
         print(filePath)
@@ -221,7 +237,7 @@ def insert(status):
     if status == "add":
         m = hello.add(titre.get(), artiste.get(), album.get(), remotePath)
         musics.append(m)
-        listView.insert(m.identifier, m.titre)
+        # listView.insert(m.identifier, m.titre)
         filePath = None
 
     elif status == "update" and currentIdentifier is not None:
@@ -231,16 +247,23 @@ def insert(status):
         [musics.remove(a) for a in musics if a.identifier == currentIdentifier]
         musics.append(m)
 
-        listView.delete(currentIndexListView)
-        listView.insert(m.identifier, m.titre)
+        # listView.delete(currentIndexListView)
+        # listView.insert(currentIdentifier, m.titre)
 
         # Clear all fields
-        currentIdentifier = None
-        titre.delete(0,END)
-        artiste.delete(0,END)
-        album.delete(0,END)
-        filePath = None
-        currentIndexListView = None
+        clearFields()
+
+    updateList()
+
+def clearFields():
+
+    # Clear all fields
+    currentIdentifier = None
+    titre.delete(0,END)
+    artiste.delete(0,END)
+    album.delete(0,END)
+    filePath = None
+    currentIndexListView = None
 
 # Remove a Music from the database
 def delete():
@@ -265,9 +288,10 @@ def play():
     index = listView.curselection()[0]
     print(index)
     m = musics[index]
-    print(m.identifier)
+    print(m)
 
     url = hello.start(m.identifier)
+    print("url")
     print(url)
 
     currentMusic = url
@@ -339,6 +363,7 @@ stopBtn = Button(f3, text="Stop", command=lambda *args: stop()).pack(side = RIGH
 pauseBtn = Button(f3, text="Pause", command=lambda *args: pause()).pack(side = RIGHT)
 playBtn = Button(f3, text="Play", command=lambda *args: play()).pack(side = RIGHT)
 voiceBtn = Button(f3, text="Voice", command=lambda *args: voice()).pack(side = RIGHT)
+clearBtn = Button(f3, text="Clear", command=lambda *args: clearFields()).pack(side = RIGHT)
 # sslBtn = Button(f3, text="SSL", command=lambda *args: ssl()).pack(side = RIGHT)
 
 window.mainloop()

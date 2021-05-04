@@ -25,21 +25,17 @@ hostname = "192.168.0.29"
 
 from db import DB
 
-# The database proxy
-db = DB()
-
-musics = db.getMusics()
-print("Musics in the database:")
-print(musics)
-
 start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué"]
 stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer"]
 pause = ["pause"]
 actions = start + stop + pause
 
-players = {}
-
 class HelloI(Server.Hello):
+
+    # The database proxy
+    db = DB()
+
+    players = {}
 
     def sayHello(self, current):
         print("Hello World!")
@@ -73,6 +69,8 @@ class HelloI(Server.Hello):
 
         # Rebuild the title of the music
         title = ' '.join(others_tokens).lower()
+
+        musics = HelloI.db.getMusics()
 
         # Search for the music thanks to the title
         if len(musics) <= 0:
@@ -145,6 +143,8 @@ class HelloI(Server.Hello):
 
         print("Start search_bar {}!".format(text))
 
+        musics = HelloI.db.getMusics()
+
         if len(musics) <= 0:
             return None
 
@@ -166,17 +166,22 @@ class HelloI(Server.Hello):
         return items
 
     def showAll(self, current):
+
+        musics = HelloI.db.getMusics()
+
         print(musics)
         print(len(musics))
+
         return [a.titre for a in musics]
     
     def findAll(self, current):
 
         # Update the local instance
-        musics = db.getMusics()
+        musics = HelloI.db.getMusics()
 
         print(musics)
         print(len(musics))
+
         return musics
 
     def demoSSL(self, current):            
@@ -184,6 +189,8 @@ class HelloI(Server.Hello):
 
     # https://github.com/oaubert/python-vlc/blob/master/tests/test.py
     def start(self, identifier, current):
+
+        musics = HelloI.db.getMusics()
 
         musicsFound = [m for m in musics if m.identifier == identifier]
 
@@ -238,29 +245,23 @@ class HelloI(Server.Hello):
         m = Server.Music(int(time.time()),title,artist,album, path)
 
         # # Ajoute la musique à la liste
-        db.insert(m)
+        HelloI.db.insert(m)
 
         print("Music Added!")
-
-        # Update the local instance
-        musics = db.getMusics()
 
         return m
 
     def update(self, identifier, title, artist, album, path, current):
-
+        
         print("Music update")
 
         # Créer la musique
         m = Server.Music(int(identifier), title, artist, album, path)
 
         # # Update la musique à la liste
-        db.update(m)
+        HelloI.db.update(m)
 
         print("Music updated!")
-
-        # Update the local instance
-        musics = db.getMusics()
 
         return m
 
@@ -269,10 +270,7 @@ class HelloI(Server.Hello):
         print("Delete {}!".format(identifier))
         
         # Remove the music from the database
-        res = db.removeMusic(identifier)
-
-        # Update the local instance
-        musics = db.getMusics()
+        res = HelloI.db.removeMusic(identifier)
 
         return res
 

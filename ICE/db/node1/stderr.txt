@@ -15752,3 +15752,119 @@ shared memfd open() failed: Function not implemented
 -- 05/02/21 04:27:40.855 Node1: Replica: failed to establish session with replica `Master':
    ::IceGrid::NodeActiveException
 -- 05/02/21 04:27:45.187 Node1: Replica: trying to establish session with replica `Replica1'
+-! 05/04/21 07:05:18.011 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 07:05:18.012 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 07:05:28.046 Node1: Replica: established session with replica `Master'
+-- 05/04/21 07:05:28.047 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 07:05:28.056 Node1: Replica: established session with replica `Replica1'
+shared memfd open() failed: Function not implemented
+[00007f48780a1cd0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f486c004df0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f48780e3f00] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f4858002df0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f48780b8210] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f4860002d90] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f48780d77a0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f48504c81b0] dummy mux: Open
+-! 05/04/21 10:35:15.229 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 10:35:15.230 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:35:25.254 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:35:25.255 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:35:25.262 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 10:36:51.152 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 10:36:51.153 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:37:01.680 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:37:01.681 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:37:01.686 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 10:41:45.552 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 10:41:45.552 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:41:55.577 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:41:55.578 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:41:55.582 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 10:52:06.247 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 10:52:06.248 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:52:17.284 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:52:17.285 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:52:17.289 Node1: Replica: established session with replica `Replica1'
+-- 05/04/21 10:57:54.204 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:57:58.218 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:57:58.219 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:57:58.222 Node1: Replica: established session with replica `Replica1'
+-- 05/04/21 10:57:58.823 Node1: Replica: destroyed replica `Replica1' session
+-- 05/04/21 10:57:58.823 Node1: Replica: destroyed replica `Master' session
+-- 05/04/21 10:59:34.904 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 10:59:38.917 Node1: Replica: established session with replica `Master'
+-- 05/04/21 10:59:38.919 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 10:59:38.922 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 11:04:51.830 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 11:04:51.831 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 11:05:01.855 Node1: Replica: established session with replica `Master'
+-- 05/04/21 11:05:01.856 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 11:05:01.860 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 11:18:53.876 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 11:18:53.877 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 11:19:03.924 Node1: Replica: established session with replica `Master'
+-- 05/04/21 11:19:03.925 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 11:19:03.929 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 11:27:05.827 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 11:27:05.828 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 11:27:15.853 Node1: Replica: established session with replica `Master'
+-- 05/04/21 11:27:15.854 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 11:27:15.858 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 12:01:36.675 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 12:01:36.675 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 12:01:46.700 Node1: Replica: established session with replica `Master'
+-- 05/04/21 12:01:46.701 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 12:01:46.705 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 12:28:03.974 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 12:28:03.975 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 12:28:14.999 Node1: Replica: established session with replica `Master'
+-- 05/04/21 12:28:15.001 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 12:28:15.011 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 12:34:26.144 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 12:34:26.145 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 12:34:36.168 Node1: Replica: established session with replica `Master'
+-- 05/04/21 12:34:36.170 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 12:34:36.173 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 12:35:40.987 SimpleServer-2: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server.py", line 259, in update
+       m = Server.Music(int(identifier), title, artist, album, path)
+   ValueError: invalid literal for int() with base 10: ''
+   
+   identity: hello
+   facet: 
+   operation: update
+   remote host: 192.168.0.29 remote port: 1549
