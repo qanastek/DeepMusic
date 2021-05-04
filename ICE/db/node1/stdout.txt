@@ -9220,4 +9220,2186 @@ Music updated!
     artiste = test alpha
     album = test alpha
     path = musics/172609_1620123785.mp3
+}]<mysql.connector.connection.MySQLConnection object at 0x7f2301a1e070>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+musics/610607_1620124117.mp3
+1620124847000_544930698
+musics/610607_1620124117.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620124847000_544930698.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f2301019280>>
+Broadcast created!
+musics/610607_1620124117.mp3
+1620124859000_554375181
+musics/610607_1620124117.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620124859000_554375181.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f2301019430>>
+Broadcast created!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+Music Added!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}]
+6
+Music Added!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}]
+7
+musics/484736_1620125760.mp3
+1620125830000_277558083
+musics/484736_1620125760.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620125830000_277558083.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f2301019580>>
+Broadcast created!
+Music Added!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}]
+8
+musics/72346_1620125855.mp3
+1620126007000_180716773
+musics/72346_1620125855.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620126007000_180716773.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f23010195e0>><mysql.connector.connection.MySQLConnection object at 0x7fe4a698e070>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 2
+    artiste = test 2
+    album = test 2
+    path = musics/610607_1620124117.mp3
+}]
+4
+Music update
+Music updated!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}]
+4
+Music update
+Music Added!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]
+5
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]
+5
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]
+5
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]
+5
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]
+5
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}]<mysql.connector.connection.MySQLConnection object at 0x7f868e83f070>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}]
+10
+Music Added!
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]<mysql.connector.connection.MySQLConnection object at 0x7f35d2b7e070>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
+}]
+11
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 548
+    titre = test 3
+    artiste = test 3
+    album = test 3
+    path = musics/610607_1620124117.mp3
+}, 
+{
+    identifier = 558
+    titre = test beta
+    artiste = test beta
+    album = test beta
+    path = musics/804449_1620124542.mp3
+}, 
+{
+    identifier = 559
+    titre = add
+    artiste = add
+    album = add
+    path = musics/729742_1620125682.mp3
+}, 
+{
+    identifier = 560
+    titre = zzz
+    artiste = zzz
+    album = zzz
+    path = musics/484736_1620125760.mp3
+}, 
+{
+    identifier = 561
+    titre = eee
+    artiste = eee
+    album = eee
+    path = musics/72346_1620125855.mp3
+}, 
+{
+    identifier = 562
+    titre = et
+    artiste = et
+    album = et
+    path = musics/586323_1620126025.mp3
+}, 
+{
+    identifier = 563
+    titre = eeeeee
+    artiste = eeeeee
+    album = eeeeee
+    path = musics/150372_1620126075.mp3
+}, 
+{
+    identifier = 570
+    titre = add1
+    artiste = add1
+    album = add1
+    path = musics/365401_1620126400.mp3
 }]

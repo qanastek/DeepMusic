@@ -15880,3 +15880,26 @@ shared memfd open() failed: Function not implemented
 [00007f22cc0c92f0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
 shared memfd open() failed: Function not implemented
 [00007f22c8008640] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc106e10] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22c0004fe0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc114ea0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22c4002c50] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc0c2a90] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22b00036d0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f22cc0cd0c0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f22a4003d00] dummy mux: Open
+-! 05/04/21 13:06:03.606 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 13:06:03.607 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 13:06:13.634 Node1: Replica: established session with replica `Master'
+-- 05/04/21 13:06:13.635 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 13:06:13.645 Node1: Replica: established session with replica `Replica1'

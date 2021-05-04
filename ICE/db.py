@@ -4,7 +4,7 @@ import Server
 
 import mysql.connector
 
-class DB:
+class DB(object):
 
     DB_NAME = "DeepMusic"
     DB_TABLE = "musics"
