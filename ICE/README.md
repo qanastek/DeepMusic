@@ -1,5 +1,12 @@
 # Running procedure
 
+## Install Python Environement
+
+```bash
+conda create -y --name Ice python=3.6
+conda activate Ice
+```
+
 ## Install the system dependencies
 
 ```bash
@@ -25,9 +32,6 @@ icegridregistry --Ice.Config=config.master&
 
 icegridregistry --Ice.Config=config.replica1&
 icegridnode --Ice.Config=config.node1&
-
-icegridregistry --Ice.Config=config.replica2&
-icegridnode --Ice.Config=config.node2&
 ```
 
 ## In a separate window, start the client

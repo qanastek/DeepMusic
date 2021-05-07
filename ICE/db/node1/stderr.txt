@@ -16217,3 +16217,456 @@ shared memfd open() failed: Function not implemented
 [00007f1d9422c320] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
 shared memfd open() failed: Function not implemented
 [00007f1d4c002500] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+-! 05/07/21 16:40:51.829 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:40:51.830 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:41:01.856 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:41:01.858 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:41:01.868 Node1: Replica: established session with replica `Replica1'
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+Traceback (most recent call last):
+  File "server.py", line 40, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+NameError: name 'SequenceTagger' is not defined
+-! 05/07/21 16:44:10.763 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:44:10.764 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:44:20.786 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:44:20.787 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:44:20.795 Node1: Replica: established session with replica `Replica1'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+-- 05/07/21 16:46:15.230 Node1: Replica: trying to establish session with replica `Master'
+!! 05/07/21 16:46:19.239 Node1: error: a node with the same name is already active with the replica `Master'
+-- 05/07/21 16:46:19.239 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 16:46:23.249 Node1: Replica: trying to establish session with replica `Replica1'
+!! 05/07/21 16:46:23.251 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 16:46:23.252 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+-! 05/07/21 16:46:41.163 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:46:41.165 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:46:50.687 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:46:50.689 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:46:50.692 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 16:50:24.338 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:50:24.339 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:50:34.361 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:50:34.362 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:50:34.366 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 16:52:21.964 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:52:21.965 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:52:27.995 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:52:27.997 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:52:28.000 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 16:54:06.356 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:54:06.357 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:54:11.884 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:54:11.885 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:54:11.888 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 16:56:47.443 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:56:47.444 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:56:53.961 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:56:53.962 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:56:53.965 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 16:59:33.314 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 16:59:33.314 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 16:59:39.330 Node1: Replica: established session with replica `Master'
+-- 05/07/21 16:59:39.332 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 16:59:39.335 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 17:02:20.888 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 17:02:20.889 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 17:02:27.408 Node1: Replica: established session with replica `Master'
+-- 05/07/21 17:02:27.409 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 17:02:27.418 Node1: Replica: established session with replica `Replica1'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+-- 05/07/21 17:44:10.087 Node1: Replica: trying to establish session with replica `Master'
+!! 05/07/21 17:44:14.096 Node1: error: a node with the same name is already active with the replica `Master'
+-- 05/07/21 17:44:14.096 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 17:44:18.112 Node1: Replica: trying to establish session with replica `Replica1'
+!! 05/07/21 17:44:18.115 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 17:44:18.115 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+-! 05/07/21 17:44:42.381 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 17:44:42.382 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 17:44:48.399 Node1: Replica: established session with replica `Master'
+-- 05/07/21 17:44:48.401 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 17:44:48.409 Node1: Replica: established session with replica `Replica1'
+-! 05/07/21 17:46:24.484 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 17:46:24.485 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 17:46:30.513 Node1: Replica: established session with replica `Master'
+-- 05/07/21 17:46:30.514 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 17:46:30.518 Node1: Replica: established session with replica `Replica1'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+Traceback (most recent call last):
+  File "server.py", line 13, in <module>
+    import Ice
+ModuleNotFoundError: No module named 'Ice'
+-! 05/07/21 18:05:24.099 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 18:05:24.100 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 18:05:30.117 Node1: Replica: established session with replica `Master'
+-- 05/07/21 18:05:30.118 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 18:05:30.122 Node1: Replica: established session with replica `Replica1'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 16, in <module>
+    import vlc
+ModuleNotFoundError: No module named 'vlc'
+Traceback (most recent call last):
+  File "server.py", line 17, in <module>
+    import pylev
+ModuleNotFoundError: No module named 'pylev'
+Traceback (most recent call last):
+  File "server.py", line 17, in <module>
+    import pylev
+ModuleNotFoundError: No module named 'pylev'
+Traceback (most recent call last):
+  File "server.py", line 17, in <module>
+    import pylev
+ModuleNotFoundError: No module named 'pylev'
+Traceback (most recent call last):
+  File "server.py", line 17, in <module>
+    import pylev
+ModuleNotFoundError: No module named 'pylev'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 26, in <module>
+    from db import DB
+  File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 5, in <module>
+    import mysql.connector
+ModuleNotFoundError: No module named 'mysql'
+Traceback (most recent call last):
+  File "server.py", line 28, in <module>
+    from flair.data import Sentence
+ModuleNotFoundError: No module named 'flair'
+Traceback (most recent call last):
+  File "server.py", line 28, in <module>
+    from flair.data import Sentence
+ModuleNotFoundError: No module named 'flair'
+Traceback (most recent call last):
+  File "server.py", line 28, in <module>
+    from flair.data import Sentence
+ModuleNotFoundError: No module named 'flair'
+Traceback (most recent call last):
+  File "server.py", line 28, in <module>
+    from flair.data import Sentence
+ModuleNotFoundError: No module named 'flair'
+Traceback (most recent call last):
+  File "server.py", line 43, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/nn.py", line 81, in load
+    model_file = cls._fetch_model(str(model))
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1232, in _fetch_model
+    return model_path
+UnboundLocalError: local variable 'model_path' referenced before assignment
+Traceback (most recent call last):
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1220, in _fetch_model
+    cache_dir=flair.cache_root / 'models' / model_folder)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/huggingface_hub/file_download.py", line 337, in cached_download
+    r.raise_for_status()
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/requests/models.py", line 943, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-17%EF%80%BA36%EF%80%BA53/final-model.pt/resolve/main/pytorch_model.bin
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "server.py", line 43, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/nn.py", line 81, in load
+    model_file = cls._fetch_model(str(model))
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1230, in _fetch_model
+    Path(flair.cache_root / 'models' / model_folder).rmdir() # remove folder again if not valid
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/pathlib.py", line 1292, in rmdir
+    self._accessor.rmdir(self)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home/.flair/models/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-17\uf03a36\uf03a53/final-model.pt'
+Traceback (most recent call last):
+  File "server.py", line 43, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/nn.py", line 81, in load
+    model_file = cls._fetch_model(str(model))
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1232, in _fetch_model
+    return model_path
+UnboundLocalError: local variable 'model_path' referenced before assignment
+Traceback (most recent call last):
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1220, in _fetch_model
+    cache_dir=flair.cache_root / 'models' / model_folder)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/huggingface_hub/file_download.py", line 337, in cached_download
+    r.raise_for_status()
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/requests/models.py", line 943, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-17%EF%80%BA36%EF%80%BA53/final-model.pt/resolve/main/pytorch_model.bin
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "server.py", line 43, in <module>
+    model = SequenceTagger.load(PATH_MODEL)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/nn.py", line 81, in load
+    model_file = cls._fetch_model(str(model))
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/flair/models/sequence_tagger_model.py", line 1230, in _fetch_model
+    Path(flair.cache_root / 'models' / model_folder).rmdir() # remove folder again if not valid
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/pathlib.py", line 1292, in rmdir
+    self._accessor.rmdir(self)
+  File "/home/home/miniconda3/envs/Ice/lib/python3.6/pathlib.py", line 387, in wrapped
+    return strfunc(str(pathobj), *args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/home/.flair/models/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-17\uf03a36\uf03a53/final-model.pt'
+-! 05/07/21 18:24:34.240 SimpleServer-2: warning: dispatch exception: src/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/home/home/miniconda3/envs/Ice/lib/python3.6/site-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server.py", line 151, in startVoice
+       m, actions_tokens = self.searchVoice(text)
+     File "server.py", line 96, in searchVoice
+       actions_tokens, title = getInfo(res)
+   NameError: name 'getInfo' is not defined
+   
+   identity: hello
+   facet: 
+   operation: startVoice
+   remote host: 192.168.0.24 remote port: 45782
+shared memfd open() failed: Function not implemented
+[00007f9a100ef770] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f99e04c9c50] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f9a1011a900] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f99944c78f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f9a1012dcb0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f99e8003a90] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f9a10161310] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f99980017c0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f9a10116fb0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f99884c78d0] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!

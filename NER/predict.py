@@ -28,6 +28,39 @@ text.grid(column=1, row=2)
 # load the model you trained
 model = SequenceTagger.load(args.model_path)
 
+# lance Trip to Valhalla
+def getInfo(res):
+
+    title = []
+    tokensAction = []
+
+    tokens = res.split(" ")
+
+    for i, token in enumerate(tokens):
+
+        if "-TRACK" in token:
+
+            prev = tokens[i-1]
+            print(prev)
+
+            title.append(prev)
+
+        # Else other token
+        elif '-' not in token and '<' in token:
+
+            print("----------b")
+            print(token)
+            print('-' not in token)
+            print('<' not in token)
+            print("----------e")
+
+            # past = tokens[i-1]
+            # print(past)
+
+            tokensAction.append(token)
+
+    return tokensAction, " ".join(title)
+
 # OnClick
 def clicked():
 
@@ -45,11 +78,12 @@ def clicked():
     res = sentence.to_tagged_string()
 
     print(res)
+    print(getInfo(res))
 
     # Update the label
     # lbl['text'] = res
     text.insert(INSERT, res)
-    
+
 # Button
 btn = Button(window, text="Complete", command=clicked)
 btn.grid(column=0, row=3)

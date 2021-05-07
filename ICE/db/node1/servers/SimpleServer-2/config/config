@@ -1,12 +1,12 @@
-# Configuration file (05/07/21 18:05:30.122)
+# Configuration file (05/07/21 18:05:30.136)
 
 # Server configuration
-Ice.Admin.ServerId=SimpleServer-1
+Ice.Admin.ServerId=SimpleServer-2
 Ice.Admin.Endpoints=tcp -h localhost
-Ice.ProgramName=SimpleServer-1
+Ice.ProgramName=SimpleServer-2
 # Object adapter Hello
 Hello.Endpoints=tcp -h 192.168.0.29
-Hello.AdapterId=SimpleServer-1.Hello
+Hello.AdapterId=SimpleServer-2.Hello
 Hello.ReplicaGroupId=ReplicatedHelloAdapter
 # Server descriptor properties
 Identity=hello

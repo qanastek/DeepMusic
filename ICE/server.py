@@ -25,10 +25,22 @@ hostname = "192.168.0.29"
 
 from db import DB
 
-start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué","restart","redémaré","redémarré"]
-stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer","finish","terminate","end"]
-pause = ["pause"]
+from flair.data import Sentence
+from flair.models import SequenceTagger
+
+# start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué","restart","redémaré","redémarré"]
+# stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer","finish","terminate","end"]
+# pause = ["pause"]
+# actions = start + stop + pause
+
+start = "<START>"
+stop = "<STOP>"
+pause = "<PAUSE>"
 actions = start + stop + pause
+
+PATH_MODEL = "models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt"
+
+model = SequenceTagger.load(PATH_MODEL)
 
 class HelloI(Server.Hello):
 
@@ -53,22 +65,44 @@ class HelloI(Server.Hello):
 
         # Close the stream
         musicFile.close()
+        
+    def getInfo(self, res):
+
+        title = []
+        tokensAction = []
+
+        tokens = res.split(" ")
+
+        for i, token in enumerate(tokens):
+
+            if "-TRACK" in token:
+                title.append(tokens[i-1])
+
+            elif '-' not in token and '<' in token:
+                tokensAction.append(token)
+
+        return tokensAction, " ".join(title)
 
     def searchVoice(self, text):
 
         print("search_voice {}!".format(text))
 
         # Tokenize
-        splitted = text.split()
+        # splitted = text.split()
+        
+        sentence = Sentence(text)
+        model.predict(sentence)
+        res = sentence.to_tagged_string()
+        actions_tokens, title = self.getInfo(res)
 
-        # Get action tokens
-        actions_tokens = [a for a in splitted if a in actions]
+        # # Get action tokens
+        # actions_tokens = [a for a in splitted if a in actions]
 
-        # Get others tokens
-        others_tokens = [a for a in splitted if a not in actions_tokens]
+        # # Get others tokens
+        # others_tokens = [a for a in splitted if a not in actions_tokens]
 
         # Rebuild the title of the music
-        title = ' '.join(others_tokens).lower()
+        # title = ' '.join(others_tokens).lower()
 
         musics = HelloI.db.getMusics()
 
@@ -106,7 +140,7 @@ class HelloI(Server.Hello):
             print("search_voice: {}".format(music.titre))
 
             if not actions_tokens or len(actions_tokens) <= 0:
-                actions_tokens = [start[0]]
+                actions_tokens = [start]
 
             return music, actions_tokens
 

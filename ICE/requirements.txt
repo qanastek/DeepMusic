@@ -1,3 +1,6 @@
 python-vlc
 pylev
 zeroc-ice
+flair
+mysql
+mysql-connector

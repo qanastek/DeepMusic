@@ -18015,4 +18015,27 @@ Broadcast created!
     artiste = miora
     album = miora
     path = musics/android_525360_1620395029071.mp3
-}]
+}]2021-05-07 18:22:31,114 --------------------------------------------------------------------------------
+2021-05-07 18:22:31,115 ACHTUNG: The key 'out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt' was neither found on the ModelHub nor is this a valid path to a file on your system!
+2021-05-07 18:22:31,115  -> Please check https://huggingface.co/models?filter=flair for all available models.
+2021-05-07 18:22:31,115  -> Alternatively, point to a model file on your local drive.
+2021-05-07 18:22:31,115 --------------------------------------------------------------------------------
+2021-05-07 18:22:31,124 --------------------------------------------------------------------------------
+2021-05-07 18:22:31,124 ACHTUNG: The key 'out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt' was neither found on the ModelHub nor is this a valid path to a file on your system!
+2021-05-07 18:22:31,124  -> Please check https://huggingface.co/models?filter=flair for all available models.
+2021-05-07 18:22:31,125  -> Alternatively, point to a model file on your local drive.
+2021-05-07 18:22:31,125 --------------------------------------------------------------------------------
+2021-05-07 18:22:35,214 --------------------------------------------------------------------------------
+2021-05-07 18:22:35,214 ACHTUNG: The key 'out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt' was neither found on the ModelHub nor is this a valid path to a file on your system!
+2021-05-07 18:22:35,215  -> Please check https://huggingface.co/models?filter=flair for all available models.
+2021-05-07 18:22:35,215  -> Alternatively, point to a model file on your local drive.
+2021-05-07 18:22:35,215 --------------------------------------------------------------------------------
+2021-05-07 18:22:35,240 --------------------------------------------------------------------------------
+2021-05-07 18:22:35,692 ACHTUNG: The key 'out/models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt' was neither found on the ModelHub nor is this a valid path to a file on your system!
+2021-05-07 18:22:35,692  -> Please check https://huggingface.co/models?filter=flair for all available models.
+2021-05-07 18:22:35,692  -> Alternatively, point to a model file on your local drive.
+2021-05-07 18:22:35,692 --------------------------------------------------------------------------------
+2021-05-07 18:23:36,763 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
+2021-05-07 18:23:36,763 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
+2021-05-07 18:25:42,813 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
+2021-05-07 18:25:42,931 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
