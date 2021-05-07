@@ -18039,3 +18039,904 @@ Broadcast created!
 2021-05-07 18:23:36,763 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
 2021-05-07 18:25:42,813 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
 2021-05-07 18:25:42,931 loading file models/_FLAIR_NER_MMTD_PLUS_FR_100_2021-05-06-173653/final-model.pt
+<mysql.connector.connection.MySQLConnection object at 0x7f9b273130b8>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+search_voice lance the storm!
+mike d-sturb & high voltage 22
+mike dee yan-key - hold on 12 26
+checkie brown - rosalie (cb 104) 27
+add 9
+add2 9
+add34 9
+add4 9
+zerty 7
+sample 9
+real 8
+serious real 11
+miora 7
+search_voice: zerty
+------------------------
+
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}
+596
+['<START>']
+<START>
+musics/android_899316_1620381479276.mp3
+1620404767000_103689425
+musics/android_899316_1620381479276.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620404767000_103689425.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f99a67dba20>>
+Broadcast created!
+search_voice stop!
+mike d-sturb & high voltage 27
+mike dee yan-key - hold on 12 29
+checkie brown - rosalie (cb 104) 32
+add 3
+add2 4
+add34 5
+add4 4
+zerty 5
+sample 6
+real 4
+serious real 12
+miora 5
+search_voice: add
+------------------------
+
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}
+578
+['<STOP>']
+<STOP>
+search_voice lance Miura!
+mike d-sturb & high voltage 23
+mike dee yan-key - hold on 12 27
+checkie brown - rosalie (cb 104) 29
+add 5
+add2 5
+add34 5
+add4 5
+zerty 5
+sample 6
+real 5
+serious real 8
+miora 2
+search_voice: miora
+------------------------
+
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}
+605
+['<START>']
+<START>
+musics/android_525360_1620395029071.mp3
+1620404793000_380474984
+musics/android_525360_1620395029071.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620404793000_380474984.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f99a67db518>>
+Broadcast created!
+search_voice lance petit!
+mike d-sturb & high voltage 23
+mike dee yan-key - hold on 12 28
+checkie brown - rosalie (cb 104) 30
+add 5
+add2 5
+add34 5
+add4 5
+zerty 4
+sample 6
+real 4
+serious real 10
+miora 5
+search_voice: zerty
+------------------------
+
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}
+596
+['<START>']
+<START>
+musics/android_899316_1620381479276.mp3
+1620404807000_748115707
+musics/android_899316_1620381479276.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620404807000_748115707.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f99cea1ceb8>>
+Broadcast created!
+search_voice arrête!
+mike d-sturb & high voltage 27
+mike dee yan-key - hold on 12 29
+checkie brown - rosalie (cb 104) 32
+add 3
+add2 4
+add34 5
+add4 4
+zerty 5
+sample 6
+real 4
+serious real 12
+miora 5
+search_voice: add
+------------------------
+
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}
+578
+['<STOP>']
+<STOP>
+musics/546672_1620130637.mp3
+1620404826000_610825842
+musics/546672_1620130637.mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620404826000_610825842.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f99cea1ce48>>
+Broadcast created!
+search_voice lance ferme ta gueule ferme ta gueule ferme ta gueule ferme ta gueule!
+mike d-sturb & high voltage 50
+mike dee yan-key - hold on 12 50
+checkie brown - rosalie (cb 104) 52
+add 62
+add2 62
+add34 62
+add4 62
+zerty 60
+sample 59
+real 59
+serious real 55
+miora 60
+search_voice: Mike D-Sturb & High Voltage
+------------------------
+
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}
+460
+['<START>']
+<START>
+musics/Checkie Brown - Rosalie (CB 104).mp3
+1620404841000_796592723
+musics/Checkie Brown - Rosalie (CB 104).mp3
+#transcode{acodec=mp3,ab=128,channels=2,samplerate=44100}:http{dst=:20000/stream_1620404841000_796592723.mp3}
+<bound method Instance.vlm_add_broadcast of <vlc.Instance object at 0x7f99cea1c320>>
+Broadcast created!
+search_voice stop!
+mike d-sturb & high voltage 27
+mike dee yan-key - hold on 12 29
+checkie brown - rosalie (cb 104) 32
+add 3
+add2 4
+add34 5
+add4 4
+zerty 5
+sample 6
+real 4
+serious real 12
+miora 5
+search_voice: add
+------------------------
+
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}
+578
+['<STOP>']
+<STOP>
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]<mysql.connector.connection.MySQLConnection object at 0x7f36b12733c8>
+0 record inserted.
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]
+12
+[
+{
+    identifier = 460
+    titre = Mike D-Sturb & High Voltage
+    artiste = Artiste Test 1
+    album = Album Test 1
+    path = musics/Checkie Brown - Rosalie (CB 104).mp3
+}, 
+{
+    identifier = 461
+    titre = Mike Dee Yan-Key - Hold on 12
+    artiste = Artiste Test 2
+    album = Album Test 2
+    path = musics/Lobo Loco - Bad Guys (ID 1333).mp3
+}, 
+{
+    identifier = 462
+    titre = Checkie Brown - Rosalie (CB 104)
+    artiste = Artiste Test 3
+    album = Album Test 3
+    path = musics/Dee Yan-Key - Hold on.mp3
+}, 
+{
+    identifier = 578
+    titre = add
+    artiste = add
+    album = add
+    path = musics/993369_1620127015.mp3
+}, 
+{
+    identifier = 579
+    titre = add2
+    artiste = add2
+    album = add2
+    path = musics/722977_1620127035.mp3
+}, 
+{
+    identifier = 587
+    titre = add34
+    artiste = add3
+    album = add3
+    path = musics/546672_1620130637.mp3
+}, 
+{
+    identifier = 588
+    titre = add4
+    artiste = add4
+    album = add4
+    path = musics/691663_1620130748.mp3
+}, 
+{
+    identifier = 596
+    titre = zerty
+    artiste = zerty
+    album = zerty
+    path = musics/android_899316_1620381479276.mp3
+}, 
+{
+    identifier = 602
+    titre = sample
+    artiste = sample
+    album = sample
+    path = musics/android_347934_1620394618202.mp3
+}, 
+{
+    identifier = 603
+    titre = real
+    artiste = real
+    album = real
+    path = musics/android_427759_1620394743014.mp3
+}, 
+{
+    identifier = 604
+    titre = serious real
+    artiste = serious real
+    album = serious real
+    path = musics/android_377669_1620394920825.mp3
+}, 
+{
+    identifier = 605
+    titre = miora
+    artiste = miora
+    album = miora
+    path = musics/android_525360_1620395029071.mp3
+}]

@@ -50,3 +50,7 @@ icegridadmin --Ice.Config=config.client -e "application remove Simple"
 ## Dependencies
 
 * icegrid.jar (Android Only): https://mvnrepository.com/artifact/com.zeroc/icegrid/3.7.1
+
+## Sources
+
+* [MMTD - Million Musical Tweets Dataset](http://www.cp.jku.at/datasets/MMTD/)

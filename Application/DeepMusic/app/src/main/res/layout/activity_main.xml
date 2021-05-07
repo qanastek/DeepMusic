@@ -6,14 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <android.support.v7.widget.Toolbar-->
-<!--        android:id="@+id/appbar"-->
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="?attr/actionBarSize"-->
 <!--        android:background="?attr/colorPrimary"-->
-<!--        android:elevation="4dp"-->
-<!--        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"-->
-<!--        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+<!--        app:layout_anchorGravity="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/addBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:background="#e3a909"-->
+<!--            android:drawableStart="@android:drawable/ic_menu_add"-->
+<!--            android:text="Add"-->
+<!--            android:textSize="12sp" />-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
 
     <fragment
         android:id="@+id/nav_host_fragment"
@@ -21,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"

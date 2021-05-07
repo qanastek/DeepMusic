@@ -140,7 +140,7 @@ public class YourLibraryFragment extends Fragment {
             }
         });
 
-        final Button upload = view.findViewById(R.id.upload);
+        final FloatingActionButton upload = view.findViewById(R.id.upload);
         upload.setOnClickListener(new View.OnClickListener() {
 
             @Override

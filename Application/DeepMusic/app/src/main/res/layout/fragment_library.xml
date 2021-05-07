@@ -110,25 +110,25 @@
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/upload"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:layout_marginEnd="3dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_edittext"
-                android:backgroundTint="@color/createPlaylist"
-                android:text="Add"
-                android:textAlignment="center"
-                android:textColor="@color/likedSondGradientBottom"
-                android:textColorHint="@color/navText" />
+<!--            <Button-->
+<!--                android:id="@+id/upload"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="14dp"-->
+<!--                android:layout_marginEnd="3dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/rounded_edittext"-->
+<!--                android:backgroundTint="@color/createPlaylist"-->
+<!--                android:text="Add"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/likedSondGradientBottom"-->
+<!--                android:textColorHint="@color/navText" />-->
 
             <Button
                 android:id="@+id/update"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="3dp"
+                android:layout_marginStart="14dp"
                 android:layout_marginEnd="3dp"
                 android:layout_weight="1"
                 android:background="@drawable/rounded_edittext"
@@ -167,18 +167,45 @@
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/voiceFloatingBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/createPlaylist"
-        android:outlineAmbientShadowColor="@color/createPlaylist"
-        android:outlineSpotShadowColor="@color/createPlaylist"
-        android:tint="@color/colorAccent"
-        app:rippleColor="@color/createPlaylist"
-        app:srcCompat="@drawable/ic_mics" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/createPlaylist"
+                android:outlineAmbientShadowColor="@color/createPlaylist"
+                android:outlineSpotShadowColor="@color/createPlaylist"
+                android:tint="@color/colorAccent"
+                app:rippleColor="@color/createPlaylist"
+                app:srcCompat="@drawable/ic_add" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/voiceFloatingBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/createPlaylist"
+                android:outlineAmbientShadowColor="@color/createPlaylist"
+                android:outlineSpotShadowColor="@color/createPlaylist"
+                android:tint="@color/colorAccent"
+                app:rippleColor="@color/createPlaylist"
+                app:srcCompat="@drawable/ic_mics" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
