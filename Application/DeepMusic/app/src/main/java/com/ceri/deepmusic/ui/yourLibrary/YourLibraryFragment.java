@@ -37,6 +37,7 @@ import com.ceri.deepmusic.models.IceServer;
 import com.ceri.deepmusic.models.Toolbox;
 import com.ceri.deepmusic.ui.add.AddMusic;
 import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.zeroc.Ice.InvocationFuture;
 import com.zeroc.Ice.Util;
@@ -103,7 +104,7 @@ public class YourLibraryFragment extends Fragment {
         adapter = new MyMusicsRecyclerViewAdapter(DummyContent.ITEMS);
         recyclerView.setAdapter(adapter);
 
-        final Button toggle = view.findViewById(R.id.toggle);
+        final FloatingActionButton toggle = view.findViewById(R.id.voiceFloatingBtn);
         toggle.setOnClickListener(new View.OnClickListener() {
 
             @Override

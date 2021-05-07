@@ -16113,3 +16113,107 @@ shared memfd open() failed: Function not implemented
 [00007f1d94156d00] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
 shared memfd open() failed: Function not implemented
 [00007f1d504c8210] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d94181c20] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d60003bb0] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d94118600] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d58003b00] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d94170040] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d64003960] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d94122c80] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d48002d90] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d9417f5e0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d44003730] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d94154790] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d384c78f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941473c0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d34003540] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9419b070] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d2c4c8d50] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941cf320] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d304c8d50] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9416d190] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d3c003810] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941f52c0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d144c78f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941c7090] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d0c4c7950] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941deb10] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d104c7b70] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941eb700] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d200017c0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941f4060] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d24001df0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9412e040] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d040017c0] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d941d1eb0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d404c8430] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941e3cc0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d1c002f40] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9414c820] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1cf44c8d50] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9423f630] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d08003d20] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941ae7e0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1cf84c7b70] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941b98b0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1cec0034d0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9422c320] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d4c002500] dummy mux: Open
