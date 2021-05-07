@@ -15903,3 +15903,65 @@ shared memfd open() failed: Function not implemented
 -- 05/04/21 13:06:13.634 Node1: Replica: established session with replica `Master'
 -- 05/04/21 13:06:13.635 Node1: Replica: trying to establish session with replica `Replica1'
 -- 05/04/21 13:06:13.645 Node1: Replica: established session with replica `Replica1'
+-! 05/04/21 13:13:51.637 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 13:13:51.637 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 13:14:01.662 Node1: Replica: established session with replica `Master'
+-- 05/04/21 13:14:01.664 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 13:14:01.667 Node1: Replica: established session with replica `Replica1'
+shared memfd open() failed: Function not implemented
+[00007fba680c1400] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba58004f00] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007fba68103af0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba600017f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007fba681161a0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba5001ba00] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007fba680e5250] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba5c002100] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007fba680f27b0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba40002d90] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007fba68130d00] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007fba44003d00] dummy mux: Open
+-! 05/04/21 14:16:22.200 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/04/21 14:16:22.201 Node1: Replica: trying to establish session with replica `Master'
+-- 05/04/21 14:16:32.498 Node1: Replica: established session with replica `Master'
+-- 05/04/21 14:16:32.499 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/04/21 14:16:32.503 Node1: Replica: established session with replica `Replica1'
+shared memfd open() failed: Function not implemented
+[00007f15f40b2d20] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15e4004df0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f15f40f97f0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15ec0017f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f15f40205e0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15d801b5f0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f15f40e98b0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15d44c83e0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f15f4112520] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15f0009180] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f15f40d9850] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f15d0003f20] dummy mux: Open

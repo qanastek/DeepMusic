@@ -25,8 +25,8 @@ hostname = "192.168.0.29"
 
 from db import DB
 
-start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué"]
-stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer"]
+start = ["lancer","lance","demarrer","demarre","débuter","commencer","débute","débuté","jouer","jouée","joue","joué","restart","redémaré","redémarré"]
+stop = ["arrete","arete","arrête","arrêter","arrêt","stopper","stop","éteint","éteins","étein","étain","terminer","finish","terminate","end"]
 pause = ["pause"]
 actions = start + stop + pause
 

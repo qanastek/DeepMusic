@@ -1,0 +1,2545 @@
+finish VER STOP
+Dominó NOM B-TRACK
+
+étain VER STOP
+The NOM B-TRACK
+Promise NOM I-TRACK
+
+étain VER STOP
+
+end VER STOP
+
+joué VER START
+Against NOM B-TRACK
+the NOM I-TRACK
+Grain NOM I-TRACK
+de PRP O
+Leonard NOM B-ARTIST
+Jones NOM I-ARTIST
+
+étain VER STOP
+
+demarre VER START
+I NOM B-TRACK
+Still NOM I-TRACK
+Like NOM I-TRACK
+Bologna NOM I-TRACK
+of PRP O
+Erkki NOM B-ARTIST
+Laurokari NOM I-ARTIST
+
+demarre VER START
+Crazy NOM B-TRACK
+Vibes NOM I-TRACK
+
+jouer VER START
+Hearts NOM B-TRACK
+and NOM I-TRACK
+Bones NOM I-TRACK
+
+end VER STOP
+Boogie NOM B-TRACK
+Fever NOM I-TRACK
+
+joué VER START
+Before NOM B-TRACK
+You NOM I-TRACK
+Leave NOM I-TRACK
+par PRP O
+Jessy NOM B-ARTIST
+Bajwa NOM I-ARTIST
+& NOM I-ARTIST
+Sudesh NOM I-ARTIST
+Kumari NOM I-ARTIST
+
+arrête VER STOP
+
+arrete VER STOP
+
+demarrer VER START
+Gönül NOM B-TRACK
+from PRP O
+I NOM B-ARTIST
+Trovatori NOM I-ARTIST
+
+demarrer VER START
+11th NOM B-TRACK
+Hour NOM I-TRACK
+
+lance VER START
+Say NOM B-TRACK
+good-bye NOM I-TRACK
+de PRP O
+The NOM B-ARTIST
+Gospel NOM I-ARTIST
+Keynotes NOM I-ARTIST
+
+stop VER STOP
+12 NOM B-TRACK
+Seconds NOM I-TRACK
+
+éteins VER STOP
+
+étain VER STOP
+So NOM B-TRACK
+Good NOM I-TRACK
+
+joue VER START
+Met NOM B-TRACK
+Before NOM I-TRACK
+
+terminer VER STOP
+
+arrête VER STOP
+Una NOM B-TRACK
+aventura NOM I-TRACK
+
+étein VER STOP
+Closet NOM B-TRACK
+Freak NOM I-TRACK
+
+éteint VER STOP
+
+arrete VER STOP
+
+demarrer VER START
+It's NOM B-TRACK
+Alright NOM I-TRACK
+par PRP O
+The NOM B-ARTIST
+Defendants NOM I-ARTIST
+
+étein VER STOP
+
+arrêt VER STOP
+False NOM B-TRACK
+Astronomy NOM I-TRACK
+
+arrete VER STOP
+
+commencer VER START
+Little NOM B-TRACK
+Woman NOM I-TRACK
+Love NOM I-TRACK
+
+jouée VER START
+If NOM B-TRACK
+You're NOM I-TRACK
+Not NOM I-TRACK
+Here NOM I-TRACK
+from PRP O
+The NOM B-ARTIST
+Motes NOM I-ARTIST
+
+restart VER START
+Lips NOM B-TRACK
+of NOM I-TRACK
+Ashes NOM I-TRACK
+of PRP O
+Huddelsfield NOM B-ARTIST
+Transit NOM I-ARTIST
+Authority NOM I-ARTIST
+
+demarre VER START
+Mission NOM B-TRACK
+impossible NOM I-TRACK
+par PRP O
+Leo NOM B-ARTIST
+Fall NOM I-ARTIST
+
+étain VER STOP
+
+arrête VER STOP
+Destiny's NOM B-TRACK
+Child NOM I-TRACK
+Medley NOM I-TRACK
+
+restart VER START
+Fake NOM B-TRACK
+Emotion NOM I-TRACK
+
+redémarré VER START
+Le NOM B-TRACK
+retour NOM I-TRACK
+du NOM I-TRACK
+rap NOM I-TRACK
+français NOM I-TRACK
+de PRP O
+Y NOM B-ARTIST
+Kant NOM I-ARTIST
+Tori NOM I-ARTIST
+Read NOM I-ARTIST
+
+demarre VER START
+The NOM B-TRACK
+Great NOM I-TRACK
+Stone NOM I-TRACK
+War NOM I-TRACK
+of PRP O
+M.E. NOM B-ARTIST
+
+lance VER START
+Wham NOM B-TRACK
+City NOM I-TRACK
+de PRP O
+Natasja NOM B-ARTIST
+Crone NOM I-ARTIST
+& NOM I-ARTIST
+De NOM I-ARTIST
+11 NOM I-ARTIST
+Stjernevindere NOM I-ARTIST
+
+arete VER STOP
+
+lancer VER START
+Show NOM B-TRACK
+Me NOM I-TRACK
+de PRP O
+DJ NOM B-ARTIST
+Thundah NOM I-ARTIST
+Thyz NOM I-ARTIST
+
+pause VER PAUSE
+June NOM B-TRACK
+Evenings NOM I-TRACK
+
+end VER STOP
+You're NOM B-TRACK
+All NOM I-TRACK
+I NOM I-TRACK
+Need NOM I-TRACK
+
+redémaré VER START
+Take NOM B-TRACK
+It NOM I-TRACK
+Back NOM I-TRACK
+
+finish VER STOP
+How NOM B-TRACK
+Long NOM I-TRACK
+
+éteint VER STOP
+
+débute VER START
+Icarus NOM B-TRACK
+(live NOM I-TRACK
+version) NOM I-TRACK
+de PRP O
+Paul NOM B-ARTIST
+Clarke NOM I-ARTIST
+& NOM I-ARTIST
+M. NOM I-ARTIST
+Ramone NOM I-ARTIST
+
+joue VER START
+Fly NOM B-TRACK
+By NOM I-TRACK
+Night NOM I-TRACK
+by PRP O
+JJ NOM B-ARTIST
+Robert NOM I-ARTIST
+
+restart VER START
+Last NOM B-TRACK
+Dance NOM I-TRACK
+de PRP O
+End NOM B-ARTIST
+Of NOM I-ARTIST
+Circle NOM I-ARTIST
+
+restart VER START
+Booty NOM B-TRACK
+Music NOM I-TRACK
+
+arrêter VER STOP
+
+arrete VER STOP
+
+étein VER STOP
+
+demarre VER START
+Aaja NOM B-TRACK
+We NOM I-TRACK
+Mahiya NOM I-TRACK
+of PRP O
+The NOM B-ARTIST
+Limelights NOM I-ARTIST
+
+arrete VER STOP
+
+restart VER START
+We NOM B-TRACK
+Rot NOM I-TRACK
+from PRP O
+The NOM B-ARTIST
+Ramblin' NOM I-ARTIST
+Ambassadors NOM I-ARTIST
+
+arrete VER STOP
+
+débute VER START
+Someone NOM B-TRACK
+Like NOM I-TRACK
+You NOM I-TRACK
+
+joue VER START
+Si NOM B-TRACK
+seulement NOM I-TRACK
+je NOM I-TRACK
+pouvais NOM I-TRACK
+lui NOM I-TRACK
+manquer NOM I-TRACK
+of PRP O
+Ribbon NOM B-ARTIST
+of NOM I-ARTIST
+Highway NOM I-ARTIST
+Players NOM I-ARTIST
+
+restart VER START
+Tive NOM B-TRACK
+sim NOM I-TRACK
+by PRP O
+Judith NOM B-ARTIST
+De NOM I-ARTIST
+Los NOM I-ARTIST
+Santos NOM I-ARTIST
+Romero NOM I-ARTIST
+
+étain VER STOP
+
+joué VER START
+All NOM B-TRACK
+We NOM I-TRACK
+Ever NOM I-TRACK
+Needed NOM I-TRACK
+
+joué VER START
+Dawned NOM B-TRACK
+on NOM I-TRACK
+Me NOM I-TRACK
+de PRP O
+Death NOM B-ARTIST
+Dealer NOM I-ARTIST
+
+terminate VER STOP
+
+commencer VER START
+Without NOM B-TRACK
+You NOM I-TRACK
+
+arrêt VER STOP
+
+joué VER START
+La NOM B-TRACK
+lettre NOM I-TRACK
+
+lance VER START
+Meet NOM B-TRACK
+the NOM I-TRACK
+Parents NOM I-TRACK
+from PRP O
+Bass NOM B-ARTIST
+Odyssey NOM I-ARTIST
+
+arrête VER STOP
+
+étain VER STOP
+What NOM B-TRACK
+It NOM I-TRACK
+Says NOM I-TRACK
+on NOM I-TRACK
+the NOM I-TRACK
+Tin NOM I-TRACK
+
+end VER STOP
+Sexy NOM B-TRACK
+Dance NOM I-TRACK
+
+joué VER START
+Silver NOM B-TRACK
+Lady NOM I-TRACK
+from PRP O
+Sandy NOM B-ARTIST
+Christen NOM I-ARTIST
+
+terminer VER STOP
+
+joué VER START
+Comme NOM B-TRACK
+en NOM I-TRACK
+90 NOM I-TRACK
+
+arrêt VER STOP
+
+stopper VER STOP
+Magnetic NOM B-TRACK
+Warrior NOM I-TRACK
+
+arrêter VER STOP
+Chica NOM B-TRACK
+mala NOM I-TRACK
+
+débuté VER START
+Toque NOM B-TRACK
+de NOM I-TRACK
+timbaleiro NOM I-TRACK
+
+éteins VER STOP
+The NOM B-TRACK
+Lights NOM I-TRACK
+
+arrête VER STOP
+
+éteint VER STOP
+
+jouée VER START
+Legalize NOM B-TRACK
+já NOM I-TRACK
+de PRP O
+Zeugwart NOM B-ARTIST
+Hallbauer NOM I-ARTIST
+
+joué VER START
+Minha NOM B-TRACK
+Liberdade NOM I-TRACK
+
+terminer VER STOP
+Come NOM B-TRACK
+Back NOM I-TRACK
+in NOM I-TRACK
+One NOM I-TRACK
+Piece NOM I-TRACK
+
+lancer VER START
+Light NOM B-TRACK
+on NOM I-TRACK
+My NOM I-TRACK
+Shoulder NOM I-TRACK
+
+lancer VER START
+A NOM B-TRACK
+Strange NOM I-TRACK
+Arrangement NOM I-TRACK
+
+arrete VER STOP
+La NOM B-TRACK
+Ultima NOM I-TRACK
+Sombra NOM I-TRACK
+
+débuté VER START
+Here NOM B-TRACK
+I NOM I-TRACK
+Go NOM I-TRACK
+Again NOM I-TRACK
+par PRP O
+Rolf NOM B-ARTIST
+Dietmar NOM I-ARTIST
+Schuster NOM I-ARTIST
+
+demarre VER START
+Y'all NOM B-TRACK
+Heard NOM I-TRACK
+of NOM I-TRACK
+Me NOM I-TRACK
+
+terminate VER STOP
+
+stopper VER STOP
+
+étain VER STOP
+
+stop VER STOP
+
+joué VER START
+O NOM B-TRACK
+pastor NOM I-TRACK
+by PRP O
+Miss NOM B-ARTIST
+Diamond NOM I-ARTIST
+DJ NOM I-ARTIST
+
+terminate VER STOP
+I NOM B-TRACK
+Remember NOM I-TRACK
+You NOM I-TRACK
+
+redémarré VER START
+A NOM B-TRACK
+New NOM I-TRACK
+Dynasty NOM I-TRACK
+from PRP O
+The NOM B-ARTIST
+Viking NOM I-ARTIST
+Progress NOM I-ARTIST
+
+lancer VER START
+Lonesome NOM B-TRACK
+Hunter NOM I-TRACK
+par PRP O
+Psi.Kore NOM B-ARTIST
+
+débute VER START
+Ampuni NOM B-TRACK
+Aku NOM I-TRACK
+
+arrêter VER STOP
+
+jouer VER START
+I NOM B-TRACK
+Am NOM I-TRACK
+the NOM I-TRACK
+Killer NOM I-TRACK
+
+lance VER START
+Why NOM B-TRACK
+Does NOM I-TRACK
+It NOM I-TRACK
+Always NOM I-TRACK
+Rain NOM I-TRACK
+on NOM I-TRACK
+Me NOM I-TRACK
+
+stopper VER STOP
+Ruler NOM B-TRACK
+of NOM I-TRACK
+My NOM I-TRACK
+Heart NOM I-TRACK
+
+commencer VER START
+Wish NOM B-TRACK
+It NOM I-TRACK
+Was NOM I-TRACK
+True NOM I-TRACK
+par PRP O
+Robert NOM B-ARTIST
+Reich NOM I-ARTIST
+
+jouer VER START
+The NOM B-TRACK
+Pressure NOM I-TRACK
+by PRP O
+LaVerne NOM B-ARTIST
+Butler NOM I-ARTIST
+
+pause VER PAUSE
+Growing NOM B-TRACK
+Pains NOM I-TRACK
+
+finish VER STOP
+
+débute VER START
+I'm NOM B-TRACK
+Feeling NOM I-TRACK
+You NOM I-TRACK
+
+étain VER STOP
+Better NOM B-TRACK
+Than NOM I-TRACK
+the NOM I-TRACK
+Best NOM I-TRACK
+
+finish VER STOP
+
+débuter VER START
+Crushed NOM B-TRACK
+and NOM I-TRACK
+Dragged NOM I-TRACK
+to NOM I-TRACK
+the NOM I-TRACK
+Swamp NOM I-TRACK
+from PRP O
+Fox-X NOM B-ARTIST
+
+étain VER STOP
+
+stopper VER STOP
+You NOM B-TRACK
+Never NOM I-TRACK
+Knew NOM I-TRACK
+
+jouée VER START
+Stay NOM B-TRACK
+Together NOM I-TRACK
+by PRP O
+Marc-Henri NOM B-ARTIST
+Aubert NOM I-ARTIST
+
+lance VER START
+Untuk NOM B-TRACK
+Perempuan NOM I-TRACK
+
+lance VER START
+Big NOM B-TRACK
+Lost NOM I-TRACK
+
+restart VER START
+Girls, NOM B-TRACK
+Girls, NOM I-TRACK
+Girls NOM I-TRACK
+
+joué VER START
+Bad NOM B-TRACK
+Blood NOM I-TRACK
+by PRP O
+Annika NOM B-ARTIST
+Askman NOM I-ARTIST
+
+redémarré VER START
+Amor NOM B-TRACK
+y NOM I-TRACK
+lujo NOM I-TRACK
+of PRP O
+Jamie NOM B-ARTIST
+Cullum NOM I-ARTIST
+
+arete VER STOP
+Like NOM B-TRACK
+This NOM I-TRACK
+Like NOM I-TRACK
+That NOM I-TRACK
+
+arrête VER STOP
+The NOM B-TRACK
+Captain NOM I-TRACK
+
+lancer VER START
+Ring NOM B-TRACK
+Ring NOM I-TRACK
+Ring NOM I-TRACK
+
+étain VER STOP
+
+finish VER STOP
+
+étein VER STOP
+
+lancer VER START
+She's NOM B-TRACK
+a NOM I-TRACK
+Rocker NOM I-TRACK
+
+redémarré VER START
+Please NOM B-TRACK
+Don't NOM I-TRACK
+Go NOM I-TRACK
+de PRP O
+Jordi NOM B-ARTIST
+Luque NOM I-ARTIST
+
+stop VER STOP
+Hear NOM B-TRACK
+My NOM I-TRACK
+Train NOM I-TRACK
+a NOM I-TRACK
+Comin' NOM I-TRACK
+
+jouée VER START
+Macy's NOM B-TRACK
+Day NOM I-TRACK
+Parade NOM I-TRACK
+de PRP O
+Channel-East NOM B-ARTIST
+
+débuté VER START
+A NOM B-TRACK
+Horse NOM I-TRACK
+with NOM I-TRACK
+No NOM I-TRACK
+Name NOM I-TRACK
+
+restart VER START
+Electric NOM B-TRACK
+Super NOM I-TRACK
+Highway NOM I-TRACK
+
+joue VER START
+Venus NOM B-TRACK
+vs. NOM I-TRACK
+Mars NOM I-TRACK
+
+débuté VER START
+Melrose NOM B-TRACK
+Place NOM I-TRACK
+
+finish VER STOP
+
+restart VER START
+Naïve NOM B-TRACK
+from PRP O
+Anvil NOM B-ARTIST
+Dome NOM I-ARTIST
+
+arrêter VER STOP
+Thug NOM B-TRACK
+Motivation NOM I-TRACK
+101 NOM I-TRACK
+
+redémaré VER START
+Entre NOM B-TRACK
+tus NOM I-TRACK
+alas NOM I-TRACK
+from PRP O
+Bishop NOM B-ARTIST
+Don NOM I-ARTIST
+Magic NOM I-ARTIST
+Juan NOM I-ARTIST
+
+stop VER STOP
+Waterloo NOM B-TRACK
+Sunset NOM I-TRACK
+
+étain VER STOP
+
+terminate VER STOP
+Blue NOM B-TRACK
+Jeans NOM I-TRACK
+
+arete VER STOP
+
+étein VER STOP
+What NOM B-TRACK
+Counts NOM I-TRACK
+
+jouée VER START
+Rut NOM B-TRACK
+& NOM I-TRACK
+Nuzzle NOM I-TRACK
+par PRP O
+Isaïah NOM B-ARTIST
+
+pause VER PAUSE
+
+end VER STOP
+
+end VER STOP
+
+end VER STOP
+
+jouée VER START
+Mrs NOM B-TRACK
+Robinson NOM I-TRACK
+
+terminate VER STOP
+
+finish VER STOP
+Ace NOM B-TRACK
+of NOM I-TRACK
+Spades NOM I-TRACK
+
+stop VER STOP
+
+stop VER STOP
+You NOM B-TRACK
+Spin NOM I-TRACK
+Me NOM I-TRACK
+Round NOM I-TRACK
+
+arrêt VER STOP
+This NOM B-TRACK
+World NOM I-TRACK
+Is NOM I-TRACK
+Watching NOM I-TRACK
+Me NOM I-TRACK
+
+commencer VER START
+Party NOM B-TRACK
+Train NOM I-TRACK
+
+éteint VER STOP
+
+demarrer VER START
+Walking NOM B-TRACK
+on NOM I-TRACK
+Water NOM I-TRACK
+par PRP O
+Omar NOM B-ARTIST
+Faruk NOM I-ARTIST
+
+restart VER START
+My NOM B-TRACK
+Baby NOM I-TRACK
+Left NOM I-TRACK
+Me NOM I-TRACK
+
+éteint VER STOP
+
+finish VER STOP
+
+terminate VER STOP
+We NOM B-TRACK
+Want NOM I-TRACK
+Blood NOM I-TRACK
+
+terminate VER STOP
+Little NOM B-TRACK
+Voice NOM I-TRACK
+
+commencer VER START
+Hate NOM B-TRACK
+Crime NOM I-TRACK
+from PRP O
+Polly NOM B-ARTIST
+Bergen NOM I-ARTIST
+
+joué VER START
+Let's NOM B-TRACK
+Play NOM I-TRACK
+House NOM I-TRACK
+par PRP O
+Ilene NOM B-ARTIST
+Novi NOM I-ARTIST
+Novog NOM I-ARTIST
+
+jouer VER START
+Get NOM B-TRACK
+it NOM I-TRACK
+On NOM I-TRACK
+
+arrêt VER STOP
+Yamba NOM B-TRACK
+Ngai NOM I-TRACK
+
+commencer VER START
+Sonido NOM B-TRACK
+bestial NOM I-TRACK
+par PRP O
+Beau NOM B-ARTIST
+Kavanagh NOM I-ARTIST
+
+arrêt VER STOP
+
+terminer VER STOP
+First NOM B-TRACK
+Time NOM I-TRACK
+
+débuter VER START
+My NOM B-TRACK
+Mind NOM I-TRACK
+Ain't NOM I-TRACK
+So NOM I-TRACK
+Open NOM I-TRACK
+
+étein VER STOP
+
+redémarré VER START
+Letting NOM B-TRACK
+the NOM I-TRACK
+Cables NOM I-TRACK
+Sleep NOM I-TRACK
+of PRP O
+Basic NOM B-ARTIST
+Rock NOM I-ARTIST
+Outfit NOM I-ARTIST
+
+redémarré VER START
+Steel NOM B-TRACK
+Sings NOM I-TRACK
+of PRP O
+D*Tch NOM B-ARTIST
+W*Tch NOM I-ARTIST
+
+end VER STOP
+
+lance VER START
+Pardonne-moi NOM B-TRACK
+ce NOM I-TRACK
+caprice NOM I-TRACK
+d'enfant NOM I-TRACK
+par PRP O
+Music NOM B-ARTIST
+for NOM I-ARTIST
+Little NOM I-ARTIST
+People NOM I-ARTIST
+Kids NOM I-ARTIST
+Choir NOM I-ARTIST
+
+commencer VER START
+A NOM B-TRACK
+Hard NOM I-TRACK
+Rain's NOM I-TRACK
+Gonna NOM I-TRACK
+Fall NOM I-TRACK
+of PRP O
+Max NOM B-ARTIST
+Schmeling NOM I-ARTIST
+
+commencer VER START
+Calles NOM B-TRACK
+de NOM I-TRACK
+Madrid NOM I-TRACK
+
+débuter VER START
+In NOM B-TRACK
+2 NOM I-TRACK
+Deep NOM I-TRACK
+
+arrête VER STOP
+Massive NOM B-TRACK
+Attack NOM I-TRACK
+
+étein VER STOP
+
+arete VER STOP
+2nd NOM B-TRACK
+Round NOM I-TRACK
+
+commencer VER START
+La NOM B-TRACK
+gent NOM I-TRACK
+normal NOM I-TRACK
+by PRP O
+Bedia NOM B-ARTIST
+Akartürk NOM I-ARTIST
+
+end VER STOP
+
+stop VER STOP
+
+jouer VER START
+Diventerai NOM B-TRACK
+una NOM I-TRACK
+star NOM I-TRACK
+from PRP O
+Veronika NOM B-ARTIST
+Plotņikova NOM I-ARTIST
+
+finish VER STOP
+
+éteint VER STOP
+
+restart VER START
+From NOM B-TRACK
+Zero NOM I-TRACK
+to NOM I-TRACK
+Nothing NOM I-TRACK
+
+étain VER STOP
+
+terminer VER STOP
+Forever NOM B-TRACK
+man NOM I-TRACK
+
+terminer VER STOP
+Is NOM B-TRACK
+This NOM I-TRACK
+the NOM I-TRACK
+Day? NOM I-TRACK
+
+demarre VER START
+Traigo NOM B-TRACK
+una NOM I-TRACK
+pena NOM I-TRACK
+
+jouée VER START
+I'm NOM B-TRACK
+Your NOM I-TRACK
+Hoochie NOM I-TRACK
+Coochie NOM I-TRACK
+Man NOM I-TRACK
+
+lance VER START
+Safety NOM B-TRACK
+Net NOM I-TRACK
+of PRP O
+Joie/Dead NOM B-ARTIST
+Blonde NOM I-ARTIST
+Girlfriend NOM I-ARTIST
+
+joué VER START
+I NOM B-TRACK
+Smile NOM I-TRACK
+
+terminate VER STOP
+
+débuter VER START
+Strani NOM B-TRACK
+amori NOM I-TRACK
+
+commencer VER START
+Rosa NOM B-TRACK
+Nova NOM I-TRACK
+by PRP O
+Lord NOM B-ARTIST
+Nelson NOM I-ARTIST
+& NOM I-ARTIST
+His NOM I-ARTIST
+Boppers NOM I-ARTIST
+
+end VER STOP
+
+arrêt VER STOP
+Blues NOM B-TRACK
+at NOM I-TRACK
+Sunrise NOM I-TRACK
+
+stopper VER STOP
+No NOM B-TRACK
+Tengo NOM I-TRACK
+Amigos NOM I-TRACK
+
+joue VER START
+Smalltime NOM B-TRACK
+Shot NOM I-TRACK
+Away NOM I-TRACK
+by PRP O
+DJ NOM B-ARTIST
+Xelerator NOM I-ARTIST
+
+étein VER STOP
+
+étain VER STOP
+Departure NOM B-TRACK
+(Paris NOM I-TRACK
+96) NOM I-TRACK
+
+demarrer VER START
+Love NOM B-TRACK
+and NOM I-TRACK
+Some NOM I-TRACK
+Verses NOM I-TRACK
+de PRP O
+d-complex NOM B-ARTIST
+
+éteint VER STOP
+
+joué VER START
+Aortic NOM B-TRACK
+Dissection NOM I-TRACK
+of PRP O
+Lyn NOM B-ARTIST
+Murray NOM I-ARTIST
+
+étain VER STOP
+Menangis NOM B-TRACK
+Semalam NOM I-TRACK
+
+étein VER STOP
+Never NOM B-TRACK
+Lose NOM I-TRACK
+
+éteint VER STOP
+If NOM B-TRACK
+I NOM I-TRACK
+Had NOM I-TRACK
+a NOM I-TRACK
+Million NOM I-TRACK
+Dollars NOM I-TRACK
+
+éteint VER STOP
+Higher NOM B-TRACK
+Love NOM I-TRACK
+
+lancer VER START
+Guardian NOM B-TRACK
+Angel NOM I-TRACK
+
+finish VER STOP
+Work NOM B-TRACK
+Me NOM I-TRACK
+
+jouée VER START
+Come NOM B-TRACK
+Get NOM I-TRACK
+to NOM I-TRACK
+This NOM I-TRACK
+
+débuté VER START
+Buona NOM B-TRACK
+sera NOM I-TRACK
+
+joue VER START
+Jesus NOM B-TRACK
+Arrested NOM I-TRACK
+
+débuté VER START
+His NOM B-TRACK
+Love NOM I-TRACK
+
+éteint VER STOP
+
+terminer VER STOP
+
+redémarré VER START
+I NOM B-TRACK
+Bet NOM I-TRACK
+You NOM I-TRACK
+Look NOM I-TRACK
+Good NOM I-TRACK
+on NOM I-TRACK
+the NOM I-TRACK
+Dancefloor NOM I-TRACK
+par PRP O
+In NOM B-ARTIST
+the NOM I-ARTIST
+Streetz NOM I-ARTIST
+Crew NOM I-ARTIST
+
+joue VER START
+The NOM B-TRACK
+Negotiation NOM I-TRACK
+Limerick NOM I-TRACK
+File NOM I-TRACK
+
+joué VER START
+To NOM B-TRACK
+Be NOM I-TRACK
+the NOM I-TRACK
+One NOM I-TRACK
+from PRP O
+Mitsuhiro NOM B-ARTIST
+Yoshimura NOM I-ARTIST
+
+jouer VER START
+One NOM B-TRACK
+Time NOM I-TRACK
+
+redémarré VER START
+Stranger NOM B-TRACK
+in NOM I-TRACK
+Blue NOM I-TRACK
+Suede NOM I-TRACK
+Shoes NOM I-TRACK
+par PRP O
+Mystery NOM B-ARTIST
+Fluid NOM I-ARTIST
+
+demarre VER START
+Count NOM B-TRACK
+on NOM I-TRACK
+Me NOM I-TRACK
+
+terminer VER STOP
+Girls NOM B-TRACK
+Like NOM I-TRACK
+You NOM I-TRACK
+
+étein VER STOP
+
+éteint VER STOP
+
+demarre VER START
+Find NOM B-TRACK
+a NOM I-TRACK
+Way NOM I-TRACK
+
+terminate VER STOP
+
+redémaré VER START
+Boom NOM B-TRACK
+Blast NOM I-TRACK
+
+redémaré VER START
+I NOM B-TRACK
+Do NOM I-TRACK
+Need NOM I-TRACK
+You NOM I-TRACK
+from PRP O
+Brian NOM B-ARTIST
+Reichert NOM I-ARTIST
+
+étain VER STOP
+
+pause VER PAUSE
+
+lancer VER START
+Motorcycle NOM B-TRACK
+Driver NOM I-TRACK
+
+débute VER START
+Best NOM B-TRACK
+of NOM I-TRACK
+You NOM I-TRACK
+de PRP O
+High NOM B-ARTIST
+Fructose NOM I-ARTIST
+Corn NOM I-ARTIST
+Syrup NOM I-ARTIST
+
+redémaré VER START
+Suffocation NOM B-TRACK
+Keep NOM I-TRACK
+
+redémarré VER START
+Hal NOM B-TRACK
+Terindah NOM I-TRACK
+
+joue VER START
+Philadelphia NOM B-TRACK
+Freedom NOM I-TRACK
+
+jouée VER START
+A NOM B-TRACK
+donde NOM I-TRACK
+vas NOM I-TRACK
+
+finish VER STOP
+Hard NOM B-TRACK
+on NOM I-TRACK
+You NOM I-TRACK
+
+débute VER START
+Two NOM B-TRACK
+Hours NOM I-TRACK
+
+débuter VER START
+Highway NOM B-TRACK
+Star NOM I-TRACK
+de PRP O
+Festering NOM B-ARTIST
+Saliva NOM I-ARTIST
+
+lance VER START
+You NOM B-TRACK
+Probably NOM I-TRACK
+Couldn't NOM I-TRACK
+See NOM I-TRACK
+for NOM I-TRACK
+the NOM I-TRACK
+Lights NOM I-TRACK
+
+jouer VER START
+Down NOM B-TRACK
+That NOM I-TRACK
+Road NOM I-TRACK
+by PRP O
+Allyssa NOM B-ARTIST
+Jones NOM I-ARTIST
+
+arete VER STOP
+
+arrete VER STOP
+
+arrêter VER STOP
+
+lancer VER START
+New NOM B-TRACK
+Amsterdam NOM I-TRACK
+
+demarrer VER START
+Gimme NOM B-TRACK
+the NOM I-TRACK
+Prize NOM I-TRACK
+
+commencer VER START
+Pump NOM B-TRACK
+Ya NOM I-TRACK
+Fist NOM I-TRACK
+Like NOM I-TRACK
+This NOM I-TRACK
+by PRP O
+Venus NOM B-ARTIST
+in NOM I-ARTIST
+Flames NOM I-ARTIST
+
+jouée VER START
+Give NOM B-TRACK
+me NOM I-TRACK
+a NOM I-TRACK
+Kiss NOM I-TRACK
+to NOM I-TRACK
+Build NOM I-TRACK
+a NOM I-TRACK
+Dream NOM I-TRACK
+on NOM I-TRACK
+
+terminate VER STOP
+What NOM B-TRACK
+a NOM I-TRACK
+feeling NOM I-TRACK
+
+arrete VER STOP
+Vida NOM B-TRACK
+louca NOM I-TRACK
+vida NOM I-TRACK
+
+jouée VER START
+Everything NOM B-TRACK
+Is NOM I-TRACK
+Average NOM I-TRACK
+Nowadays NOM I-TRACK
+from PRP O
+Cheb NOM B-ARTIST
+Benalou NOM I-ARTIST
+& NOM I-ARTIST
+Chaba NOM I-ARTIST
+Zohra NOM I-ARTIST
+
+étain VER STOP
+This NOM B-TRACK
+Is NOM I-TRACK
+the NOM I-TRACK
+Warning NOM I-TRACK
+
+étein VER STOP
+I NOM B-TRACK
+Want NOM I-TRACK
+You NOM I-TRACK
+Back NOM I-TRACK
+
+arrete VER STOP
+
+éteint VER STOP
+
+arrete VER STOP
+All NOM B-TRACK
+Hail NOM I-TRACK
+the NOM I-TRACK
+Heartbreaker NOM I-TRACK
+
+lancer VER START
+One NOM B-TRACK
+Drop NOM I-TRACK
+par PRP O
+Albert NOM B-ARTIST
+Beale NOM I-ARTIST
+
+éteins VER STOP
+
+arrêt VER STOP
+
+pause VER PAUSE
+
+lance VER START
+Absolute NOM B-TRACK
+Begginers NOM I-TRACK
+
+commencer VER START
+Olhos NOM B-TRACK
+nos NOM I-TRACK
+olhos NOM I-TRACK
+from PRP O
+St. NOM B-ARTIST
+Louis NOM I-ARTIST
+Levee NOM I-ARTIST
+Band NOM I-ARTIST
+
+arrêt VER STOP
+
+arete VER STOP
+
+arete VER STOP
+
+jouer VER START
+Golden NOM B-TRACK
+Time NOM I-TRACK
+of NOM I-TRACK
+Day NOM I-TRACK
+
+joué VER START
+God NOM B-TRACK
+Will NOM I-TRACK
+Cut NOM I-TRACK
+You NOM I-TRACK
+Down NOM I-TRACK
+de PRP O
+The NOM B-ARTIST
+Home NOM I-ARTIST
+Phonema NOM I-ARTIST
+
+débuter VER START
+What NOM B-TRACK
+I NOM I-TRACK
+Almost NOM I-TRACK
+Was NOM I-TRACK
+de PRP O
+Fish NOM B-ARTIST
+and NOM I-ARTIST
+Chips NOM I-ARTIST
+
+étain VER STOP
+Marcus NOM B-TRACK
+Garvey NOM I-TRACK
+
+débute VER START
+Blue NOM B-TRACK
+Skies NOM I-TRACK
+
+débuter VER START
+A NOM B-TRACK
+comme NOM I-TRACK
+amour NOM I-TRACK
+of PRP O
+Lugbug NOM B-ARTIST
+& NOM I-ARTIST
+Ballerin NOM I-ARTIST
+
+jouer VER START
+Two NOM B-TRACK
+Weeks NOM I-TRACK
+in NOM I-TRACK
+Hawaii NOM I-TRACK
+
+éteins VER STOP
+Joyful NOM B-TRACK
+Kings NOM I-TRACK
+
+débuter VER START
+Yo NOM B-TRACK
+El NOM I-TRACK
+Ray NOM I-TRACK
+
+terminer VER STOP
+Gee NOM B-TRACK
+Up NOM I-TRACK
+
+joué VER START
+I NOM B-TRACK
+Just NOM I-TRACK
+Wanna NOM I-TRACK
+Live NOM I-TRACK
+from PRP O
+Chico NOM B-ARTIST
+Rockstar NOM I-ARTIST
+
+arrêt VER STOP
+Street NOM B-TRACK
+Life NOM I-TRACK
+
+commencer VER START
+Allahi NOM B-TRACK
+Allah NOM I-TRACK
+
+end VER STOP
+
+joue VER START
+Light NOM B-TRACK
+Skinned NOM I-TRACK
+Hoes NOM I-TRACK
+by PRP O
+Lance NOM B-ARTIST
+Diamond NOM I-ARTIST
+
+redémaré VER START
+Secuencia NOM B-TRACK
+inicial NOM I-TRACK
+
+terminate VER STOP
+Tales NOM B-TRACK
+of NOM I-TRACK
+Brave NOM I-TRACK
+Ulysses NOM I-TRACK
+
+finish VER STOP
+
+stop VER STOP
+We NOM B-TRACK
+Got NOM I-TRACK
+Hood NOM I-TRACK
+Love NOM I-TRACK
+
+jouer VER START
+Get NOM B-TRACK
+Away NOM I-TRACK
+par PRP O
+Fraulein NOM B-ARTIST
+Rottenmeier NOM I-ARTIST
+
+arrêter VER STOP
+Only NOM B-TRACK
+You NOM I-TRACK
+
+redémaré VER START
+One NOM B-TRACK
+Time NOM I-TRACK
+Too NOM I-TRACK
+Many NOM I-TRACK
+par PRP O
+Hippies NOM B-ARTIST
+in NOM I-ARTIST
+Space NOM I-ARTIST
+
+stopper VER STOP
+Pincoya NOM B-TRACK
+Calipso NOM I-TRACK
+
+lancer VER START
+Do NOM B-TRACK
+sétimo NOM I-TRACK
+andar NOM I-TRACK
+
+terminate VER STOP
+
+arrête VER STOP
+Say NOM B-TRACK
+Yes NOM I-TRACK
+
+demarre VER START
+OK NOM B-TRACK
+Pal NOM I-TRACK
+of PRP O
+Plain NOM B-ARTIST
+Capers NOM I-ARTIST
+Band NOM I-ARTIST
+
+restart VER START
+Conducted NOM B-TRACK
+Rhythms NOM I-TRACK
+
+arrête VER STOP
+
+joue VER START
+Love NOM B-TRACK
+Hangover NOM I-TRACK
+
+joue VER START
+Unwind NOM B-TRACK
+Yourself NOM I-TRACK
+
+redémaré VER START
+Let NOM B-TRACK
+the NOM I-TRACK
+Flames NOM I-TRACK
+Begin NOM I-TRACK
+
+éteint VER STOP
+Black NOM B-TRACK
+Hole NOM I-TRACK
+Sun NOM I-TRACK
+
+arrêter VER STOP
+I'm NOM B-TRACK
+Dat NOM I-TRACK
+Nigga NOM I-TRACK
+
+éteins VER STOP
+Big NOM B-TRACK
+Yellow NOM I-TRACK
+Taxi NOM I-TRACK
+
+arete VER STOP
+
+arrêt VER STOP
+
+jouée VER START
+When NOM B-TRACK
+My NOM I-TRACK
+Niggas NOM I-TRACK
+Come NOM I-TRACK
+Home NOM I-TRACK
+
+jouer VER START
+Emosi NOM B-TRACK
+Tradisi NOM I-TRACK
+de PRP O
+Sleeper NOM B-ARTIST
+Agent NOM I-ARTIST
+
+débuté VER START
+Brothers NOM B-TRACK
+and NOM I-TRACK
+Sisters NOM I-TRACK
+of PRP O
+This NOM B-ARTIST
+Morn' NOM I-ARTIST
+Omina NOM I-ARTIST
+
+arrêt VER STOP
+
+débute VER START
+What's NOM B-TRACK
+Love NOM I-TRACK
+Got NOM I-TRACK
+to NOM I-TRACK
+Do NOM I-TRACK
+With NOM I-TRACK
+It NOM I-TRACK
+
+terminate VER STOP
+
+joué VER START
+The NOM B-TRACK
+Rising NOM I-TRACK
+
+restart VER START
+Falling NOM B-TRACK
+in NOM I-TRACK
+Love NOM I-TRACK
+at NOM I-TRACK
+a NOM I-TRACK
+Coffee NOM I-TRACK
+Shop NOM I-TRACK
+by PRP O
+Milfred NOM B-ARTIST
+Rainey, NOM I-ARTIST
+Kathryn NOM I-ARTIST
+Scott NOM I-ARTIST
+
+arrete VER STOP
+Heavy NOM B-TRACK
+Denim NOM I-TRACK
+
+éteins VER STOP
+
+demarrer VER START
+All NOM B-TRACK
+Your NOM I-TRACK
+Gold NOM I-TRACK
+par PRP O
+残像カフェ NOM B-ARTIST
+
+arrêter VER STOP
+
+arrête VER STOP
+Rescue NOM B-TRACK
+Me NOM I-TRACK
+
+finish VER STOP
+I NOM B-TRACK
+Did NOM I-TRACK
+It NOM I-TRACK
+for NOM I-TRACK
+My NOM I-TRACK
+Dawgz NOM I-TRACK
+
+débuté VER START
+Inviting NOM B-TRACK
+Eyes NOM I-TRACK
+
+stop VER STOP
+
+joué VER START
+Eye NOM B-TRACK
+Embedded NOM I-TRACK
+
+débuté VER START
+Snoopy's NOM B-TRACK
+Christmas NOM I-TRACK
+
+commencer VER START
+Love NOM B-TRACK
+Can NOM I-TRACK
+Wait NOM I-TRACK
+
+éteins VER STOP
+
+end VER STOP
+I NOM B-TRACK
+Wanna NOM I-TRACK
+Be NOM I-TRACK
+Like NOM I-TRACK
+You NOM I-TRACK
+
+demarrer VER START
+Let NOM B-TRACK
+Me NOM I-TRACK
+Go NOM I-TRACK
+from PRP O
+Gialappa's NOM B-ARTIST
+Band NOM I-ARTIST
+
+demarrer VER START
+Evil NOM B-TRACK
+Beauty NOM I-TRACK
+par PRP O
+Die NOM B-ARTIST
+Himmelsstürmer NOM I-ARTIST
+
+commencer VER START
+Cedo NOM B-TRACK
+ou NOM I-TRACK
+Tarde NOM I-TRACK
+de PRP O
+Handelsblatt NOM B-ARTIST
+Audio NOM I-ARTIST
+Edition NOM I-ARTIST
+
+débute VER START
+Pedestrians NOM B-TRACK
+Is NOM I-TRACK
+Another NOM I-TRACK
+Word NOM I-TRACK
+for NOM I-TRACK
+Speedbump NOM I-TRACK
+
+débuter VER START
+Eu NOM B-TRACK
+Nunca NOM I-TRACK
+Amei NOM I-TRACK
+Alguém NOM I-TRACK
+Como NOM I-TRACK
+Eu NOM I-TRACK
+Te NOM I-TRACK
+Amei NOM I-TRACK
+
+éteins VER STOP
+
+demarrer VER START
+It's NOM B-TRACK
+Alright NOM I-TRACK
+of PRP O
+Hugh NOM B-ARTIST
+E NOM I-ARTIST
+MC NOM I-ARTIST
+
+jouée VER START
+A NOM B-TRACK
+vita NOM I-TRACK
+bassa NOM I-TRACK
+par PRP O
+Julian NOM B-ARTIST
+Shah-Tayler NOM I-ARTIST
+
+redémarré VER START
+Don't NOM B-TRACK
+Mess NOM I-TRACK
+With NOM I-TRACK
+My NOM I-TRACK
+Man NOM I-TRACK
+from PRP O
+MDS NOM B-ARTIST
+Music NOM I-ARTIST
+
+étein VER STOP
+Standing NOM B-TRACK
+on NOM I-TRACK
+Paper NOM I-TRACK
+Stilts NOM I-TRACK
+
+arrêt VER STOP
+Como NOM B-TRACK
+é NOM I-TRACK
+grande NOM I-TRACK
+o NOM I-TRACK
+meu NOM I-TRACK
+amor NOM I-TRACK
+por NOM I-TRACK
+você NOM I-TRACK
+
+terminer VER STOP
+Best NOM B-TRACK
+of NOM I-TRACK
+Us NOM I-TRACK
+
+terminate VER STOP
+
+étain VER STOP
+Son NOM B-TRACK
+of NOM I-TRACK
+man NOM I-TRACK
+
+stopper VER STOP
+
+stopper VER STOP
+
+joue VER START
+This NOM B-TRACK
+Town NOM I-TRACK
+Ain't NOM I-TRACK
+Big NOM I-TRACK
+Enough NOM I-TRACK
+for NOM I-TRACK
+the NOM I-TRACK
+Both NOM I-TRACK
+of NOM I-TRACK
+Us NOM I-TRACK
+from PRP O
+Black NOM B-ARTIST
+Ace NOM I-ARTIST
+
+restart VER START
+Time NOM B-TRACK
+to NOM I-TRACK
+Make NOM I-TRACK
+You NOM I-TRACK
+Mine NOM I-TRACK
+from PRP O
+Schola NOM B-ARTIST
+regina NOM I-ARTIST
+
+étain VER STOP
+
+lancer VER START
+Raise NOM B-TRACK
+Your NOM I-TRACK
+Rifles NOM I-TRACK
+
+restart VER START
+A NOM B-TRACK
+Gente NOM I-TRACK
+Faz NOM I-TRACK
+a NOM I-TRACK
+Festa NOM I-TRACK
+of PRP O
+Die NOM B-ARTIST
+Molly NOM I-ARTIST
+Sisters NOM I-ARTIST
+
+jouée VER START
+Sky NOM B-TRACK
+Is NOM I-TRACK
+the NOM I-TRACK
+Limit NOM I-TRACK
+
+arete VER STOP
+Porcos NOM B-TRACK
+fardados NOM I-TRACK
+
+demarre VER START
+Blacks NOM B-TRACK
+and NOM I-TRACK
+Blues NOM I-TRACK
+
+pause VER PAUSE
+Take NOM B-TRACK
+off NOM I-TRACK
+
+débuté VER START
+I've NOM B-TRACK
+Grown NOM I-TRACK
+Accustomed NOM I-TRACK
+to NOM I-TRACK
+Her NOM I-TRACK
+Face NOM I-TRACK
+
+restart VER START
+Enola NOM B-TRACK
+gay NOM I-TRACK
+from PRP O
+Dan NOM B-ARTIST
+Jones NOM I-ARTIST
+
+débuter VER START
+Make NOM B-TRACK
+A NOM I-TRACK
+Wish NOM I-TRACK
+
+étain VER STOP
+
+débute VER START
+Merry NOM B-TRACK
+Christmas NOM I-TRACK
+from PRP O
+Solitone NOM B-ARTIST
+Wave NOM I-ARTIST
+
+demarrer VER START
+The NOM B-TRACK
+Longest NOM I-TRACK
+Day NOM I-TRACK
+of NOM I-TRACK
+Spring NOM I-TRACK
+
+terminate VER STOP
+Wish NOM B-TRACK
+You NOM I-TRACK
+Were NOM I-TRACK
+Here NOM I-TRACK
+
+arrêt VER STOP
+
+jouer VER START
+New NOM B-TRACK
+Sentimentality NOM I-TRACK
+
+end VER STOP
+
+étain VER STOP
+Savin' NOM B-TRACK
+Me NOM I-TRACK
+
+étein VER STOP
+
+lancer VER START
+All NOM B-TRACK
+in NOM I-TRACK
+Your NOM I-TRACK
+Head NOM I-TRACK
+de PRP O
+Philippe NOM B-ARTIST
+Pétain NOM I-ARTIST
+
+joue VER START
+Iron NOM B-TRACK
+Sharpen NOM I-TRACK
+Iron NOM I-TRACK
+de PRP O
+Барто NOM B-ARTIST
+
+restart VER START
+Should NOM B-TRACK
+the NOM I-TRACK
+Bible NOM I-TRACK
+Be NOM I-TRACK
+Banned NOM I-TRACK
+by PRP O
+Teddy NOM B-ARTIST
+Leyh NOM I-ARTIST
+
+joué VER START
+I NOM B-TRACK
+Looked NOM I-TRACK
+Away NOM I-TRACK
+
+redémarré VER START
+Ever NOM B-TRACK
+Fallen NOM I-TRACK
+in NOM I-TRACK
+Love NOM I-TRACK
+de PRP O
+Tarantella NOM B-ARTIST
+Serpentine NOM I-ARTIST
+
+joue VER START
+Right NOM B-TRACK
+Beside NOM I-TRACK
+You NOM I-TRACK
+
+terminate VER STOP
+
+arrêter VER STOP
+To NOM B-TRACK
+the NOM I-TRACK
+Master NOM I-TRACK
+of NOM I-TRACK
+Darkness NOM I-TRACK
+
+restart VER START
+Stop NOM B-TRACK
+Your NOM I-TRACK
+Bad NOM I-TRACK
+Mind NOM I-TRACK
+by PRP O
+Александр NOM B-ARTIST
+Айвазов NOM I-ARTIST
+
+restart VER START
+I'm NOM B-TRACK
+in NOM I-TRACK
+Luv NOM I-TRACK
+
+débuter VER START
+Rise NOM B-TRACK
+Above NOM I-TRACK
+from PRP O
+Indian NOM B-ARTIST
+Tea NOM I-ARTIST
+Company NOM I-ARTIST
+
+commencer VER START
+Come NOM B-TRACK
+Over NOM I-TRACK
+
+terminate VER STOP
+
+jouée VER START
+Music NOM B-TRACK
+and NOM I-TRACK
+Me NOM I-TRACK
+from PRP O
+The NOM B-ARTIST
+Mindcrimers NOM I-ARTIST
+
+étain VER STOP
+
+pause VER PAUSE
+Come NOM B-TRACK
+Back NOM I-TRACK
+to NOM I-TRACK
+Me NOM I-TRACK
+
+débuter VER START
+Take NOM B-TRACK
+Me NOM I-TRACK
+In NOM I-TRACK
+
+jouée VER START
+It NOM B-TRACK
+Was NOM I-TRACK
+Written NOM I-TRACK
+in NOM I-TRACK
+Blood NOM I-TRACK
+par PRP O
+Drifting NOM B-ARTIST
+Slim NOM I-ARTIST
+
+redémarré VER START
+The NOM B-TRACK
+Book NOM I-TRACK
+of NOM I-TRACK
+Morris NOM I-TRACK
+Johnson NOM I-TRACK
+
+arrête VER STOP
+
+redémaré VER START
+The NOM B-TRACK
+Closer NOM I-TRACK
+I NOM I-TRACK
+Get NOM I-TRACK
+to NOM I-TRACK
+You NOM I-TRACK
+of PRP O
+Ramón NOM B-ARTIST
+Cordero NOM I-ARTIST
+
+jouer VER START
+I NOM B-TRACK
+Don't NOM I-TRACK
+Think NOM I-TRACK
+So NOM I-TRACK
+de PRP O
+The NOM B-ARTIST
+Devil NOM I-ARTIST
+Wears NOM I-ARTIST
+Prada NOM I-ARTIST
+
+étein VER STOP
+Make NOM B-TRACK
+It NOM I-TRACK
+Hot NOM I-TRACK
+
+débute VER START
+Tres NOM B-TRACK
+Veces NOM I-TRACK
+of PRP O
+Michael NOM B-ARTIST
+Lange NOM I-ARTIST
+
+demarre VER START
+Tonight NOM B-TRACK
+Tonight NOM I-TRACK
+of PRP O
+Doug NOM B-ARTIST
+Sisemore NOM I-ARTIST
+
+étein VER STOP
+
+débute VER START
+She's NOM B-TRACK
+got NOM I-TRACK
+that NOM I-TRACK
+light NOM I-TRACK
+
+demarrer VER START
+Sweet NOM B-TRACK
+Euphoria NOM I-TRACK
+de PRP O
+Vicki NOM B-ARTIST
+Vomit NOM I-ARTIST
+
+joué VER START
+Pyramid NOM B-TRACK
+Song NOM I-TRACK
+
+demarrer VER START
+Heart NOM B-TRACK
+of NOM I-TRACK
+Flesh NOM I-TRACK
+par PRP O
+陳其鋼 NOM B-ARTIST
+
+redémarré VER START
+15 NOM B-TRACK
+Step NOM I-TRACK
+par PRP O
+The NOM B-ARTIST
+Projects NOM I-ARTIST
+
+jouer VER START
+I NOM B-TRACK
+Get NOM I-TRACK
+Lonely NOM I-TRACK
+Too NOM I-TRACK
+of PRP O
+Ion NOM B-ARTIST
+Dolănescu NOM I-ARTIST
+
+lance VER START
+Jane NOM B-TRACK
+Doe NOM I-TRACK
+
+finish VER STOP
+
+terminer VER STOP
+
+stopper VER STOP
+
+terminate VER STOP
+College NOM B-TRACK
+Girl NOM I-TRACK
+
+finish VER STOP
+
+stop VER STOP
+
+restart VER START
+Death NOM B-TRACK
+Goes NOM I-TRACK
+to NOM I-TRACK
+the NOM I-TRACK
+Disco NOM I-TRACK
+par PRP O
+The NOM B-ARTIST
+Voltage NOM I-ARTIST
+Club NOM I-ARTIST
+
+end VER STOP
+
+éteins VER STOP
+Questa NOM B-TRACK
+è NOM I-TRACK
+la NOM I-TRACK
+mia NOM I-TRACK
+vita NOM I-TRACK
+
+débuter VER START
+I NOM B-TRACK
+Like NOM I-TRACK
+to NOM I-TRACK
+Live NOM I-TRACK
+the NOM I-TRACK
+Love NOM I-TRACK
+
+terminer VER STOP
+My NOM B-TRACK
+Saving NOM I-TRACK
+Grace NOM I-TRACK
+
+arrêter VER STOP
+
+restart VER START
+Abba NOM B-TRACK
+Medley NOM I-TRACK
+
+finish VER STOP
+This NOM B-TRACK
+Is NOM I-TRACK
+4 NOM I-TRACK
+My NOM I-TRACK
+Baby NOM I-TRACK
+
+joué VER START
+Wild NOM B-TRACK
+Is NOM I-TRACK
+the NOM I-TRACK
+Wind NOM I-TRACK
+par PRP O
+The NOM B-ARTIST
+Dragoons NOM I-ARTIST
+
+lancer VER START
+Paper NOM B-TRACK
+Chase NOM I-TRACK
+
+arrêt VER STOP
+Only NOM B-TRACK
+One NOM I-TRACK
+
+restart VER START
+Sea NOM B-TRACK
+of NOM I-TRACK
+Flames NOM I-TRACK
+
+end VER STOP
+Come NOM B-TRACK
+On NOM I-TRACK
+
+finish VER STOP
+Cash NOM B-TRACK
+or NOM I-TRACK
+Clash NOM I-TRACK
+
+end VER STOP
+
+étain VER STOP
+Gokyuzunde NOM B-TRACK
+Yalniz NOM I-TRACK
+Gezen NOM I-TRACK
+Yildizlar NOM I-TRACK
+
+demarre VER START
+Versus NOM B-TRACK
+the NOM I-TRACK
+World NOM I-TRACK
+
+restart VER START
+Walk NOM B-TRACK
+Alone NOM I-TRACK
+by PRP O
+Vinyl NOM B-ARTIST
+Kings NOM I-ARTIST
+
+débuter VER START
+Historias NOM B-TRACK
+de NOM I-TRACK
+amor NOM I-TRACK
+y NOM I-TRACK
+condón NOM I-TRACK
+
+arrete VER STOP
+Pra NOM B-TRACK
+você NOM I-TRACK
+lembrar NOM I-TRACK
+de NOM I-TRACK
+mim NOM I-TRACK
+
+arrete VER STOP
+
+finish VER STOP
+
+stop VER STOP
+Itchin' NOM B-TRACK
+On NOM I-TRACK
+a NOM I-TRACK
+Photograph NOM I-TRACK
+
+terminate VER STOP
+
+étein VER STOP
+
+débuté VER START
+Girl NOM B-TRACK
+From NOM I-TRACK
+the NOM I-TRACK
+North NOM I-TRACK
+Country NOM I-TRACK
+
+terminer VER STOP
+La NOM B-TRACK
+Rose NOM I-TRACK
+noire NOM I-TRACK
+
+demarrer VER START
+Bury NOM B-TRACK
+Me NOM I-TRACK
+in NOM I-TRACK
+Smoke NOM I-TRACK
+de PRP O
+Jeremy, NOM B-ARTIST
+Perplex NOM I-ARTIST
+& NOM I-ARTIST
+Visual NOM I-ARTIST
+Paradox NOM I-ARTIST
+
+débute VER START
+Los NOM B-TRACK
+planetas NOM I-TRACK
+
+restart VER START
+Body NOM B-TRACK
+Urge NOM I-TRACK
+
+demarrer VER START
+Cold NOM B-TRACK
+Blooded NOM I-TRACK
+of PRP O
+Blind NOM B-ARTIST
+Archery NOM I-ARTIST
+Club NOM I-ARTIST
+
+commencer VER START
+Clean NOM B-TRACK
+and NOM I-TRACK
+Neat NOM I-TRACK
+par PRP O
+Marion NOM B-ARTIST
+Abernathy NOM I-ARTIST
+
+jouée VER START
+Ne NOM B-TRACK
+viens NOM I-TRACK
+pas NOM I-TRACK
+
+pause VER PAUSE
+Crazy NOM B-TRACK
+Chick NOM I-TRACK
+
+demarre VER START
+Kamikazes NOM B-TRACK
+enamorados NOM I-TRACK
+from PRP O
+The NOM B-ARTIST
+Xynochronous NOM I-ARTIST
+Weasel NOM I-ARTIST
+
+end VER STOP
+
+jouée VER START
+The NOM B-TRACK
+Time NOM I-TRACK
+Has NOM I-TRACK
+Come NOM I-TRACK
+
+lance VER START
+Ain't NOM B-TRACK
+Too NOM I-TRACK
+Proud NOM I-TRACK
+to NOM I-TRACK
+Beg NOM I-TRACK
+
+commencer VER START
+Mongo NOM B-TRACK
+Push NOM I-TRACK
+
+débuter VER START
+I NOM B-TRACK
+Never NOM I-TRACK
+Needed NOM I-TRACK
+You NOM I-TRACK
+
+joue VER START
+Have NOM B-TRACK
+Yourself NOM I-TRACK
+a NOM I-TRACK
+Merry NOM I-TRACK
+Little NOM I-TRACK
+Christmas NOM I-TRACK
+of PRP O
+Sound NOM B-ARTIST
+Of NOM I-ARTIST
+The NOM I-ARTIST
+New NOM I-ARTIST
+Breed NOM I-ARTIST
+
+demarrer VER START
+Sweet NOM B-TRACK
+Love NOM I-TRACK
+from PRP O
+Danny NOM B-ARTIST
+& NOM I-ARTIST
+Chillin NOM I-ARTIST
+
+end VER STOP
+Elysian NOM B-TRACK
+Fields NOM I-TRACK
+
+terminate VER STOP
+
+stopper VER STOP
+The NOM B-TRACK
+Problem NOM I-TRACK
+
+joue VER START
+I'm NOM B-TRACK
+Not NOM I-TRACK
+Missing NOM I-TRACK
+You NOM I-TRACK
+from PRP O
+E.P.R. NOM B-ARTIST
+
+éteins VER STOP
+
+stopper VER STOP
+Let NOM B-TRACK
+England NOM I-TRACK
+Shake NOM I-TRACK
+
+stopper VER STOP
+
+end VER STOP
+Last NOM B-TRACK
+Christmas NOM I-TRACK
+
+demarrer VER START
+Debu-Debu NOM B-TRACK
+Berterbangan NOM I-TRACK
+par PRP O
+Edgar NOM B-ARTIST
+Villaroel NOM I-ARTIST
+
+end VER STOP
+
+éteins VER STOP
+
+jouée VER START
+Better NOM B-TRACK
+Days NOM I-TRACK
+from PRP O
+Zora NOM B-ARTIST
+Young NOM I-ARTIST
+
+redémaré VER START
+Tunnel NOM B-TRACK
+of NOM I-TRACK
+Love NOM I-TRACK
+
+étein VER STOP
+Roll NOM B-TRACK
+the NOM I-TRACK
+Credits NOM I-TRACK
+
+éteins VER STOP
+
+éteint VER STOP
+
+lance VER START
+De NOM B-TRACK
+Pata NOM I-TRACK
+Negra NOM I-TRACK
+
+restart VER START
+My NOM B-TRACK
+Heart NOM I-TRACK
+
+terminate VER STOP
+
+terminate VER STOP
+
+stopper VER STOP
+
+arete VER STOP
+Keep NOM B-TRACK
+It NOM I-TRACK
+Rollin NOM I-TRACK
+
+arrête VER STOP
+Malefic NOM B-TRACK
+Dowery NOM I-TRACK
+
+joue VER START
+Last NOM B-TRACK
+Night NOM I-TRACK
+
+stopper VER STOP
+
+commencer VER START
+Our NOM B-TRACK
+Song NOM I-TRACK
+
+étain VER STOP
+
+demarre VER START
+The NOM B-TRACK
+Death NOM I-TRACK
+Song NOM I-TRACK
+by PRP O
+Last NOM B-ARTIST
+Place NOM I-ARTIST
+Champs NOM I-ARTIST
+
+pause VER PAUSE
+We're NOM B-TRACK
+Gonna NOM I-TRACK
+Have NOM I-TRACK
+Us NOM I-TRACK
+a NOM I-TRACK
+Champagne NOM I-TRACK
+Jam NOM I-TRACK
+
+stopper VER STOP
+
+stopper VER STOP
+In NOM B-TRACK
+My NOM I-TRACK
+Eyes NOM I-TRACK
+
+joue VER START
+Batman NOM B-TRACK
+Flow NOM I-TRACK
+
+restart VER START
+The NOM B-TRACK
+Noose NOM I-TRACK
+
+arrêt VER STOP
+
+joue VER START
+What NOM B-TRACK
+Could NOM I-TRACK
+Have NOM I-TRACK
+Been NOM I-TRACK
+de PRP O
+Steve NOM B-ARTIST
+Gillette NOM I-ARTIST
+& NOM I-ARTIST
+Cindy NOM I-ARTIST
+Mangsen NOM I-ARTIST
+
+demarrer VER START
+Ice NOM B-TRACK
+Cream NOM I-TRACK
+Freeze NOM I-TRACK
+
+redémaré VER START
+Trippin NOM B-TRACK
+On NOM I-TRACK
+Her NOM I-TRACK
+of PRP O
+Michala NOM B-ARTIST
+Banas NOM I-ARTIST
+
+arrête VER STOP
+Deck NOM B-TRACK
+the NOM I-TRACK
+Halls NOM I-TRACK
+
+arrêt VER STOP
+
+arrête VER STOP
+
+jouée VER START
+Fixation NOM B-TRACK
+on NOM I-TRACK
+the NOM I-TRACK
+Darkness NOM I-TRACK
+de PRP O
+Icy NOM B-ARTIST
+Blu NOM I-ARTIST
+
+éteint VER STOP
+California NOM B-TRACK
+Dreamin NOM I-TRACK
+
+commencer VER START
+Tu NOM B-TRACK
+jueguito NOM I-TRACK
+
+débuter VER START
+I NOM B-TRACK
+Can't NOM I-TRACK
+Stop NOM I-TRACK
+Loving NOM I-TRACK
+You NOM I-TRACK
+of PRP O
+Totally NOM B-ARTIST
+Normal NOM I-ARTIST
+
+restart VER START
+It's NOM B-TRACK
+a NOM I-TRACK
+Curse NOM I-TRACK
+by PRP O
+The NOM B-ARTIST
+Barons NOM I-ARTIST
+
+arete VER STOP
+
+arrêt VER STOP
+Pearls NOM B-TRACK
+Girl NOM I-TRACK
+
+lancer VER START
+Side NOM B-TRACK
+Streets NOM I-TRACK
+
+débuté VER START
+Sympathy NOM B-TRACK
+Orchestra NOM I-TRACK
+
+arrête VER STOP
+
+arrêt VER STOP
+
+terminer VER STOP
+
+débuté VER START
+Saat NOM B-TRACK
+Jarak NOM I-TRACK
+Memisahkan NOM I-TRACK
+
+pause VER PAUSE
+
+jouée VER START
+Hitam NOM B-TRACK
+Manis NOM I-TRACK
+by PRP O
+Penjabi NOM B-ARTIST
+MC NOM I-ARTIST
+
+demarre VER START
+Fuoco NOM B-TRACK
+nel NOM I-TRACK
+fuoco NOM I-TRACK
+
+étein VER STOP
+

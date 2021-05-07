@@ -1,0 +1,24 @@
+Introduction
+
+Difficultés
+
+Mise en contexte:
+Dev d'une application de lecture de musique sur plusieurs medium
+pk les application mobiles sont plus intéréssentes
+
+Architecture
+
+Accessibilité
+
+Temporalité si possible
+
+Pas de screenshot A4
+
+faires des usecases pour montrer le fonctionnement
+
+Vidéo sur YTB en hidden
+    Décrire si possible les actions
+
+Model sur drive + décrire dans le rapport
+
+Cité les sources
