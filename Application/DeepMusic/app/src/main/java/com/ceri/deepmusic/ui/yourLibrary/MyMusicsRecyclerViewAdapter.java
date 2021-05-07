@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ceri.deepmusic.R;
 import com.ceri.deepmusic.models.Toolbox;
@@ -20,8 +21,8 @@ import java.util.List;
  */
 public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRecyclerViewAdapter.ViewHolder> {
 
-    public List<Server.Music> rawValues;
-    public List<Server.Music> mValues;
+    public static List<Server.Music> rawValues;
+    public static List<Server.Music> mValues;
 
     public MyMusicsRecyclerViewAdapter(List<Server.Music> items) {
         rawValues = new ArrayList<Server.Music>(items);
@@ -118,6 +119,16 @@ public class MyMusicsRecyclerViewAdapter extends RecyclerView.Adapter<MyMusicsRe
             mIdView = (TextView) view.findViewById(R.id.identifierMusic);
             mTitleView = (TextView) view.findViewById(R.id.title);
             mAlbumView = (TextView) view.findViewById(R.id.album);
+
+            //Long Press
+            view.setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View v) {
+                    Toast.makeText(view.getContext(), "Music Selected", Toast.LENGTH_SHORT).show();
+                    Toolbox.CURRENT_MUSIC_MAJ = mItem;
+                    return false;
+                }
+            });
         }
 
         @Override

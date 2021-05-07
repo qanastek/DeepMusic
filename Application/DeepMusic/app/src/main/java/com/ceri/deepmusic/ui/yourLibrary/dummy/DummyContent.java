@@ -31,6 +31,10 @@ public class DummyContent {
     public static final Map<String, Server.Music> ITEM_MAP = new HashMap<String, Server.Music>();
 
     static {
+        loadAll();
+    }
+
+    public static void loadAll() {
 
         Server.Music[] items = DummyContent.iceServer.getHello().findAll();
 

@@ -35,6 +35,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ceri.deepmusic.R;
 import com.ceri.deepmusic.models.IceServer;
 import com.ceri.deepmusic.models.Toolbox;
+import com.ceri.deepmusic.ui.add.AddMusic;
 import com.ceri.deepmusic.ui.yourLibrary.dummy.DummyContent;
 import com.google.android.material.snackbar.Snackbar;
 import com.zeroc.Ice.InvocationFuture;
@@ -62,7 +63,8 @@ public class YourLibraryFragment extends Fragment {
     private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
 
-    static RecyclerView recyclerView;
+    public static RecyclerView recyclerView;
+    public static MyMusicsRecyclerViewAdapter adapter;
 
     EditText searchbar;
 
@@ -97,7 +99,9 @@ public class YourLibraryFragment extends Fragment {
         } else {
             recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
         }
-        recyclerView.setAdapter(new MyMusicsRecyclerViewAdapter(DummyContent.ITEMS));
+
+        adapter = new MyMusicsRecyclerViewAdapter(DummyContent.ITEMS);
+        recyclerView.setAdapter(adapter);
 
         final Button toggle = view.findViewById(R.id.toggle);
         toggle.setOnClickListener(new View.OnClickListener() {
@@ -140,16 +144,25 @@ public class YourLibraryFragment extends Fragment {
 
             @Override
             public void onClick(View arg0) {
-                upload();
+                add();
             }
         });
 
-        final Button ssl = view.findViewById(R.id.ssl);
-        ssl.setOnClickListener(new View.OnClickListener() {
+        final Button update = view.findViewById(R.id.update);
+        update.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                ssl();
+                update();
+            }
+        });
+
+        final Button remove = view.findViewById(R.id.delete);
+        remove.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                remove();
             }
         });
 
@@ -207,11 +220,6 @@ public class YourLibraryFragment extends Fragment {
         if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.CAMERA}, 1);
         }
-    }
-
-    public static void ssl() {
-        String res = iceServer.getHello().demoSSL();
-        Log.d("SSL",res);
     }
 
     public static void togglePlay() {
@@ -309,70 +317,35 @@ public class YourLibraryFragment extends Fragment {
         }
     }
 
-    public void upload() {
+    public void add() {
+        Intent myIntent = new Intent(getActivity(), AddMusic.class);
+        getActivity().startActivity(myIntent);
+    }
 
-        checkPermissions();
+    public void update() {
 
-        try {
-
-            String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString();
-
-            path = path + "/sample.mp3";
-
-            File song = new File(path);
-            FileInputStream file = new FileInputStream(song);
-
-            int chunkSize = 4096;
-            int offset = 0;
-
-            LinkedList<InvocationFuture<Void>> results = new LinkedList<InvocationFuture<Void>>();
-            int numRequests = 5;
-
-            String extension = MimeTypeMap.getFileExtensionFromUrl(song.toString());
-
-            Random rand = new Random();
-            int min = 1;
-            int max = 999999;
-            int rand1 = rand.nextInt(max - min + 1) + min;
-
-            String remotePath = "musics/" + "android_" + rand1 + "_" + System.currentTimeMillis() + "." + extension;
-
-            Log.d("Remote Path",remotePath);
-
-            byte[] bs = new byte[chunkSize];
-
-            while ((offset = file.read(bs)) != -1) {
-
-                // Send up to numRequests + 1 chunks asynchronously.
-                CompletableFuture<Void> f = YourLibraryFragment.iceServer.getHello().sendAsync(offset, bs, remotePath);
-                offset += bs.length;
-
-                // Wait until this request has been passed to the transport.
-                InvocationFuture<Void> i = Util.getInvocationFuture(f);
-                i.waitForSent();
-                results.add(i);
-
-                // Once there are more than numRequests, wait for the least
-                // recent one to complete.
-                while(results.size() > numRequests)
-                {
-                    i = results.getFirst();
-                    results.removeFirst();
-                    i.join();
-                }
-            }
-
-            // Wait for any remaining requests to complete.
-            while(results.size() > 0)
-            {
-                InvocationFuture<Void> i = results.getFirst();
-                results.removeFirst();
-                i.join();
-            }
-
-        } catch (Exception e) {
-            System.err.println(e.toString());
+        if(Toolbox.CURRENT_MUSIC_MAJ == null) {
+            Toast.makeText(getContext(), "No music to update", Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        Intent myIntent = new Intent(getActivity(), AddMusic.class);
+        myIntent.putExtra("music", Toolbox.CURRENT_MUSIC_MAJ);
+        getActivity().startActivity(myIntent);
+    }
+
+    public void remove() {
+
+        if(Toolbox.CURRENT_MUSIC_MAJ == null) {
+            Toast.makeText(getContext(), "No music to delete", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        iceServer.getHello().delete(Toolbox.CURRENT_MUSIC_MAJ.identifier);
+
+        AddMusic.fetchContent(iceServer);
+
+        Toast.makeText(getContext(), "Music deleted", Toast.LENGTH_SHORT).show();
     }
 
     public static void toggleStop() {

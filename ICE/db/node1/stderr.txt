@@ -15965,3 +15965,151 @@ shared memfd open() failed: Function not implemented
 [00007f15f40d9850] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
 shared memfd open() failed: Function not implemented
 [00007f15d0003f20] dummy mux: Open
+-! 05/07/21 10:50:15.032 SimpleServer-1: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server.py", line 180, in findAll
+       musics = HelloI.db.getMusics()
+     File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 113, in getMusics
+       self.mycursor.execute("SELECT * FROM " + self.DB_TABLE)
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/cursor.py", line 551, in execute
+       self._handle_result(self._connection.cmd_query(stmt))
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/connection.py", line 490, in cmd_query
+       result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/connection.py", line 267, in _send_cmd
+       return self._socket.recv()
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/network.py", line 243, in recv_plain
+       raise errors.InterfaceError(errno=2013)
+   mysql.connector.errors.InterfaceError: 2013: Lost connection to MySQL server during query
+   
+   identity: hello
+   facet: 
+   operation: findAll
+   remote host: 192.168.0.24 remote port: 40948
+-! 05/07/21 10:50:50.280 SimpleServer-1: warning: dispatch exception: modules/IcePy/Util.cpp:344: ::Ice::UnknownException:
+   unknown exception:
+   Traceback (most recent call last):
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/network.py", line 140, in send_plain
+       self.sock.sendall(packet)
+   BrokenPipeError: [Errno 32] Broken pipe
+   
+   During handling of the above exception, another exception occurred:
+   
+   Traceback (most recent call last):
+     File "/usr/lib/python3/dist-packages/Ice/__init__.py", line 408, in _iceDispatch
+       result = method(*args)
+     File "server.py", line 180, in findAll
+       musics = HelloI.db.getMusics()
+     File "/mnt/d/Projects/DeepMusic/ICE/db.py", line 113, in getMusics
+       self.mycursor.execute("SELECT * FROM " + self.DB_TABLE)
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/cursor.py", line 551, in execute
+       self._handle_result(self._connection.cmd_query(stmt))
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/connection.py", line 490, in cmd_query
+       result = self._handle_result(self._send_cmd(ServerCmd.QUERY, query))
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/connection.py", line 259, in _send_cmd
+       self._socket.send(
+     File "/home/home/.local/lib/python3.8/site-packages/mysql/connector/network.py", line 142, in send_plain
+       raise errors.OperationalError(
+   mysql.connector.errors.OperationalError: 2055: Lost connection to MySQL server at 'localhost:3306', system error: 32 Broken pipe
+   
+   identity: hello
+   facet: 
+   operation: findAll
+   remote host: 192.168.0.24 remote port: 40956
+-- 05/07/21 10:51:10.637 Node1: Replica: trying to establish session with replica `Master'
+!! 05/07/21 10:51:14.651 Node1: error: a node with the same name is already active with the replica `Master'
+-- 05/07/21 10:51:14.651 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 10:51:17.649 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 10:51:18.660 Node1: Replica: trying to establish session with replica `Replica1'
+!! 05/07/21 10:51:18.662 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 10:51:18.662 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+!! 05/07/21 10:51:21.661 Node1: error: a node with the same name is already active with the replica `Master'
+-- 05/07/21 10:51:21.661 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 10:51:25.671 Node1: Replica: trying to establish session with replica `Replica1'
+!! 05/07/21 10:51:25.672 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 10:51:25.672 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 10:51:28.663 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 10:51:28.663 Node1: Replica: trying to establish session with replica `Master'
+!! 05/07/21 10:51:28.664 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 10:51:28.664 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+!! 05/07/21 10:51:28.664 Node1: error: a node with the same name is already active with the replica `Master'
+-- 05/07/21 10:51:28.665 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 10:51:35.673 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 10:51:35.673 Node1: Replica: trying to establish session with replica `Master'
+!! 05/07/21 10:51:35.674 Node1: error: a node with the same name is already active with the replica `Master'
+!! 05/07/21 10:51:35.674 Node1: error: a node with the same name is already active with the replica `Replica1'
+-- 05/07/21 10:51:35.674 Node1: Replica: failed to establish session with replica `Master':
+   ::IceGrid::NodeActiveException
+-- 05/07/21 10:51:35.674 Node1: Replica: failed to establish session with replica `Replica1':
+   ::IceGrid::NodeActiveException
+-! 05/07/21 10:52:54.101 Node1: warning: couldn't reach the IceGrid registry (this is expected if it's down, otherwise please check the value of the Ice.Default.Locator property):
+   src/Ice/ConnectionI.cpp:2194: ::Ice::ConnectTimeoutException:
+   timeout while establishing a connection
+-- 05/07/21 10:52:54.102 Node1: Replica: trying to establish session with replica `Master'
+-- 05/07/21 10:53:03.643 Node1: Replica: established session with replica `Master'
+-- 05/07/21 10:53:03.644 Node1: Replica: trying to establish session with replica `Replica1'
+-- 05/07/21 10:53:03.652 Node1: Replica: established session with replica `Replica1'
+shared memfd open() failed: Function not implemented
+[00007f1d940a2290] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d84004ce0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940e4510] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d800043c0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940bf1e0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d6c4c81b0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940e3340] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d90021d30] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d94132d30] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d744c8820] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d941269e0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d70002d90] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940fe430] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d78000e80] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940b3ea0] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d5c4c8210] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d940b7680] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d8c003780] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d9410cd70] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d544c83e0] dummy mux: Open
+shared memfd open() failed: Function not implemented
+[00007f1d9411bb00] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d68002f30] dummy mux: Open
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+
+Warning: Encountered more data after announced end of track (frame 6128/6128). Frankenstein!
+shared memfd open() failed: Function not implemented
+[00007f1d94156d00] vlcpulse audio output error: PulseAudio server connection failure: Connection refused
+shared memfd open() failed: Function not implemented
+[00007f1d504c8210] dummy mux: Open
