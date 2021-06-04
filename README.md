@@ -4,7 +4,7 @@
 
 DeepMusic is an easy to use Spotify like app to manage and listen to your favorites musics.
 
-Technically, this is an Android Application and its entire RPC / MOM backend.
+Technically, this is an Android Application and its entire RPC / MOM backend. The SpeechToText is provided by the Android SpeechToText API and the named entity recognition done with Flair.
 
 <!-- ![Preview](GithubAssets/Preview.png) -->
 ## Install Dependencies
