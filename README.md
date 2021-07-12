@@ -4,7 +4,7 @@
 
 DeepMusic is an easy to use Spotify like app to manage and listen to your favorites musics.
 
-Technically, this is an Android Application and its entire RPC / MOM backend. The SpeechToText is provided by the Android SpeechToText API and the named entity recognition done with Flair.
+Technically, this project is an Android Client and its entire RPC / MOM backend. After being recorded, the input sequence is transcribed by the Android SpeechToText API provided natively on Android. Then, the transcription is provided to an homemade named entity recognition system which is done with Flair to identify semantic entities such like: Artist(s), Music Name, Order, ... In response of that, the correct order is emitted and the music stream is played, stopped or paused on the device. The solution is scalable to dozen of mobile devices and multiple backend servers thanks to IceGrid. 
 
 Administration             |  Android Client
 :-------------------------:|:-------------------------:
